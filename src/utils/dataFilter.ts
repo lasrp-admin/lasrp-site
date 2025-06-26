@@ -15,14 +15,14 @@ export function handleFilterUpdate(
   setDisplayData: React.Dispatch<SetStateAction<Resource[]>>
 ): void {
   const filteredDatabase = Object.fromEntries(
-    Object.entries(structuredClone(database)).filter(
+    Object.entries(database).filter(
       ([_, resource]) =>
         typeMatch(resource, filterSet.resourceTypes) &&
         audienceMatch(resource, filterSet.resourceAudiences) &&
         languageMatch(resource, filterSet.resourceLanguages)
     )
   );
-
+  console.log("filt:", filteredDatabase);
   setDisplayData(Object.values(filteredDatabase));
 }
 
@@ -32,6 +32,7 @@ export function handleFilterUpdate(
  * @param types
  */
 function typeMatch(resource: Resource, types: Set<ResourceType>): boolean {
+  console.log("hello", resource.name);
   return isSubsetOf(types, resource.type);
 }
 
@@ -60,8 +61,11 @@ function languageMatch(
 }
 
 function isSubsetOf<T>(a: Set<T>, b: Set<T>): boolean {
+  let flag = true;
+  console.log(a, b);
   for (const item of a) {
-    if (!b.has(item)) return false;
+    if (!b.has(item)) flag = false;
   }
-  return true;
+  console.log("Flag: ", flag);
+  return flag;
 }

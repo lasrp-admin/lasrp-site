@@ -56,7 +56,7 @@ export type ResourceType =
   | "Legal Services"
   | "LGBT Services"
   | "Medical Services"
-  | "Mental Health & Consulting"
+  | "Mental Health & Counseling"
   | "Spiritual Services"
   | "Transportation"
   | "Undocumented/Refugee/Asylum Services";
@@ -87,7 +87,7 @@ export const ALL_RESOURCE_TYPES: ResourceType[] = [
   "Legal Services",
   "LGBT Services",
   "Medical Services",
-  "Mental Health & Consulting",
+  "Mental Health & Counseling",
   "Spiritual Services",
   "Transportation",
   "Undocumented/Refugee/Asylum Services",
