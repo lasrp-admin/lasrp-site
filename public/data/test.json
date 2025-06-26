@@ -1,0 +1,69 @@
+{
+  "Adolescent Care and Transition (ACT) Clinic": {
+    "Name": "Adolescent Care and Transition (ACT) Clinic",
+    "Type": [
+      "LGBT Services",
+      "Medical Services",
+      "Family Planning & Reproductive Health"
+    ],
+    "Description": "Comprehensive medical homes for high risk teens and children with chronic medical illnesses transitioning into adult care. Providers are board certified in both pediatrics and internal medicine, and work closely with a team of social workers, case managers, and mental health specialists. Services provided include primary medical care (including care for infants/children, pregnant/parenting teens, LGBTQ youth and young adults, and young adults with chronic medical illness) and contraception counseling and placement.",
+    "Audience": [
+      "Adolescents & Young Adults (AYA)",
+      "LGBTQ+ Community"
+    ],
+    "Laguages": [
+      "English",
+      "Spanish"
+    ],
+    "Other": [
+      "Government Program"
+    ],
+    "Eligibility": [
+      "FLEXIBLE ELIGIBILITY"
+    ],
+    "EligibilityInfo": "",
+    "Email1": "",
+    "Email2": "",
+    "Phone1": "(323) 409-3233",
+    "Phone2": "(323) 226-7289 (Fax)",
+    "Hours": "M-F: 8AM-5:30PM",
+    "ContactPerson": "",
+    "ContactLink": "",
+    "Address": "2010 Zonal Avenue, 3rd floor, 3P-40A, Los Angeles, CA 90033",
+    "Neighborhood": "Central LA",
+    "MoreInfo": ""
+  },
+  "National Maternal Mental Health Hotline": {
+    "Name": "National Maternal Mental Health Hotline",
+    "Type": [
+      "Mental Health & Counseling"
+    ],
+    "Description": "Free and confidential hotline for pregnant or new mothers. Professional counseolrs will listen to what clients are going through, connect them with local support groups and organizations, and refer them to other health care professionals if they need more care.",
+    "Audience": [
+      "Women",
+      "Families & Parents"
+    ],
+    "Laguages": [
+      "English",
+      "Spanish"
+    ],
+    "Other": [
+      "Hotline Available",
+      "Government Program"
+    ],
+    "Eligibility": [
+      "FLEXIBLE ELIGIBILITY"
+    ],
+    "EligibilityInfo": "",
+    "Email1": "",
+    "Email2": "",
+    "Phone1": "1 (833) 852-6262 (1-833-TLC-MAMA)",
+    "Phone2": "",
+    "Hours": "24/7",
+    "ContactPerson": "",
+    "ContactLink": "",
+    "Address": "",
+    "Neighborhood": "Remote",
+    "MoreInfo": ""
+  }
+}

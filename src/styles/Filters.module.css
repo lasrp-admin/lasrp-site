@@ -1,0 +1,9 @@
+.filtersContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.bar {
+  width: 25vw;
+}
