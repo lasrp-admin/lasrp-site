@@ -13,6 +13,24 @@ const App = () => {
         started by adding your desired filters below and hitting search.
       </span>
       <ResourceSearch />
+      <span style={{ marginBottom: "10px" }}>
+        <a
+          href="https://github.com/AtonalDev/lasrp"
+          target="_blank"
+          style={{ color: "#007AFF" }}
+        >
+          Code{" "}
+        </a>
+        by
+        <a
+          href="https://github.com/AtonalDev"
+          target="_blank"
+          style={{ color: "#007AFF" }}
+        >
+          {" "}
+          Atonal
+        </a>
+      </span>
     </main>
   );
 };
