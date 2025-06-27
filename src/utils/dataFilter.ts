@@ -9,6 +9,8 @@ import type {
 } from "../types/types";
 import type { SetStateAction } from "react";
 
+import { sorted } from "../utils/sorted";
+
 export function handleFilterUpdate(
   database: ResourceDatabase,
   filterSet: FilterSet,
@@ -23,7 +25,7 @@ export function handleFilterUpdate(
     )
   );
   console.log("filt:", filteredDatabase);
-  setDisplayData(Object.values(filteredDatabase));
+  setDisplayData(sorted(Object.values(filteredDatabase)));
 }
 
 /**

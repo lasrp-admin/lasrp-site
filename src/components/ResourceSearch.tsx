@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
 import { handleFilterUpdate } from "../utils/dataFilter.ts";
+import { sorted } from "../utils/sorted.ts";
 import Filters from "./Filters";
 import Results from "./Results";
 
@@ -45,7 +46,9 @@ const ResourceSearch = () => {
         );
 
         setDatabase(convertLists);
-        setDisplaydata(Object.entries(convertLists).map((entry) => entry[1]));
+        setDisplaydata(
+          sorted(Object.entries(convertLists).map((entry) => entry[1]))
+        );
       } catch (err) {
         console.error("Failed to load JSON: ", err);
       }
