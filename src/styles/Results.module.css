@@ -1,18 +1,39 @@
 .resultsContainer {
+  position: relative;
   display: flex;
   flex-direction: column;
 
   align-items: center;
-  width: 80vw;
+  width: 65vw;
 
-  margin-bottom: 200px;
+  margin-bottom: 50px;
 }
 
 .table {
   width: 100%;
 }
 
-.message {
+.count {
+  position: relative;
   text-align: center;
-  margin: 15px;
+  width: 100%;
+}
+
+.checkBox {
+  position: absolute;
+
+  display: flex;
+  flex-direction: row;
+
+  gap: 10px;
+
+  left: 18px;
+
+  z-index: 1;
+}
+
+.tableHeader {
+  position: relative;
+  width: 100%;
+  display: flex;
 }
