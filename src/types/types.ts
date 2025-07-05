@@ -28,6 +28,7 @@ export type Resource = {
   address: string;
   neighborhood: string;
   moreInfo: string;
+  selected: boolean;
 };
 
 export type ResourceType =
