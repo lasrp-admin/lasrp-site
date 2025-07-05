@@ -1,5 +1,11 @@
 import ResourceSearch from "./components/ResourceSearch";
 import styles from "./styles/App.module.css";
+import { FaRegQuestionCircle } from "react-icons/fa";
+import { FiPrinter } from "react-icons/fi";
+import { FaRegStar } from "react-icons/fa6";
+
+import Info from "./components/Info";
+import SelectedResourcesView from "./components/SelectedResourcesView";
 
 const App = () => {
   return (
