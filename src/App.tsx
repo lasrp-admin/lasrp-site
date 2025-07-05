@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import ResourceSearch from "./components/ResourceSearch";
 import styles from "./styles/App.module.css";
 import { FaRegQuestionCircle } from "react-icons/fa";
@@ -8,8 +10,25 @@ import Info from "./components/Info";
 import SelectedResourcesView from "./components/SelectedResourcesView";
 
 const App = () => {
+  const [help, setHelp] = useState<boolean>(false);
+  const [favorite, setFavorite] = useState<boolean>(false);
   return (
     <main className={styles.main}>
+      <div className={styles.iconBar}>
+        <FaRegStar
+          onClick={() => setFavorite(true)}
+          size={40}
+          title={"View selected resources"}
+        />
+        <FiPrinter size={40} title={"Print selected resources"} />
+        <FaRegQuestionCircle
+          onClick={() => setHelp(true)}
+          size={40}
+          title={"Help"}
+        />
+      </div>
+      {help && <Info setHelp={setHelp} />}
+      {favorite && <SelectedResourcesView setFavorite={setFavorite} />}
       <span className={styles.title}>
         Los Angeles Social Resources for Patients
       </span>
