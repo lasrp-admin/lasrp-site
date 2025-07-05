@@ -19,12 +19,12 @@ export function handleFilterUpdate(
   const filteredDatabase = Object.fromEntries(
     Object.entries(database).filter(
       ([_, resource]) =>
-        typeMatch(resource, filterSet.resourceTypes) &&
-        audienceMatch(resource, filterSet.resourceAudiences) &&
-        languageMatch(resource, filterSet.resourceLanguages)
+        resource.selected ||
+        (typeMatch(resource, filterSet.resourceTypes) &&
+          audienceMatch(resource, filterSet.resourceAudiences) &&
+          languageMatch(resource, filterSet.resourceLanguages))
     )
   );
-  console.log("filt:", filteredDatabase);
   setDisplayData(sorted(Object.values(filteredDatabase)));
 }
 
@@ -34,7 +34,6 @@ export function handleFilterUpdate(
  * @param types
  */
 function typeMatch(resource: Resource, types: Set<ResourceType>): boolean {
-  console.log("hello", resource.name);
   return isSubsetOf(types, resource.type);
 }
 
@@ -62,12 +61,10 @@ function languageMatch(
   return isSubsetOf(languages, resource.language);
 }
 
-function isSubsetOf<T>(a: Set<T>, b: Set<T>): boolean {
+export function isSubsetOf<T>(a: Set<T>, b: Set<T>): boolean {
   let flag = true;
-  console.log(a, b);
   for (const item of a) {
     if (!b.has(item)) flag = false;
   }
-  console.log("Flag: ", flag);
   return flag;
 }
