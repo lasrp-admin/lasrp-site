@@ -5,19 +5,48 @@ import type { Resource } from "../types/types";
 import ResourceRow from "./ResourceRow";
 
 import styles from "../styles/Results.module.css";
+import { useDatabaseContext } from "../contexts/DatabaseContext";
+import { MdCheckBox, MdCheckBoxOutlineBlank } from "react-icons/md";
+import { isSubsetOf } from "../utils/dataFilter";
 
 interface ResultsProps {
   data: Resource[];
 }
 
 const Results: React.FC<ResultsProps> = ({ data }) => {
+  const { selectedResources, selectAll, deselectAll } = useDatabaseContext();
+
   return (
     <div className={styles.resultsContainer}>
-      <span className={styles.message}>
+      <div className={styles.tableHeader}>
         {data.length > 0 ? (
-          `${data.length} resources found.`
+          <>
+            {isSubsetOf(
+              new Set(data.map((resource) => resource.name)),
+              selectedResources
+            ) ? (
+              <div className={styles.checkBox}>
+                <MdCheckBox
+                  size={25}
+                  onClick={() => deselectAll(data)}
+                  style={{ cursor: "pointer" }}
+                />
+                <span>Deselect All</span>
+              </div>
+            ) : (
+              <div className={styles.checkBox}>
+                <MdCheckBoxOutlineBlank
+                  size={25}
+                  onClick={() => selectAll(data)}
+                  style={{ cursor: "pointer" }}
+                />
+                <span>Select All</span>
+              </div>
+            )}
+            <span className={styles.count}>{data.length} resources found.</span>
+          </>
         ) : (
-          <div style={{ display: "flex", flexDirection: "column" }}>
+          <div>
             <span>No resources matching your filters were found.</span>
             <span>
               If you represent a resource or know of one that is missing in our
@@ -26,12 +55,20 @@ const Results: React.FC<ResultsProps> = ({ data }) => {
             </span>
           </div>
         )}
-      </span>
+      </div>
       <motion.div className={styles.table} layout>
         <AnimatePresence>
           {data.length > 0 &&
             data.map((entry, i) => (
-              <ResourceRow key={i} resource={entry} color={(i % 2) as 0 | 1} />
+              <ResourceRow
+                key={entry.name}
+                name={entry.name}
+                description={entry.description}
+                website={entry.website}
+                color={(i % 2) as 0 | 1}
+                expandInit={false}
+                selected={selectedResources.has(entry.name)}
+              />
             ))}
         </AnimatePresence>
       </motion.div>
