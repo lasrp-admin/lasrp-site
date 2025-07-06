@@ -42,3 +42,32 @@
 .icon {
   cursor: pointer;
 }
+
+.rowContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 100px;
+}
+
+.leftContent {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.rightContent {
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+.detail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  gap: 25px;
+}

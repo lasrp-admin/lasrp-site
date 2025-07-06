@@ -5,21 +5,43 @@ import { AnimatePresence, motion } from "motion/react";
 import { IoMdExpand } from "react-icons/io";
 import { AiOutlineCompress } from "react-icons/ai";
 import { GoGlobe } from "react-icons/go";
+import { MdPeople } from "react-icons/md";
 import { MdCheckBoxOutlineBlank } from "react-icons/md";
 import { MdCheckBox } from "react-icons/md";
+import { FaPhoneFlip } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
 import { useDatabaseContext } from "../contexts/DatabaseContext";
 
 interface ResourceRowProps {
   name: string;
   description: string;
+  eligibility: string[];
+  eligibilityText: string;
   website: string;
+  phone1: string;
+  phone2: string;
+  mail1: string;
+  mail2: string;
   expandInit: boolean;
   selected: boolean;
   color: 0 | 1;
 }
 
 const ResourceRow: React.FC<ResourceRowProps> = React.memo(
-  ({ name, description, website, color, expandInit, selected }) => {
+  ({
+    name,
+    description,
+    eligibility,
+    eligibilityText,
+    website,
+    phone1,
+    phone2,
+    mail1,
+    mail2,
+    color,
+    expandInit,
+    selected,
+  }) => {
     const [expand, setExpand] = useState<boolean>(expandInit);
     const [linkHover, setLinkHover] = useState<boolean>(false);
     const { setSelectedResources } = useDatabaseContext();
@@ -36,6 +58,8 @@ const ResourceRow: React.FC<ResourceRowProps> = React.memo(
         transition={{ opacity: { duration: 0.2 } }}
       >
         <span className={styles.title}>{name}</span>
+        <span>{description}</span>
+
         <div className={styles.checkbox}>
           {selected ? (
             <MdCheckBox
@@ -89,20 +113,58 @@ const ResourceRow: React.FC<ResourceRowProps> = React.memo(
         <AnimatePresence>
           {expand && (
             <motion.div
-              className={styles.details}
               initial={{ height: 0 }}
               animate={{ height: "auto" }}
               exit={{ height: 0 }}
               transition={{ duration: 0.3 }}
             >
               <div className={styles.spacer}></div>
-              <span>{description}</span>
-              <p>
-                <strong>Link:</strong>{" "}
-                <a href={website} target="_blank" rel="noopener noreferrer">
-                  {website}
-                </a>
-              </p>
+              <div className={styles.rowContent}>
+                <div className={styles.leftContent}>
+                  {(eligibility || eligibilityText) && (
+                    <div className={styles.detail}>
+                      <div>
+                        <MdPeople size={35} />
+                      </div>
+                      <div
+                        style={{
+                          display: "flex",
+                          flexDirection: "column",
+                          gap: "5px",
+                        }}
+                      >
+                        {eligibility.map((x) => (
+                          <span key={x} style={{ fontWeight: "bold" }}>
+                            {x}
+                          </span>
+                        ))}
+                        <span>{eligibilityText}</span>
+                      </div>
+                    </div>
+                  )}
+                </div>
+                <div className={styles.rightContent}>
+                  <div className={styles.detail}>
+                    <div>
+                      <FaPhoneFlip size={25} />
+                    </div>
+                    <div style={{ display: "flex", flexDirection: "column" }}>
+                      <span>{phone1}</span>
+                      <span>{phone2}</span>
+                    </div>
+                  </div>
+
+                  <div className={styles.detail}>
+                    <div>
+                      <MdEmail size={25} />
+                    </div>
+                    <div style={{ display: "flex", flexDirection: "column" }}>
+                      <span>{mail1}</span>
+                      <span>{mail2}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </motion.div>
           )}
         </AnimatePresence>

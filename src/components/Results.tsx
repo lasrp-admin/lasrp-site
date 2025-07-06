@@ -64,7 +64,13 @@ const Results: React.FC<ResultsProps> = ({ data }) => {
                 key={entry.name}
                 name={entry.name}
                 description={entry.description}
+                eligibility={entry.eligibility}
+                eligibilityText={entry.eligibilityText}
                 website={entry.website}
+                phone1={entry.phone1}
+                phone2={entry.phone2}
+                mail1={entry.email1}
+                mail2={entry.email2}
                 color={(i % 2) as 0 | 1}
                 expandInit={false}
                 selected={selectedResources.has(entry.name)}
