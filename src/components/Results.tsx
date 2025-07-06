@@ -64,6 +64,7 @@ const Results: React.FC<ResultsProps> = ({ data }) => {
                 key={entry.name}
                 name={entry.name}
                 description={entry.description}
+                categories={Array.from(entry.type)}
                 eligibility={entry.eligibility}
                 eligibilityText={entry.eligibilityText}
                 website={entry.website}

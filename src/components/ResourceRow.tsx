@@ -12,9 +12,13 @@ import { FaPhoneFlip } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { useDatabaseContext } from "../contexts/DatabaseContext";
 
+import IconList from "./IconList";
+import type { ResourceType } from "../types/types";
+
 interface ResourceRowProps {
   name: string;
   description: string;
+  categories: ResourceType[];
   eligibility: string[];
   eligibilityText: string;
   website: string;
@@ -31,6 +35,7 @@ const ResourceRow: React.FC<ResourceRowProps> = React.memo(
   ({
     name,
     description,
+    categories,
     eligibility,
     eligibilityText,
     website,
@@ -57,7 +62,17 @@ const ResourceRow: React.FC<ResourceRowProps> = React.memo(
         exit={{ opacity: 0 }}
         transition={{ opacity: { duration: 0.2 } }}
       >
-        <span className={styles.title}>{name}</span>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
+            gap: "30px",
+          }}
+        >
+          <span className={styles.title}>{name}</span>
+          <IconList categories={categories} />
+        </div>
         <span>{description}</span>
 
         <div className={styles.checkbox}>
