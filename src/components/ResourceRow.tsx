@@ -126,43 +126,49 @@ const ResourceRow: React.FC<ResourceRowProps> = React.memo(
                       <div>
                         <MdPeople size={35} />
                       </div>
-                      <div
-                        style={{
-                          display: "flex",
-                          flexDirection: "column",
-                          gap: "5px",
-                        }}
-                      >
-                        {eligibility.map((x) => (
-                          <span key={x} style={{ fontWeight: "bold" }}>
-                            {x}
-                          </span>
-                        ))}
-                        <span>{eligibilityText}</span>
-                      </div>
+                      {eligibility && (
+                        <div
+                          style={{
+                            display: "flex",
+                            flexDirection: "column",
+                            gap: "5px",
+                          }}
+                        >
+                          {eligibility.map((x) => (
+                            <span key={x} style={{ fontWeight: "bold" }}>
+                              {x}
+                            </span>
+                          ))}
+                          {eligibilityText && <span>{eligibilityText}</span>}
+                        </div>
+                      )}
                     </div>
                   )}
                 </div>
                 <div className={styles.rightContent}>
-                  <div className={styles.detail}>
-                    <div>
-                      <FaPhoneFlip size={25} />
+                  {phone1 && (
+                    <div className={styles.detail}>
+                      <div>
+                        <FaPhoneFlip size={25} />
+                      </div>
+                      <div style={{ display: "flex", flexDirection: "column" }}>
+                        <span>{phone1}</span>
+                        <span>{phone2}</span>
+                      </div>
                     </div>
-                    <div style={{ display: "flex", flexDirection: "column" }}>
-                      <span>{phone1}</span>
-                      <span>{phone2}</span>
-                    </div>
-                  </div>
+                  )}
 
-                  <div className={styles.detail}>
-                    <div>
-                      <MdEmail size={25} />
+                  {mail1 && (
+                    <div className={styles.detail}>
+                      <div>
+                        <MdEmail size={25} />
+                      </div>
+                      <div style={{ display: "flex", flexDirection: "column" }}>
+                        <span>{mail1}</span>
+                        <span>{mail2}</span>
+                      </div>
                     </div>
-                    <div style={{ display: "flex", flexDirection: "column" }}>
-                      <span>{mail1}</span>
-                      <span>{mail2}</span>
-                    </div>
-                  </div>
+                  )}
                 </div>
               </div>
             </motion.div>
