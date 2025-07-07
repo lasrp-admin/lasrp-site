@@ -82,17 +82,55 @@ const PDF: React.FC<PDFProps> = ({ resources }) => {
   return (
     <Document title="lasrp_resource_sheet">
       <Page size="A4" style={pdfStyles.body}>
+        <View>
+          <Text style={pdfStyles.header}>
+            This is a printout of {resources.length} resources selected from
+            laresources.org{" "}
+          </Text>
+        </View>
         {resources.map((resource, i) => (
-          <View key={`view-${i}`}>
+          <View key={`view-${i}`} wrap={false} style={pdfStyles.resource}>
             <Text key={`title-${i}`} style={pdfStyles.titleText}>
               {resource.name}
+            </Text>
+            <Text style={{ ...pdfStyles.text, marginBottom: 10 }}>
+              {Array.from(resource.type).map((type, i) =>
+                i === resource.type.size - 1 ? (
+                  <Text style={pdfStyles.text}>{type}</Text>
+                ) : (
+                  <Text style={pdfStyles.text}>
+                    {type}
+                    {", "}
+                  </Text>
+                )
+              )}
             </Text>
             <Text key={`descr-${i}`} style={pdfStyles.text}>
               {resource.description}
             </Text>
-            <Text key={`web-${i}`} style={pdfStyles.text}>
-              {resource.website}
+            <Text
+              key={`web-${i}`}
+              style={{
+                ...pdfStyles.text,
+                fontWeight: "bold",
+                marginBottom: 10,
+              }}
+            >
+              Resource contact information:
             </Text>
+            {resource.phone1 && (
+              <Text style={pdfStyles.text}>{resource.phone1}</Text>
+            )}
+            {resource.phone2 && (
+              <Text style={pdfStyles.text}>{resource.phone2}</Text>
+            )}
+            {resource.email1 && (
+              <Text style={pdfStyles.text}>{resource.email1}</Text>
+            )}
+            {resource.email2 && (
+              <Text style={pdfStyles.text}>{resource.email2}</Text>
+            )}
+            <Text style={pdfStyles.text}>{resource.website}</Text>
           </View>
         ))}
       </Page>
@@ -103,47 +141,31 @@ const PDF: React.FC<PDFProps> = ({ resources }) => {
 export default Printer;
 
 const pdfStyles = StyleSheet.create({
+  resource: {
+    border: "2px solid black",
+    borderRadius: "10px",
+    margin: "10px",
+    padding: "15px",
+  },
   body: {
-    paddingTop: 35,
-    paddingBottom: 65,
-    paddingHorizontal: 35,
+    paddingTop: 15,
+    paddingBottom: 15,
+    paddingHorizontal: 10,
   },
   titleText: {
-    fontSize: 24,
-    fontFamily: "Times-Roman",
-  },
-  author: {
-    fontSize: 12,
-    textAlign: "center",
-    marginBottom: 40,
-  },
-  subtitle: {
     fontSize: 18,
-    margin: 12,
-    fontFamily: "Oswald",
+    fontFamily: "Times-Roman",
+    marginBottom: 2,
+    fontWeight: "bold",
   },
   text: {
-    margin: 12,
     fontSize: 14,
-    textAlign: "justify",
     fontFamily: "Times-Roman",
-  },
-  image: {
-    marginVertical: 15,
-    marginHorizontal: 100,
+    marginBottom: 6,
   },
   header: {
     fontSize: 12,
     marginBottom: 20,
-    textAlign: "center",
-    color: "grey",
-  },
-  pageNumber: {
-    position: "absolute",
-    fontSize: 12,
-    bottom: 30,
-    left: 0,
-    right: 0,
     textAlign: "center",
     color: "grey",
   },
