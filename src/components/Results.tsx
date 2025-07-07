@@ -72,6 +72,7 @@ const Results: React.FC<ResultsProps> = ({ data }) => {
                 phone2={entry.phone2}
                 mail1={entry.email1}
                 mail2={entry.email2}
+                address={entry.address}
                 color={(i % 2) as 0 | 1}
                 expandInit={false}
                 selected={selectedResources.has(entry.name)}

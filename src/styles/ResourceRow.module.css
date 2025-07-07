@@ -45,9 +45,10 @@
 
 .rowContent {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 
-  gap: 100px;
+  column-gap: 100px;
+  row-gap: 30px;
 }
 
 .leftContent {

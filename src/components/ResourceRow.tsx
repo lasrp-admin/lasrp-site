@@ -9,6 +9,7 @@ import { MdPeople } from "react-icons/md";
 import { MdCheckBoxOutlineBlank } from "react-icons/md";
 import { MdCheckBox } from "react-icons/md";
 import { FaPhoneFlip } from "react-icons/fa6";
+import { IoMdPin } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
 import { useDatabaseContext } from "../contexts/DatabaseContext";
 
@@ -26,6 +27,7 @@ interface ResourceRowProps {
   phone2: string;
   mail1: string;
   mail2: string;
+  address: string;
   expandInit: boolean;
   selected: boolean;
   color: 0 | 1;
@@ -43,6 +45,7 @@ const ResourceRow: React.FC<ResourceRowProps> = React.memo(
     phone2,
     mail1,
     mail2,
+    address,
     color,
     expandInit,
     selected,
@@ -138,56 +141,62 @@ const ResourceRow: React.FC<ResourceRowProps> = React.memo(
             >
               <div className={styles.spacer}></div>
               <div className={styles.rowContent}>
-                <div className={styles.leftContent}>
-                  {(eligibility || eligibilityText) && (
-                    <div className={styles.detail}>
-                      <div>
-                        <MdPeople size={35} />
-                      </div>
-                      {eligibility && (
-                        <div
-                          style={{
-                            display: "flex",
-                            flexDirection: "column",
-                            gap: "5px",
-                          }}
-                        >
-                          {eligibility.map((x) => (
-                            <span key={x} style={{ fontWeight: "bold" }}>
-                              {x}
-                            </span>
-                          ))}
-                          {eligibilityText && <span>{eligibilityText}</span>}
-                        </div>
-                      )}
+                {(eligibility[0] || eligibilityText) && (
+                  <div className={styles.detail}>
+                    <div>
+                      <MdPeople size={35} title={"Eligibility details"} />
                     </div>
-                  )}
-                </div>
-                <div className={styles.rightContent}>
-                  {phone1 && (
-                    <div className={styles.detail}>
-                      <div>
-                        <FaPhoneFlip size={25} />
+                    {eligibility && (
+                      <div
+                        style={{
+                          display: "flex",
+                          flexDirection: "column",
+                          gap: "5px",
+                        }}
+                      >
+                        {eligibility.map((x) => (
+                          <span key={x} style={{ fontWeight: "bold" }}>
+                            {x}
+                          </span>
+                        ))}
+                        {eligibilityText && <span>{eligibilityText}</span>}
                       </div>
-                      <div style={{ display: "flex", flexDirection: "column" }}>
-                        <span>{phone1}</span>
-                        <span>{phone2}</span>
-                      </div>
-                    </div>
-                  )}
+                    )}
+                  </div>
+                )}
 
-                  {mail1 && (
-                    <div className={styles.detail}>
-                      <div>
-                        <MdEmail size={25} />
-                      </div>
-                      <div style={{ display: "flex", flexDirection: "column" }}>
-                        <span>{mail1}</span>
-                        <span>{mail2}</span>
-                      </div>
+                {phone1 && (
+                  <div className={styles.detail}>
+                    <div>
+                      <FaPhoneFlip size={25} title={"Phone number(s)"} />
                     </div>
-                  )}
-                </div>
+                    <div style={{ display: "flex", flexDirection: "column" }}>
+                      <span>{phone1}</span>
+                      <span>{phone2}</span>
+                    </div>
+                  </div>
+                )}
+
+                {mail1 && (
+                  <div className={styles.detail}>
+                    <div>
+                      <MdEmail size={25} title={"Email(s)"} />
+                    </div>
+                    <div style={{ display: "flex", flexDirection: "column" }}>
+                      <span>{mail1}</span>
+                      <span>{mail2}</span>
+                    </div>
+                  </div>
+                )}
+
+                {address && (
+                  <div className={styles.detail}>
+                    <div>
+                      <IoMdPin size={25} title={"Address"} />
+                    </div>
+                    <span>{address}</span>
+                  </div>
+                )}
               </div>
             </motion.div>
           )}
