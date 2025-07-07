@@ -108,6 +108,7 @@ const ResourceRow: React.FC<ResourceRowProps> = React.memo(
             onMouseEnter={() => setLinkHover((prev) => !prev)}
             onMouseLeave={() => setLinkHover((prev) => !prev)}
             className={styles.icon}
+            title="Visit resource website"
             style={{ color: linkHover ? "#007AFF" : "black" }}
             size={20}
           />
@@ -115,12 +116,14 @@ const ResourceRow: React.FC<ResourceRowProps> = React.memo(
             <AiOutlineCompress
               onClick={() => setExpand((prev) => !prev)}
               className={styles.icon}
+              title="See less"
               size={22}
             />
           ) : (
             <IoMdExpand
               onClick={() => setExpand((prev) => !prev)}
               className={styles.icon}
+              title="See more"
               size={22}
             />
           )}
