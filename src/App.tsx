@@ -8,10 +8,13 @@ import { FaRegStar } from "react-icons/fa6";
 
 import Info from "./components/Info";
 import SelectedResourcesView from "./components/SelectedResourcesView";
+import Printer from "./components/Printer";
 
 const App = () => {
   const [help, setHelp] = useState<boolean>(false);
   const [favorite, setFavorite] = useState<boolean>(false);
+  const [printer, setPrinter] = useState<boolean>(false);
+
   return (
     <main className={styles.main}>
       <div className={styles.iconBar}>
@@ -20,7 +23,11 @@ const App = () => {
           size={40}
           title={"View selected resources"}
         />
-        <FiPrinter size={40} title={"Print selected resources"} />
+        <FiPrinter
+          onClick={() => setPrinter(true)}
+          size={40}
+          title={"Print selected resources"}
+        />
         <FaRegQuestionCircle
           onClick={() => setHelp(true)}
           size={40}
@@ -29,6 +36,7 @@ const App = () => {
       </div>
       {help && <Info setHelp={setHelp} />}
       {favorite && <SelectedResourcesView setFavorite={setFavorite} />}
+      {printer && <Printer setPrinter={setPrinter}/>}
       <span className={styles.title}>
         Los Angeles Social Resources for Patients
       </span>
