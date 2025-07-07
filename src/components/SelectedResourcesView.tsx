@@ -4,6 +4,7 @@ import { useDatabaseContext } from "../contexts/DatabaseContext";
 import styles from "../styles/SelectedResourcesView.module.css";
 import type React from "react";
 import type { SetStateAction } from "react";
+import ResourceCard from "./ResourceCard";
 
 interface SelectedResourceViewProps {
   setFavorite: React.Dispatch<SetStateAction<boolean>>;
@@ -12,25 +13,22 @@ interface SelectedResourceViewProps {
 const SelectedResourcesView: React.FC<SelectedResourceViewProps> = ({
   setFavorite,
 }) => {
-  const { database, selectedResources } = useDatabaseContext();
+  const { selectedResources } = useDatabaseContext();
   return (
     <div className={styles.overlay}>
       <div className={styles.mainBox}>
-        <IoMdClose
-          onClick={() => setFavorite(false)}
-          className={styles.toggle}
-          size={30}
-        />
-        {selectedResources.size > 0 ? (
-          Array.from(selectedResources).map((name) => (
-            <div>
-              <span>{name}</span>
-              <span>{database[name].description}</span>
-            </div>
-          ))
-        ) : (
-          <span>No selected resources.</span>
-        )}
+        <div className={styles.gridContainer}>
+          {selectedResources.size > 0 ? (
+            Array.from(selectedResources).map((name) => (
+              <ResourceCard name={name} />
+            ))
+          ) : (
+            <span>No selected resources.</span>
+          )}
+        </div>
+        <div className={styles.toggle}>
+          <IoMdClose onClick={() => setFavorite(false)} size={30} />
+        </div>
       </div>
     </div>
   );
