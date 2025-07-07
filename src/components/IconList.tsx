@@ -10,7 +10,7 @@ import { PiHospitalFill } from "react-icons/pi";
 import { FaEarthAfrica } from "react-icons/fa6";
 import { BiHandicap } from "react-icons/bi";
 import { PiBandaidsFill } from "react-icons/pi";
-import { SiBookstack } from "react-icons/si";
+import { IoSchool } from "react-icons/io5";
 import { RiPlantFill } from "react-icons/ri";
 import { PiFireTruckFill } from "react-icons/pi";
 import { MdOutlineFamilyRestroom } from "react-icons/md";
@@ -68,7 +68,7 @@ const iconMap: { [key in ResourceType]: React.ReactNode } = {
   "Domestic Violence & Trauma Survivorship": (
     <PiBandaidsFill title="Domestic Violence & Trauma Survivorship" />
   ),
-  Education: <SiBookstack title="Education" />,
+  Education: <IoSchool title="Education" />,
   "Environmentalism & Sustainability": (
     <RiPlantFill title="Environmentalism & Sustainability" />
   ),
