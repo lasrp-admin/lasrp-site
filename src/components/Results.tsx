@@ -46,12 +46,12 @@ const Results: React.FC<ResultsProps> = ({ data }) => {
             <span className={styles.count}>{data.length} resources found.</span>
           </>
         ) : (
-          <div>
-            <span>No resources matching your filters were found.</span>
+          <div style={{ textAlign: "center" }}>
             <span>
-              If you represent a resource or know of one that is missing in our
-              database, please reach out to [email] so that we can look into
-              adding it.
+              No resources matching your filters were found. If you represent a
+              resource or know of one that is missing in our database, please
+              reach out to contact[dot]lasrp[at]gmail[dot]com so that we can
+              look into adding it.
             </span>
           </div>
         )}
