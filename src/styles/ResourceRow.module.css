@@ -72,3 +72,18 @@
 
   gap: 25px;
 }
+
+.detailElig {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  gap: 25px;
+}
+
+.container {
+  display: flex;
+
+  flex-direction: column;
+  gap: 25px;
+}

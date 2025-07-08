@@ -34,14 +34,13 @@ import type { ResourceType } from "../types/types";
 import styles from "../styles/IconList.module.css";
 
 interface IconListProps {
-  categories: ResourceType[];
+  categories: string;
 }
 
 const IconList: React.FC<IconListProps> = ({ categories }) => {
+  const cats: ResourceType[] = categories.split(", ") as ResourceType[];
   return (
-    <div className={styles.iconRow}>
-      {categories.map((category) => iconMap[category])}
-    </div>
+    <div className={styles.iconRow}>{cats.map((cat) => iconMap[cat])}</div>
   );
 };
 

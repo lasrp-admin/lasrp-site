@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import ResourceSearch from "./components/ResourceSearch";
 import styles from "./styles/App.module.css";
@@ -9,11 +9,14 @@ import { FaRegStar } from "react-icons/fa6";
 import Info from "./components/Info";
 import SelectedResourcesView from "./components/SelectedResourcesView";
 import Printer from "./components/Printer";
+import useLoadDatabase from "./hooks/useLoadDatabase";
 
 const App = () => {
   const [help, setHelp] = useState<boolean>(false);
   const [favorite, setFavorite] = useState<boolean>(false);
   const [printer, setPrinter] = useState<boolean>(false);
+
+  useLoadDatabase();
 
   return (
     <main className={styles.main}>
@@ -36,7 +39,7 @@ const App = () => {
       </div>
       {help && <Info setHelp={setHelp} />}
       {favorite && <SelectedResourcesView setFavorite={setFavorite} />}
-      {printer && <Printer setPrinter={setPrinter}/>}
+      {printer && <Printer setPrinter={setPrinter} />}
       <span className={styles.title}>
         Los Angeles Social Resources for Patients
       </span>

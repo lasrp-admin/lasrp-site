@@ -1,6 +1,6 @@
 import { IoMdClose } from "react-icons/io";
-import { useDatabaseContext } from "../contexts/DatabaseContext";
 
+import useDatabaseStore from "../contexts/DatabaseStore";
 import styles from "../styles/SelectedResourcesView.module.css";
 import type React from "react";
 import type { SetStateAction } from "react";
@@ -13,13 +13,15 @@ interface SelectedResourceViewProps {
 const SelectedResourcesView: React.FC<SelectedResourceViewProps> = ({
   setFavorite,
 }) => {
-  const { selectedResources } = useDatabaseContext();
+  const selectedResources = useDatabaseStore(
+    (state) => state.selectedResources
+  );
   return (
     <div className={styles.overlay}>
       <div className={styles.mainBox}>
         <div className={styles.gridContainer}>
-          {selectedResources.size > 0 ? (
-            Array.from(selectedResources).map((name) => (
+          {Object.keys(selectedResources).length > 0 ? (
+            Array.from(Object.keys(selectedResources)).map((name) => (
               <ResourceCard name={name} />
             ))
           ) : (

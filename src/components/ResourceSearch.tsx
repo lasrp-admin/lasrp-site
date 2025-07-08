@@ -14,7 +14,8 @@ import type {
   LanguageType,
   AudienceType,
 } from "../types/types";
-import { useDatabaseContext } from "../contexts/DatabaseContext.tsx";
+
+import useDatabaseStore from "../contexts/DatabaseStore.ts";
 
 const ResourceSearch = () => {
   const [displayData, setDisplaydata] = useState<Resource[]>([]);
@@ -24,7 +25,7 @@ const ResourceSearch = () => {
     resourceLanguages: new Set<LanguageType>(),
   });
 
-  const { database } = useDatabaseContext();
+  const database = useDatabaseStore((state) => state.database);
   useEffect(() => {
     setDisplaydata(sorted(Object.entries(database).map((entry) => entry[1])));
   }, [database]);

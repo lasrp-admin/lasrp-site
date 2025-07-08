@@ -5,26 +5,25 @@ import type { Resource } from "../types/types";
 import ResourceRow from "./ResourceRow";
 
 import styles from "../styles/Results.module.css";
-import { useDatabaseContext } from "../contexts/DatabaseContext";
+
 import { MdCheckBox, MdCheckBoxOutlineBlank } from "react-icons/md";
-import { isSubsetOf } from "../utils/dataFilter";
+import useDatabaseStore from "../contexts/DatabaseStore";
 
 interface ResultsProps {
   data: Resource[];
 }
 
 const Results: React.FC<ResultsProps> = ({ data }) => {
-  const { selectedResources, selectAll, deselectAll } = useDatabaseContext();
+  const allSelected = useDatabaseStore((state) => state.areAllSelected(data));
+  const selectAll = useDatabaseStore((state) => state.selectAll);
+  const deselectAll = useDatabaseStore((state) => state.deselectAll);
 
   return (
     <div className={styles.resultsContainer}>
       <div className={styles.tableHeader}>
         {data.length > 0 ? (
           <>
-            {isSubsetOf(
-              new Set(data.map((resource) => resource.name)),
-              selectedResources
-            ) ? (
+            {allSelected ? (
               <div className={styles.checkBox}>
                 <MdCheckBox
                   size={25}
@@ -59,25 +58,26 @@ const Results: React.FC<ResultsProps> = ({ data }) => {
       <motion.div className={styles.table} layout>
         <AnimatePresence>
           {data.length > 0 &&
-            data.map((entry, i) => (
-              <ResourceRow
-                key={entry.name}
-                name={entry.name}
-                description={entry.description}
-                categories={Array.from(entry.type)}
-                eligibility={entry.eligibility}
-                eligibilityText={entry.eligibilityText}
-                website={entry.website}
-                phone1={entry.phone1}
-                phone2={entry.phone2}
-                mail1={entry.email1}
-                mail2={entry.email2}
-                address={entry.address}
-                color={(i % 2) as 0 | 1}
-                expandInit={false}
-                selected={selectedResources.has(entry.name)}
-              />
-            ))}
+            data.map((entry, i) => {
+              return (
+                <ResourceRow
+                  key={entry.name}
+                  name={entry.name}
+                  description={entry.description}
+                  categories={Array.from(entry.type).join(", ")}
+                  eligibility={entry.eligibility}
+                  eligibilityText={entry.eligibilityText}
+                  website={entry.website}
+                  phone1={entry.phone1}
+                  phone2={entry.phone2}
+                  mail1={entry.email1}
+                  mail2={entry.email2}
+                  address={entry.address}
+                  color={(i % 2) as 0 | 1}
+                  expandInit={false}
+                />
+              );
+            })}
         </AnimatePresence>
       </motion.div>
     </div>

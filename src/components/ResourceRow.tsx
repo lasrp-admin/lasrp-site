@@ -11,15 +11,14 @@ import { MdCheckBox } from "react-icons/md";
 import { FaPhoneFlip } from "react-icons/fa6";
 import { IoMdPin } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
-import { useDatabaseContext } from "../contexts/DatabaseContext";
 
 import IconList from "./IconList";
-import type { ResourceType } from "../types/types";
+import useDatabaseStore from "../contexts/DatabaseStore";
 
 interface ResourceRowProps {
   name: string;
   description: string;
-  categories: ResourceType[];
+  categories: string;
   eligibility: string[];
   eligibilityText: string;
   website: string;
@@ -29,7 +28,6 @@ interface ResourceRowProps {
   mail2: string;
   address: string;
   expandInit: boolean;
-  selected: boolean;
   color: 0 | 1;
 }
 
@@ -48,13 +46,19 @@ const ResourceRow: React.FC<ResourceRowProps> = React.memo(
     address,
     color,
     expandInit,
-    selected,
   }) => {
     const [expand, setExpand] = useState<boolean>(expandInit);
     const [linkHover, setLinkHover] = useState<boolean>(false);
-    const { setSelectedResources } = useDatabaseContext();
+    const selected = useDatabaseStore((state) =>
+      state.selectedResources.has(name)
+    );
+    const addSelectedResource = useDatabaseStore(
+      (state) => state.addSelectedResource
+    );
+    const delSelectedResource = useDatabaseStore(
+      (state) => state.delSelectedResource
+    );
 
-    console.log("Rendering");
     return (
       <motion.div
         className={styles.rowContainer}
@@ -83,24 +87,14 @@ const ResourceRow: React.FC<ResourceRowProps> = React.memo(
             <MdCheckBox
               size={20}
               onClick={() => {
-                console.log("click");
-                setSelectedResources((prev) => {
-                  const newSet = new Set(prev);
-                  newSet.delete(name);
-                  return newSet;
-                });
+                delSelectedResource(name);
               }}
             />
           ) : (
             <MdCheckBoxOutlineBlank
               size={20}
               onClick={() => {
-                console.log("click");
-                setSelectedResources((prev) => {
-                  const newSet = new Set(prev);
-                  newSet.add(name);
-                  return newSet;
-                });
+                addSelectedResource(name);
               }}
             />
           )}
@@ -138,33 +132,33 @@ const ResourceRow: React.FC<ResourceRowProps> = React.memo(
               animate={{ height: "auto" }}
               exit={{ height: 0 }}
               transition={{ duration: 0.3 }}
+              className={styles.container}
             >
               <div className={styles.spacer}></div>
-              <div className={styles.rowContent}>
-                {(eligibility[0] || eligibilityText) && (
-                  <div className={styles.detail}>
-                    <div>
-                      <MdPeople size={35} title={"Eligibility details"} />
-                    </div>
-                    {eligibility && (
-                      <div
-                        style={{
-                          display: "flex",
-                          flexDirection: "column",
-                          gap: "5px",
-                        }}
-                      >
-                        {eligibility.map((x) => (
-                          <span key={x} style={{ fontWeight: "bold" }}>
-                            {x}
-                          </span>
-                        ))}
-                        {eligibilityText && <span>{eligibilityText}</span>}
-                      </div>
-                    )}
+              {(eligibility[0] || eligibilityText) && (
+                <div className={styles.detailElig}>
+                  <div>
+                    <MdPeople size={35} title={"Eligibility details"} />
                   </div>
-                )}
-
+                  {eligibility && (
+                    <div
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        gap: "5px",
+                      }}
+                    >
+                      {eligibility.map((x) => (
+                        <span key={x} style={{ fontWeight: "bold" }}>
+                          {x}
+                        </span>
+                      ))}
+                      {eligibilityText && <span>{eligibilityText}</span>}
+                    </div>
+                  )}
+                </div>
+              )}
+              <div className={styles.rowContent}>
                 {phone1 && (
                   <div className={styles.detail}>
                     <div>

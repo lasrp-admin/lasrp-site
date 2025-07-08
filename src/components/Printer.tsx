@@ -5,22 +5,28 @@ import type { Resource } from "../types/types";
 import styles from "../styles/Printer.module.css";
 import { IoMdClose } from "react-icons/io";
 import { GrDocumentPdf } from "react-icons/gr";
-import { useDatabaseContext } from "../contexts/DatabaseContext";
 
 import { StyleSheet } from "@react-pdf/renderer";
+import useDatabaseStore from "../contexts/DatabaseStore";
 interface PrinterProps {
   setPrinter: React.Dispatch<SetStateAction<boolean>>;
 }
 
 export const Printer: React.FC<PrinterProps> = ({ setPrinter }) => {
-  const { database, selectedResources } = useDatabaseContext();
+  const database = useDatabaseStore((state) => state.database);
+  const selectedResources = useDatabaseStore(
+    (state) => state.selectedResources
+  );
+
   const [resources, setResources] = useState<Resource[]>([]);
   const [readyToRender, setReadyToRender] = useState<boolean>(false);
 
   useEffect(() => {
     if (selectedResources) {
       setReadyToRender(true);
-      setResources(Array.from(selectedResources).map((name) => database[name]));
+      setResources(
+        Array.from(Object.keys(selectedResources)).map((name) => database[name])
+      );
     }
   }, [selectedResources]);
 
