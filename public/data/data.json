@@ -153,8 +153,8 @@
     "eligibilityText": "LA County Transition Age Youth (TAY) between the ages of 18-24 years old, or unable to work due to a disability and applying for Supplemental Security Income (SSI) or Veterans Benefits (VB), or Employable and enrolled in the Skills and Training to Achieve Readiness for Tomorrow (START), preparing to find employment.",
     "email1": "",
     "email2": "",
-    "phone1": "Toll free: (866) 613-3777",
-    "phone2": "Other Local Numbers:\n(310) 258-7400\n(626) 569-1399\n(818) 701-8200",
+    "phone1": "(866) 613-3777 (Toll free),\n\n(310) 258-7400 (Other Local Number),\n\n(626) 569-1399 (Other Local Number),\n\n(818) 701-8200 (Other Local Number)",
+    "phone2": "",
     "hours": "",
     "contactPerson": "",
     "contactLink": "",
@@ -194,8 +194,8 @@
     "eligibilityText": "LA County residents with income at or under 200% Federal Poverty Level (FPL) and a reduced cost, sliding scale for those over 200% FPL qualify for the ATP",
     "email1": "",
     "email2": "",
-    "phone1": "General: (844) 804-0055",
-    "phone2": "LAG Inquiry: (323) 409-6361",
+    "phone1": "(844) 804-0055 (General),\n\n(323) 409-6361 (LAG Inquiry)",
+    "phone2": "",
     "hours": "M-F 8AM-5:30PM, Sat 8AM-4:30PM",
     "contactPerson": "",
     "contactLink": "",
@@ -372,7 +372,7 @@
     "eligibilityText": "Commit to attend at least three days per week, no weapons or violence, and full engagement in the program. For families with children between the ages of 8 and 18.",
     "email1": "membership@apch.org",
     "email2": "",
-    "phone1": "(323) 232-7653 ext 2239 or ext 2202",
+    "phone1": "(323) 232-7653 ext 2239,\n\n(323) 232-7653 ext 2202",
     "phone2": "",
     "hours": "Summer Schedule\nEarly Arrival: 8am\nCamp Schedule : 9am-3:30pm\nExtended Care: 3:30pm-6pm\n*Members must arrive no later than 9am.\n\nSchool Year Schedule\nEarly Arrival: 1pm\nDismissal: 6:30pm\n*Members must arrive no later than 4pm.",
     "contactPerson": "",
@@ -566,7 +566,7 @@
     "eligibilityText": "Children 18 years of age and younger during periods when they are out of school for fifteen (15) or more consecutive school days.",
     "email1": "SFSP@cde.ca.gov",
     "email2": "",
-    "phone1": "Breed Street Elementary:\n(213) 241-2993\n\nUtah Street Elementary:\n(213) 241-2993\n\nEvergreen Avenue Elementary: \n(213) 241-2993\n\nPuente Charter:\n(323) 780-0076",
+    "phone1": "(213) 241-2993 (Breed Street Elementary),\n\n(213) 241-2993 (Utah Street Elementary),\n\n(213) 241-2993 (Evergreen Avenue Elementary),\n\n(323) 780-0076 (Puente Charter)",
     "phone2": "",
     "hours": "Breed Street Elementary:\nBreakfast, Lunch\n\nUtah Street Elementary:\nBreakfast, Lunch\n\nEvergreen Avenue Elementary: \nBreakfast, Lunch\n\nPuente Charter:\nBreakfast, Lunch",
     "contactPerson": "Breed Street Elementary:\nManish Singh\n\nUtah Street Elementary:\nFlorence Simpson\n\nEvergreen Avenue Elementary: \nManish Singh\n\nPuente Charter:\nJerome Greening",
@@ -593,13 +593,13 @@
       "Hotline Available"
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "",
     "email2": "",
-    "phone1": "(888) 499-9303",
-    "phone2": "(877) 462-2582 (Health coverage information, M-F: 8:00 am - 6:00 pm",
+    "phone1": "(888) 499-9303,\n\n(877) 462-2582 (Health coverage information, M-F: 8:00 am - 6:00 pm)",
+    "phone2": "",
     "hours": "Clinic:\nM, W, F: 8AM-5PM,\nT, Th: 9AM-5PM\n\nDental:\nM, W, F, Sat: 8AM-5PM,\nT, Th: 9AM-5PM\n\nPharmacy:\nM-F: 9AM-5PM\n\nCall center:\nM-F: 7AM-9PM,\nSat: 8AM-6PM,\nSun: 9:30AM-6PM",
     "contactPerson": "",
     "contactLink": "",
@@ -625,7 +625,7 @@
       ""
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "cwalter@pickharbor.org ",
@@ -657,7 +657,7 @@
       "Government Program"
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "",
@@ -689,13 +689,13 @@
       "Hotline Available"
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "",
     "email2": "",
-    "phone1": "San Fernando Valley Appointments: (818) 270-9777",
-    "phone2": "Santa Clarita Valley Appointments: (661) 705-2040",
+    "phone1": "(818) 270-9777 (San Fernando Valley Appointments),\n\n(661) 705-2040 (Santa Clarita Valley Appointments)",
+    "phone2": "",
     "hours": "M-F: 8:30AM-5PM",
     "contactPerson": "",
     "contactLink": "",
@@ -720,12 +720,12 @@
       "Government Program"
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "",
     "email2": "",
-    "phone1": "Central:\n(213) 288-8204\n\nGlendale:\n(818) 291-8901\n\nHollywood/Wilshire:\n(323) 769-7800\n\nRuth Temple:\n(323) 730-3507",
+    "phone1": "\n(213) 288-8204 (Central),\n\n(818) 291-8901 (Glendale),\n\n(323) 769-7800 (Hollywood/Wilshire),\n\n(323) 730-3507 (Ruth Temple)",
     "phone2": "",
     "hours": "",
     "contactPerson": "",
@@ -751,13 +751,13 @@
       ""
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "vchfriends@vchcare.org ",
     "email2": "",
-    "phone1": "(818) 763-8836",
-    "phone2": "(818) 301-6378 (Pharmacy)",
+    "phone1": "(818) 763-8836,\n\n(818) 301-6378 (Pharmacy)",
+    "phone2": "",
     "hours": "",
     "contactPerson": "",
     "contactLink": "",
@@ -786,7 +786,7 @@
       ""
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "",
@@ -829,7 +829,7 @@
     "eligibilityText": "Primarily for people living in Culver City, Santa Monica, Venice and West LA. Services targeted (but not restricted) to Spanish speakers.\n\nProof of residency in the City of Los Angeles (Utility bill, Rent statement, CA ID or\nDrivers' License, Embassy Card, Postmarked mail, etc.)\nProof of low-mid income (Paystub, unemployment benefits, public benefit letter,\nbank statement showing direct deposit)\nCopy of most recent report card for students in grades K-12\nDOCUMENTS CANNOT BE EXPIRED AND/OR OLDER THAN 90 DAYS.",
     "email1": "info@latinoresource.org",
     "email2": "",
-    "phone1": "(424) 293 - 8297",
+    "phone1": "(424) 293-8297",
     "phone2": "",
     "hours": "",
     "contactPerson": "",
@@ -859,7 +859,7 @@
       ""
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "",
@@ -891,14 +891,13 @@
       ""
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY",
       "Requires proof of disability/medical condition"
     ],
     "eligibilityText": "",
     "email1": "info@abilityfirst.org",
     "email2": "",
-    "phone1": "(626) 396-1010",
-    "phone2": "(877) 768-4600 [toll free]",
+    "phone1": "(626) 396-1010,\n\n(877) 768-4600 (toll free)",
+    "phone2": "",
     "hours": "",
     "contactPerson": "",
     "contactLink": "",
@@ -923,13 +922,12 @@
       ""
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY",
       "Requires proof of disability/medical condition"
     ],
     "eligibilityText": "",
     "email1": "help@amputee-coalition.org",
     "email2": "",
-    "phone1": "1 (888) 267-5669",
+    "phone1": "(888) 267-5669",
     "phone2": "",
     "hours": "M-F: 8AM\u20135PM (EST)",
     "contactPerson": "",
@@ -956,7 +954,6 @@
       ""
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY",
       "Requires proof of disability/medical condition"
     ],
     "eligibilityText": "",
@@ -995,8 +992,8 @@
     "eligibilityText": "Cancer patients or people with disabilities.",
     "email1": "DRLC@theDRLC.org",
     "email2": "",
-    "phone1": "(213) 736-1031",
-    "phone2": "(866) 999-3752 [toll free]",
+    "phone1": "(213) 736-1031,\n\n(866) 999-3752 (toll free)",
+    "phone2": "",
     "hours": "",
     "contactPerson": "",
     "contactLink": "",
@@ -1026,7 +1023,7 @@
     "eligibilityText": "Bring:\n- Insurance Card(s) \u2013 if you\u2019re covered under multiple plans, please be sure to bring all of the cards \n- Photo ID\n- Prescription or Referral",
     "email1": "",
     "email2": "",
-    "phone1": "1 (877) 442-6437",
+    "phone1": "(877) 442-6437",
     "phone2": "",
     "hours": "",
     "contactPerson": "",
@@ -1059,7 +1056,7 @@
     "eligibilityText": "Adults and children might be eligible for SSI if they have: \n\nLittle or no income, and \nLittle or no resources, and \nA disability, blindness, or are age 65 or older.\n\nFull eligibility here: https://www.ssa.gov/ssi/eligibility ",
     "email1": "",
     "email2": "",
-    "phone1": "1 (800) 772-1213",
+    "phone1": "(800) 772-1213",
     "phone2": "",
     "hours": "M-F: 8AM-7PM",
     "contactPerson": "",
@@ -1091,7 +1088,7 @@
     "eligibilityText": "Individuals may be eligible for Disability if they have:\n\nA disability or blindness, and\nEnough work history.\n\nFull eligibility here: https://www.ssa.gov/disability/eligibility ",
     "email1": "",
     "email2": "",
-    "phone1": "1 (800) 772-1213",
+    "phone1": "(800) 772-1213",
     "phone2": "",
     "hours": "M-F: 8AM-7PM",
     "contactPerson": "",
@@ -1126,8 +1123,8 @@
     "eligibilityText": "",
     "email1": "",
     "email2": "",
-    "phone1": "(213) 416-1106",
-    "phone2": "(213) 481-7464",
+    "phone1": "(213) 416-1106,\n\n(213) 481-7464",
+    "phone2": "",
     "hours": "Clinic: \nM-F: 8:30AM-5PM",
     "contactPerson": "",
     "contactLink": "",
@@ -1155,13 +1152,13 @@
       "Hotline Available"
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "",
     "email2": "",
-    "phone1": "(213) 955-9090",
-    "phone2": "(213) 626-3393",
+    "phone1": "(213) 955-9090,\n\n(213) 626-3393",
+    "phone2": "",
     "hours": "",
     "contactPerson": "",
     "contactLink": "",
@@ -1192,13 +1189,13 @@
       "Hotline Available"
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "",
     "email2": "",
-    "phone1": "HOTLINE: (626) 967-0658",
-    "phone2": "(626) 960-2995",
+    "phone1": "(626) 967-0658 (Hotline),\n\n(626) 960-2995",
+    "phone2": "",
     "hours": "",
     "contactPerson": "",
     "contactLink": "",
@@ -1229,7 +1226,7 @@
     "eligibilityText": "Resident of California (no age requirement), income at or below 200% of federal poverty income guidelines based on basic family unit, with no other health care that covers family planning needs.",
     "email1": "familypact@dhcs.ca.gov",
     "email2": "",
-    "phone1": "916-650-0414",
+    "phone1": "(916) 650-0414",
     "phone2": "",
     "hours": "",
     "contactPerson": "",
@@ -1256,12 +1253,12 @@
       "Immediate Services"
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "Requires insurance or other forms of payment but has other convenient payment options",
     "email1": "info@hersmartchoice.com",
     "email2": "",
-    "phone1": "323-250-9707",
+    "phone1": "(323) 250-9707",
     "phone2": "",
     "hours": "For all clinic locations:\nM-F: 8AM-8PM, Sat: 8AM-3PM",
     "contactPerson": "",
@@ -1291,7 +1288,7 @@
       ""
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "",
@@ -1327,7 +1324,7 @@
       ""
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "",
@@ -1358,12 +1355,12 @@
       "Government Program"
     ],
     "eligibility": [
-      "COMPLEX ELIGIBILITY: REACH OUT FOR DETAILS"
+      ""
     ],
     "eligibilityText": "Program participants must be a CalFresh recipient, at least 18 years of age or older, and shop at a participating Northgate Gonz\u00e1lez Market. They have reached capacity for new participants this year. Please check for announcements about reopening enrollment next year.",
     "email1": "morefresh@ucsd.edu",
     "email2": "",
-    "phone1": "1-888-282-2711",
+    "phone1": "(888) 282-2711",
     "phone2": "",
     "hours": "",
     "contactPerson": "",
@@ -1397,8 +1394,8 @@
     "eligibilityText": "Interested families must be pregnant, are breastfeeding a baby under the age of one, had a baby within the last six months, have a child under the age of five, experienced a pregnancy loss/termination and meet income qualifications.\n\nFamilies receiving Medi-Cal, CalFresh, or CalWORKS may be income-eligible for WIC.",
     "email1": "comments@phfewic.org ",
     "email2": "",
-    "phone1": "(888) 942-2229",
-    "phone2": "Text 91997",
+    "phone1": "(888) 942-2229,\n\nText 91997",
+    "phone2": "",
     "hours": "M-Th: 9AM-5PM, F: 10AM-5PM",
     "contactPerson": "",
     "contactLink": "",
@@ -1465,7 +1462,7 @@
     "eligibilityText": "",
     "email1": "info@aviva.org",
     "email2": "",
-    "phone1": "323-876-0550",
+    "phone1": "(323) 876-0550",
     "phone2": "",
     "hours": "",
     "contactPerson": "",
@@ -1564,8 +1561,8 @@
       ""
     ],
     "eligibilityText": "",
-    "email1": "pathlosangeles@epath.org",
-    "email2": "path@epath.org",
+    "email1": "pathlosangeles@epath.org,\n\npath@epath.org",
+    "email2": "",
     "phone1": "(323) 644-2200",
     "phone2": "",
     "hours": "",
@@ -1635,7 +1632,7 @@
       "Resource Database"
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "info@californiaagainstslavery.org",
@@ -1669,13 +1666,13 @@
       "Emergency Services"
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "Shelter serves up to 10 women, 18 and older.",
     "email1": "info@castla.org",
     "email2": "",
-    "phone1": "(888) 539-2373 (hotline)",
-    "phone2": "(213) 365-1906",
+    "phone1": "(888) 539-2373 (Hotline),\n\n(213) 365-1906",
+    "phone2": "",
     "hours": "",
     "contactPerson": "",
     "contactLink": "",
@@ -1701,13 +1698,13 @@
       "Hotline Available"
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "",
     "email2": "",
-    "phone1": "(800) 585-6231 (hotline)",
-    "phone2": "(323) 526-5819 (main office) \n(213) 481-6030 (Wellness Center)",
+    "phone1": "(800) 585-6231 (Hotline),\n\n(323) 526-5819 (Main office),\n\n(213) 481-6030 (Wellness Center)",
+    "phone2": "",
     "hours": "Main office line:\nM-F: 9AM-6PM",
     "contactPerson": "",
     "contactLink": "https://www.elawc.org/contact_us",
@@ -1732,7 +1729,7 @@
       ""
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "info@gemsuncovered.org",
@@ -1763,7 +1760,7 @@
       ""
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "*Mental health services provided for individuals in Los Angeles, Riverside, San Bernardino, Orange counties",
     "email1": "info@humansave.org",
@@ -1794,7 +1791,7 @@
       ""
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "info@journeyout.org",
@@ -1825,11 +1822,11 @@
       ""
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
-    "email1": "info@survivorjusticecenter.org",
-    "email2": "info@laclj.org",
+    "email1": "info@survivorjusticecenter.org,\n\ninfo@laclj.org",
+    "email2": "",
     "phone1": "(323) 980-3500",
     "phone2": "",
     "hours": "M-F: 9AM-5PM",
@@ -1857,13 +1854,13 @@
       "Hotline Available"
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "help@humantraffickinghotline.org",
     "email2": "",
-    "phone1": "1 (888) 373-7888",
-    "phone2": "Text: 233733\nTTY: 711",
+    "phone1": "(888) 373-7888,\n\nText: 233733,\n\nTTY: 711",
+    "phone2": "",
     "hours": "24/7",
     "contactPerson": "",
     "contactLink": "",
@@ -1890,7 +1887,7 @@
       ""
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "",
@@ -1922,7 +1919,7 @@
       ""
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "",
@@ -1956,7 +1953,7 @@
       ""
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "contact@elrescate.org",
@@ -1988,7 +1985,7 @@
       ""
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "",
@@ -2019,7 +2016,7 @@
       ""
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "",
@@ -2054,7 +2051,7 @@
       ""
     ],
     "eligibilityText": "Must have legal representation",
-    "email1": "contact@keckhumanrights.com\n\nsdp_keckhumanrightsclinic@usc.edu",
+    "email1": "contact@keckhumanrights.com,\n\nsdp_keckhumanrightsclinic@usc.edu",
     "email2": "",
     "phone1": "",
     "phone2": "",
@@ -2115,12 +2112,12 @@
       ""
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "",
     "email2": "",
-    "phone1": "(213) 765-1000 [for LA Bar office, better to contact individuals in directory]",
+    "phone1": "(213) 765-1000 (For LA Bar office, it is better to contact individuals in the directory)",
     "phone2": "",
     "hours": "",
     "contactPerson": "",
@@ -2146,13 +2143,13 @@
       ""
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "marthagonzalez@nlsla.org",
     "email2": "",
-    "phone1": "(800) 433-6251",
-    "phone2": "(818) 834-7500",
+    "phone1": "(800) 433-6251,\n\n(818) 834-7500",
+    "phone2": "",
     "hours": "M-Th: 1PM-4PM\n\nWellness Center: T, Th: 9AM-12PM, 1PM-5PM",
     "contactPerson": "Martha Gonzalez, Executive Office",
     "contactLink": "",
@@ -2177,13 +2174,13 @@
       ""
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "Age 18-98",
     "email1": "webmaster@lalgbtcenter.org",
     "email2": "",
-    "phone1": "(323) 993-7500",
-    "phone2": "(323) 933-7400 (Primary care line)",
+    "phone1": "(323) 993-7500,\n\n(323) 933-7400 (Primary care line)",
+    "phone2": "",
     "hours": "",
     "contactPerson": "",
     "contactLink": "https://lalgbtcenter.org/about/contact-us/",
@@ -2248,8 +2245,8 @@
     "eligibilityText": "",
     "email1": "calhope@dhcs.ca.gov",
     "email2": "",
-    "phone1": "833-317-4673 (English)",
-    "phone2": "833-642-7696 (Spanish)",
+    "phone1": "(833) 317-4673 (English),\n\n(833) 642-7696 (Spanish)",
+    "phone2": "",
     "hours": "",
     "contactPerson": "",
     "contactLink": "https://www.calhopeconnect.org/#",
@@ -2279,7 +2276,7 @@
     "eligibilityText": "",
     "email1": "info@cal-map.org",
     "email2": "",
-    "phone1": "800-253-2103",
+    "phone1": "(800) 253-2103",
     "phone2": "",
     "hours": "M-F: 8:30AM-4:30PM",
     "contactPerson": "",
@@ -2346,7 +2343,7 @@
     "eligibilityText": "",
     "email1": "",
     "email2": "",
-    "phone1": "1-800-985-5990 (Call or Text)",
+    "phone1": "(800) 985-5990 (Call or Text)",
     "phone2": "",
     "hours": "",
     "contactPerson": "",
@@ -2378,7 +2375,7 @@
     "eligibilityText": "",
     "email1": "",
     "email2": "",
-    "phone1": "1-833-939-3877 (Call or Text)",
+    "phone1": "(833) 939-3877 (Call or Text)",
     "phone2": "",
     "hours": "24/7",
     "contactPerson": "",
@@ -2411,7 +2408,7 @@
     "eligibilityText": "Only free to those physically in Los Angeles County",
     "email1": "",
     "email2": "",
-    "phone1": "800-854-7771",
+    "phone1": "(800) 854-7771",
     "phone2": "",
     "hours": "",
     "contactPerson": "",
@@ -2537,8 +2534,8 @@
     "eligibilityText": "",
     "email1": "",
     "email2": "",
-    "phone1": "800-950-6264 (NAMI HelpLine)",
-    "phone2": "Text \"NAMI\u201d to 62640",
+    "phone1": "(800) 950-6264 (NAMI HelpLine),\n\nText \"NAMI\u201d to 62640",
+    "phone2": "",
     "hours": "M-F: 7AM-7PM (PST; 10AM-10PM EST)",
     "contactPerson": "",
     "contactLink": "https://www.nami.org/support-education/nami-helpline/",
@@ -2604,8 +2601,8 @@
     "eligibilityText": "",
     "email1": "",
     "email2": "",
-    "phone1": "1-866-488-7386",
-    "phone2": "Text \"START\" to 678-678",
+    "phone1": "(866) 488-7386,\n\nText \"START\" to 678-678",
+    "phone2": "",
     "hours": "24/7",
     "contactPerson": "",
     "contactLink": "https://www.thetrevorproject.org/get-help/",
@@ -2635,8 +2632,8 @@
     "eligibilityText": "",
     "email1": "",
     "email2": "",
-    "phone1": "988, then Press 1",
-    "phone2": "Text 838255",
+    "phone1": "988, then Press 1,\n\nText 838255",
+    "phone2": "",
     "hours": "",
     "contactPerson": "",
     "contactLink": "https://www.veteranscrisisline.net/get-help-now/chat/",
@@ -2662,13 +2659,13 @@
       "Government Program"
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "lrenteria@ph.lacounty.gov (Luis Renteria)",
     "email2": "",
-    "phone1": "1 (844) 804-7500 (substance abuse service helpline)",
-    "phone2": "(323) 568-8732 (MLK Healing Center)\n(323) 236-4155 (Luis Renteria)",
+    "phone1": "(844) 804-7500 (substance abuse service helpline),\n\n(323) 568-8732 (MLK Healing Center),\n\n(323) 236-4155 (Luis Renteria)",
+    "phone2": "",
     "hours": "",
     "contactPerson": "Luis Renteria (Counselor)",
     "contactLink": "http://publichealth.lacounty.gov/sapc/contactus.htm?tm (list of contacts)",
@@ -2694,13 +2691,13 @@
       "Government Program"
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "sspinfo@cdph.ca.gov \u200b\u200b",
     "email2": "",
-    "phone1": "(626) 457-4078\u200b (USC Street Medicine\u200b)",
-    "phone2": "(213) 372-5233 (Los Angeles Centers for Alcohol and Drug Abuse (LA CADA)\u200b)",
+    "phone1": "(626) 457-4078\u200b (USC Street Medicine\u200b),\n\n(213) 372-5233 (Los Angeles Centers for Alcohol and Drug Abuse (LA CADA)\u200b)",
+    "phone2": "",
     "hours": "",
     "contactPerson": "",
     "contactLink": "",
@@ -2727,13 +2724,13 @@
       "Hotline Available"
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "",
     "email2": "",
-    "phone1": "1 (844) 804-7500 (TTY: 711)",
-    "phone2": "(213) 626-6411 (Los Angeles Centers for Alcohol and Drug Abuse)",
+    "phone1": "(844) 804-7500 (TTY: 711),\n\n(213) 626-6411 (Los Angeles Centers for Alcohol and Drug Abuse)",
+    "phone2": "",
     "hours": "Depends on center - see website",
     "contactPerson": "",
     "contactLink": "",
@@ -2758,12 +2755,12 @@
       ""
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "narcancustomerservice@ebsi.com",
     "email2": "",
-    "phone1": "1 (844) 462-7226",
+    "phone1": "(844) 462-7226",
     "phone2": "",
     "hours": "",
     "contactPerson": "",
@@ -2792,13 +2789,13 @@
       ""
     ],
     "eligibility": [
-      "COMPLEX ELIGIBILITY: REACH OUT FOR DETAILS"
+      ""
     ],
     "eligibilityText": "Eligibility is based on your functional abilities to use fixed route bus or train services. (Application, in-person evaluation with Photo ID)\n\nFull eligbility:\nhttps://accessla.org/sites/default/files/Eligibility/Applying%20for%20Access%20Fillable%20090723%20ENG.pdf (English)\nhttps://accessla.org/sites/default/files/Eligibility/Applying%20for%20Access%20Fillable%20090723%20SPAN.pdf (Spanish)",
     "email1": "cserv@accessla.org ",
     "email2": "",
-    "phone1": "(213) 270-6110 [info line]",
-    "phone2": "1 (800) 827-0829 [toll-free, for new customers]",
+    "phone1": "(213) 270-6110 (info line),\n\n(800) 827-0829 (toll-free, for new customers)",
+    "phone2": "",
     "hours": "",
     "contactPerson": "",
     "contactLink": "",
@@ -2829,8 +2826,8 @@
     "eligibilityText": "",
     "email1": "",
     "email2": "",
-    "phone1": "1 (800) 872-7245",
-    "phone2": "1 (800) 523-6590 [TTY]",
+    "phone1": "(800) 872-7245,\n\n(800) 523-6590 (TTY)",
+    "phone2": "",
     "hours": "",
     "contactPerson": "",
     "contactLink": "",
@@ -2862,8 +2859,8 @@
     "eligibilityText": "Individuals age 65 or older and qualified persons with disabilities in the City of Los Angeles and select areas of Los Angeles County (Marina Del Rey, Kagel Canyon, Topanga, and areas near Calabasas, Chatsworth, Carson, and Long Beach) are eligible to participate in the Cityride program.",
     "email1": "",
     "email2": "",
-    "phone1": "(213)-808-7433, (310)-808-7433, (323)-808-7433, (818)-808-7433",
-    "phone2": "(800)-559-1950 [TDD number for hearing impaired]",
+    "phone1": "(213)-808-7433, \n\n(310)-808-7433, \n\n(323)-808-7433, \n\n(818)-808-7433,\n\n(800)-559-1950 (TDD number for hearing impaired)",
+    "phone2": "",
     "hours": "24/7",
     "contactPerson": "",
     "contactLink": "",
@@ -2896,8 +2893,8 @@
     "eligibilityText": "",
     "email1": "cserv@accessla.org",
     "email2": "",
-    "phone1": "1 (800) 827-0829",
-    "phone2": "1 (800) 827-1359 [TDD]",
+    "phone1": "(800) 827-0829,\n\n(800) 827-1359 (TDD)",
+    "phone2": "",
     "hours": "24/7",
     "contactPerson": "",
     "contactLink": "",
@@ -2928,8 +2925,8 @@
     "eligibilityText": "L.A. Care members",
     "email1": "",
     "email2": "",
-    "phone1": "1-(855) 427-1223 [L.A. Care general line]",
-    "phone2": "1 (888) 839-9909 [Medi-Cal]\n1 (855) 270-2327 [L.A. Care Covered or L.A. Care Covered Direct]\n1 (833) 522-3767 [L.A. Care Medicare Plus]",
+    "phone1": "(855) 427-1223 (L.A. Care general line),\n\n(888) 839-9909 (Medi-Cal),\n\n(855) 270-2327 (L.A. Care Covered or L.A. Care Covered Direct),\n\n(833) 522-3767 (L.A. Care Medicare Plus)",
+    "phone2": "",
     "hours": "M-F: 9AM-5PM",
     "contactPerson": "",
     "contactLink": "",
@@ -3006,7 +3003,7 @@
     "eligibilityText": "",
     "email1": "",
     "email2": "",
-    "phone1": "213-784-9191",
+    "phone1": "(213) 784-9191",
     "phone2": "",
     "hours": "M-F: 8:30AM-5PM",
     "contactPerson": "",
@@ -3038,13 +3035,13 @@
       ""
     ],
     "eligibility": [
-      "COMPLEX ELIGIBILITY: REACH OUT FOR DETAILS"
+      ""
     ],
-    "eligibilityText": "",
+    "eligibilityText": "Visit website for eligibility requirements.",
     "email1": "",
     "email2": "",
-    "phone1": "(323) 890-1555 (MAOF Los Angeles)",
-    "phone2": "(323) 890-9600 (MAOF Headquarters)",
+    "phone1": "(323) 890-1555 (MAOF Los Angeles),\n\n(323) 890-9600 (MAOF Headquarters)",
+    "phone2": "",
     "hours": "",
     "contactPerson": "",
     "contactLink": "https://maof.org/contact",
@@ -3070,7 +3067,7 @@
       ""
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": " streetmedicine@med.usc.edu",
@@ -3107,13 +3104,13 @@
       ""
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "contact@vip-cmhc.org",
     "email2": "",
-    "phone1": "(323) 221-4134",
-    "phone2": "Mental Health Center:\n(323) 221-4134\n\nChild Abuse Assessment Clinic:\n(323) 409-5086\n\nSexual Assault Center\n(323) 409-3800\n\nElder Abuse Forensic Center\n(323) 409-1470",
+    "phone1": "(323) 221-4134,\n\n(323) 221-4134 (Mental Health Center),\n\n(323) 409-5086 (Child Abuse Assessment Clinic),\n\n(323) 409-3800 (Sexual Assault Center),\n\n(323) 409-1470 (Elder Abuse Forensic Center)",
+    "phone2": "",
     "hours": "",
     "contactPerson": "",
     "contactLink": "",
@@ -3143,15 +3140,14 @@
       "Government Program"
     ],
     "eligibility": [
-      "COMPLEX ELIGIBILITY: REACH OUT FOR DETAILS",
       "\u2264 certain % FPL",
       "Requires proof of U.S. residence (not specific to CA)"
     ],
     "eligibilityText": "Are 16 through 24 years old, low-income individuals who\nmeet citizenship, residency, DACA or other approved status requirements and background requirements.",
     "email1": "",
     "email2": "",
-    "phone1": "(800) 733-5627",
-    "phone2": "(877) 889-5627 (TTY)",
+    "phone1": "(800) 733-5627,\n\n(877) 889-5627 (TTY)",
+    "phone2": "",
     "hours": "",
     "contactPerson": "",
     "contactLink": "https://www.jobcorps.gov/contact",
@@ -3178,7 +3174,7 @@
       ""
     ],
     "eligibility": [
-      "COMPLEX ELIGIBILITY: REACH OUT FOR DETAILS"
+      ""
     ],
     "eligibilityText": "Between the ages of 16 and 24 who are out of school and out of work",
     "email1": "info@youthbuild.org",
@@ -3213,9 +3209,9 @@
       ""
     ],
     "eligibility": [
-      "COMPLEX ELIGIBILITY: REACH OUT FOR DETAILS"
+      ""
     ],
-    "eligibilityText": "",
+    "eligibilityText": "Visit website for eligibility requirements.",
     "email1": "",
     "email2": "",
     "phone1": "(323) 526-1254",
@@ -3246,13 +3242,13 @@
       ""
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "info@losangeleshouseofruth.com",
     "email2": "",
-    "phone1": "(323) 266-4139",
-    "phone2": "(323) 265-3945 (Fax)",
+    "phone1": "(323) 266-4139,\n\n(323) 265-3945 (Fax)",
+    "phone2": "",
     "hours": "",
     "contactPerson": "",
     "contactLink": "",
@@ -3287,7 +3283,7 @@
       ""
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "services@jfsla.org",
@@ -3323,8 +3319,8 @@
     "eligibilityText": "\"Meals on Wheels focuses on caring for individuals whose diminished mobility makes it hard to shop for food, prepare meals or socialize with others. Generally programs serve adults 60 and over, although age requirements can vary by program and areas served. People who are mobile enough to join others for meals in a group setting where seniors congregate, like senior centers and cafes, are encouraged to do so; while others less mobile may qualify for home delivery.\"",
     "email1": "info@mealsonwheelsamerica.org",
     "email2": "",
-    "phone1": "1 (888) 998-6325",
-    "phone2": "(703) 548-5274",
+    "phone1": "(888) 998-6325,\n\n(703) 548-5274",
+    "phone2": "",
     "hours": "",
     "contactPerson": "",
     "contactLink": "https://www.mealsonwheelsamerica.org/find-meals#modal-subscription (newletter subscription)",
@@ -3354,13 +3350,13 @@
       ""
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "contact@www.viacarela.org",
     "email2": "",
-    "phone1": "(323) 268-9191 - East LA branch (main)",
-    "phone2": "(562) 270-4100 - Bellflower branch\n(323) 825-8300 - South Gate branch",
+    "phone1": "(323) 268-9191 (East LA branch),\n\n(562) 270-4100 (Bellflower branch),\n\n(323) 825-8300 (South Gate branch)",
+    "phone2": "",
     "hours": "Main phone line/administrative headquarters (see website for individual site hours):\nM-F: 8AM-5PM",
     "contactPerson": "",
     "contactLink": "https://www.viacarela.org/contact-us/",
@@ -3391,13 +3387,13 @@
       "Hotline Available"
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "marthagonzalez@nlsla.org",
     "email2": "",
-    "phone1": "(800) 433-6251 (hotline)",
-    "phone2": "(818) 834-7500 (general legal assistance)\n(800) 896-3202 (health consumer center)",
+    "phone1": "(800) 433-6251 (hotline),\n\n(818) 834-7500 (general legal assistance),\n\n(800) 896-3202 (health consumer center)",
+    "phone2": "",
     "hours": "Apply online: 24/7\nApply In-Person: M-Th: 1PM-4PM\nApply by Phone: M-F: 9AM-12PM, 1PM-4PM\n\nThe Wellness Center:\nAssistance by phone: M-F: 9AM-12PM; 1PM-5PM\nIn-Person Services: Tu, Th: 9AM-12PM, 1PM-5PM",
     "contactPerson": "Martha Gonzalez (executive office)",
     "contactLink": "",
@@ -3435,8 +3431,8 @@
     "eligibilityText": "",
     "email1": "",
     "email2": "",
-    "phone1": "(323) 939-0506",
-    "phone2": "(213) 471-4568 (fax)",
+    "phone1": "(323) 939-0506,\n\n(213) 471-4568 (fax)",
+    "phone2": "",
     "hours": "",
     "contactPerson": "",
     "contactLink": "",
@@ -3468,8 +3464,8 @@
     "eligibilityText": "Eligible clients typically have one or more:\n\u2022 HIV or AIDS, especially with an active viral presence or low CD4 count\n\u2022 Cancer, undergoing treatment\n\u2022 Uncontrolled diabetes with A1c indicator over 8\n\u2022 COPD or other respiratory disease requiring 24-hour or frequent oxygen.\n\u2022 End stage renal disease with one or more of the following:\no Serious comorbidity\no Additional mobility-limiting circumstances\no Dialysis that has begun in the previous 6 months\no Over age 75\n\u2022 Serious liver disease\n\u2022 Advanced congestive heart failure, recent stroke or heart attack\n\u2022 Serious neurological or muscular disease such as Alzheimer's, Parkinson's, or ALS",
     "email1": "clientservices@angelfood.org",
     "email2": "",
-    "phone1": "(323) 845-1800",
-    "phone2": "(323) 845-1810 (client services)\n(800) 761-8889",
+    "phone1": "(323) 845-1800,\n\n(323) 845-1810 (client services),\n\n(800) 761-8889",
+    "phone2": "",
     "hours": "",
     "contactPerson": "",
     "contactLink": "",
@@ -3497,13 +3493,13 @@
       "Government Program"
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "communityliaison@dhs.lacounty.gov (Community Liasion)",
     "email2": "",
-    "phone1": "(323) 274-3600",
-    "phone2": " (213) 547-0826 (Community Liasion)",
+    "phone1": "(323) 274-3600,\n\n(213) 547-0826 (Community Liasion)",
+    "phone2": "",
     "hours": "M-F: 7:30AM-5:30PM",
     "contactPerson": "",
     "contactLink": "",
@@ -3530,13 +3526,13 @@
       ""
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "help@ifhomeless.org",
     "email2": "info@ifhomeless.org",
-    "phone1": "(714) 507-2490 (Families needing housing)\n\n(714) 507-2459 (Individuals needing housing)",
-    "phone2": "(949) 273-0555 (Corporate contact)",
+    "phone1": "(714) 507-2490 (Families needing housing),\n\n(714) 507-2459 (Individuals needing housing),\n\n(949) 273-0555 (Corporate contact)",
+    "phone2": "",
     "hours": "",
     "contactPerson": "",
     "contactLink": "",
@@ -3561,13 +3557,13 @@
       ""
     ],
     "eligibility": [
-      "COMPLEX ELIGIBILITY: REACH OUT FOR DETAILS"
+      ""
     ],
     "eligibilityText": "Specific and designated referral sources (no walk-ins):\n- Law enforcement\n- Some emergency personnel\n- Designated outreach teams working in the Skid Row area\n\nTarget Population:\n- Catchment area is downtown Los Angeles. Skid Row and area adjacent\n- Predominately homeless, intoxicated individuals who might otherwise be picked up by law enforcement for petty crimes, and/or those who present or are transported by emergency personnel to a hospital ED for issues related to inebriation",
     "email1": "",
     "email2": "",
-    "phone1": "(213) 395-7700",
-    "phone2": "(213) 395-7711 (Fax)",
+    "phone1": "(213) 395-7700,\n\n(213) 395-7711 (Fax)",
+    "phone2": "",
     "hours": "",
     "contactPerson": "",
     "contactLink": "https://www.exodusrecovery.com/contact-us/ ",
@@ -3595,13 +3591,13 @@
       "Government Program"
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "Bring a photo ID or be prepared to verify your information.",
     "email1": "outpatient@rancho.org",
     "email2": "",
-    "phone1": "(877) 726-2461",
-    "phone2": "(562) 385-6536; option 5 (for appointments)",
+    "phone1": "(877) 726-2461,\n\n(562) 385-6536; option 5 (for appointments)",
+    "phone2": "",
     "hours": "M-F: 8AM-5PM",
     "contactPerson": "",
     "contactLink": "",
@@ -3630,13 +3626,13 @@
       "Government Program"
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "mamas@dhs.lacounty.gov",
     "email2": "whpi@dhs.lacounty.gov (Non-patient inquiries)",
-    "phone1": "(844) 376-2627 (Prenatal Care and MAMA's)",
-    "phone2": "(877) 227-3121 (Abortion Care)\n\n(844) 804-0055 (General Health Services, Cancer Screenings and Mammograms)",
+    "phone1": "(844) 376-2627 (Prenatal Care and MAMA's),\n\n(877) 227-3121 (Abortion Care),\n\n(844) 804-0055 (General Health Services, Cancer Screenings and Mammograms)",
+    "phone2": "",
     "hours": "Outpatient Clinics:\n8AM-4:30PM\n",
     "contactPerson": "",
     "contactLink": "",
@@ -3666,13 +3662,13 @@
       ""
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "info@alotrolado.org",
     "email2": "",
-    "phone1": "(323) 238-9935",
-    "phone2": "(619) 345-4693",
+    "phone1": "(323) 238-9935,\n\n(619) 345-4693",
+    "phone2": "",
     "hours": "",
     "contactPerson": "",
     "contactLink": "",
@@ -3701,7 +3697,7 @@
       "Government Program"
     ],
     "eligibility": [
-      "COMPLEX ELIGIBILITY: REACH OUT FOR DETAILS"
+      ""
     ],
     "eligibilityText": "Eligible applicants are county child welfare services agencies that demonstrate a need to provide housing for young adults aged 18 to 24 years, inclusive, with priority given to those currently or formerly in the foster care or probation systems.",
     "email1": "TAY@hcd.ca.gov (Application)",
@@ -3736,13 +3732,13 @@
       "Government Program"
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "",
     "email2": "",
-    "phone1": "(323) 409-3233",
-    "phone2": "(323) 226-7289 (Fax)",
+    "phone1": "(323) 409-3233,\n\n(323) 226-7289 (Fax)",
+    "phone2": "",
     "hours": "M-F: 8AM-5:30PM",
     "contactPerson": "",
     "contactLink": "",
@@ -3770,12 +3766,12 @@
       "Government Program"
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "",
     "email2": "",
-    "phone1": "1 (833) 852-6262 (1-833-TLC-MAMA)",
+    "phone1": "(833) 852-6262 ",
     "phone2": "",
     "hours": "24/7",
     "contactPerson": "",
@@ -3804,12 +3800,12 @@
       "Long-Term Support"
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "cristinac@newfamilia.org",
     "email2": "",
-    "phone1": "323-917-1700",
+    "phone1": "(323) 917-1700",
     "phone2": "",
     "hours": "W, Sat: 10AM\u20136PM",
     "contactPerson": "Cristina Carlos (Director)",
@@ -3836,7 +3832,7 @@
       "In-person services only"
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "",
@@ -3869,12 +3865,12 @@
       "Online services only"
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "",
     "email2": "",
-    "phone1": "1-800-944-4773",
+    "phone1": "(800) 944-4773",
     "phone2": "",
     "hours": "24/7",
     "contactPerson": "",
@@ -3903,7 +3899,7 @@
       "Resource Database"
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "info@maternalmentalhealthnow.org",
@@ -3969,7 +3965,7 @@
       ""
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "wso@al-anon.org",
@@ -4001,7 +3997,7 @@
       ""
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "",
@@ -4034,7 +4030,7 @@
       "Hotline Available"
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "",
@@ -4074,12 +4070,12 @@
       "Online services only"
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "",
     "email2": "",
-    "phone1": "1-800-272-3900 (24/7 Helpline)",
+    "phone1": "(800) 272-3900 (24/7 Helpline)",
     "phone2": "",
     "hours": "",
     "contactPerson": "",
@@ -4109,7 +4105,7 @@
       "Resource Database"
     ],
     "eligibility": [
-      "COMPLEX ELIGIBILITY: REACH OUT FOR DETAILS"
+      ""
     ],
     "eligibilityText": "Most services are open to anyone with vision loss; some programs (e.g. library access) may require documentation.",
     "email1": "",
@@ -4178,7 +4174,7 @@
       ""
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "",
@@ -4213,7 +4209,7 @@
       ""
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "ourhouse@ourhouse-grief.org",
@@ -4251,7 +4247,7 @@
       "Long-Term Support"
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "info@lamission.net",
@@ -4283,7 +4279,7 @@
       ""
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "",
@@ -4316,12 +4312,12 @@
       ""
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "yolanda.fernandez@med.usc.edu",
     "email2": "",
-    "phone1": "626-462-2710",
+    "phone1": "(626) 462-2710",
     "phone2": "",
     "hours": "Prepared Childbirth Class:\nTu: 6PM-9PM\n\nBreastfeeding Support Group:\nW: 10:30AM-11:30AM\n\nBreastfeeding Class:\nF: 6PM-9PM",
     "contactPerson": "",
@@ -4351,12 +4347,12 @@
       ""
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "",
     "email2": "",
-    "phone1": "1-800-733-2767",
+    "phone1": "(800) 733-2767",
     "phone2": "",
     "hours": "",
     "contactPerson": "",
@@ -4388,7 +4384,7 @@
     "eligibilityText": "",
     "email1": "",
     "email2": "",
-    "phone1": "1-866-584-7389",
+    "phone1": "(866) 584-7389",
     "phone2": "",
     "hours": "",
     "contactPerson": "",
@@ -4416,12 +4412,12 @@
       ""
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "Proof of a separate medical screening is no longer a requirement for athlete registration.",
     "email1": "info@sosc.org",
     "email2": "",
-    "phone1": "562-502-1100",
+    "phone1": "(562) 502-1100",
     "phone2": "",
     "hours": "",
     "contactPerson": "",
@@ -4452,7 +4448,7 @@
       ""
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "contact@stjla.org",
@@ -4484,14 +4480,13 @@
       "Hotline Available"
     ],
     "eligibility": [
-      "Seniors only",
-      "FLEXIBLE ELIGIBILITY"
+      "Seniors only"
     ],
     "eligibilityText": "For individuals 50 years or older.",
     "email1": "",
     "email2": "",
-    "phone1": "For more information or to arrange a free inpatient assessment, call (818) 952-2270.",
-    "phone2": "To arrange a free assessment with our outpatient program, please call (818) 949-4011.",
+    "phone1": "(818) 952-2270 (inpatient assessment),\n\n(818) 949-4011 (outpatient assessment)",
+    "phone2": "",
     "hours": "Crisis assessments using phone 1:\n24/7 ",
     "contactPerson": "",
     "contactLink": "",
@@ -4517,7 +4512,6 @@
       "Resist Oppression"
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY",
       "Requires proof of refugee/asylum status"
     ],
     "eligibilityText": "",
@@ -4552,12 +4546,12 @@
       "Hotline Available"
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "info@ccijustice.org",
     "email2": "",
-    "phone1": "Hotline: 888-624-4752\u200b\u200b\u200b\u200b\u200b\u200b",
+    "phone1": "(888) 624-4752\u200b\u200b\u200b\u200b\u200b\u200b",
     "phone2": "",
     "hours": "",
     "contactPerson": "",
@@ -4616,12 +4610,12 @@
       ""
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "info@ciclavia.org",
     "email2": "",
-    "phone1": "213-355-8500",
+    "phone1": "(213) 355-8500",
     "phone2": "",
     "hours": "M-F: 9AM-5PM",
     "contactPerson": "",
@@ -4649,12 +4643,12 @@
       "Hotline Available"
     ],
     "eligibility": [
-      "FLEXIBLE ELIGIBILITY"
+      ""
     ],
     "eligibilityText": "",
     "email1": "lworthington@dhs.lacounty.gov",
     "email2": "",
-    "phone1": "LA County Child Protection Hotline: 1-800-540-4000",
+    "phone1": "(800) 540-4000 (LA County Child Protection Hotline)",
     "phone2": "",
     "hours": "",
     "contactPerson": "",
