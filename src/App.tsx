@@ -5,6 +5,7 @@ import styles from "./styles/App.module.css";
 import { FaRegQuestionCircle } from "react-icons/fa";
 import { FiPrinter } from "react-icons/fi";
 import { FaRegStar } from "react-icons/fa6";
+import { FiTable } from "react-icons/fi";
 import ArchLogo from "./assets/images/arch_collaborative.svg?react";
 import USCLogo from "./assets/images/usc_logo.png";
 
@@ -48,10 +49,21 @@ const App = () => {
           title={"Print selected resources"}
           style={{ cursor: "pointer" }}
         />
+        <FiTable
+          onClick={() => {
+            window.open(
+              "https://docs.google.com/spreadsheets/d/1Bpe3AxJnxzBAjRTzWEMYaja1BqaMD1a5EiymTQ_EoHw/edit?usp=sharing",
+              "_blank"
+            );
+          }}
+          size={40}
+          title="Raw database"
+          style={{ cursor: "pointer" }}
+        />
         <FaRegQuestionCircle
           onClick={() => setHelp(true)}
           size={40}
-          title={"Help"}
+          title="Help"
           style={{ cursor: "pointer" }}
         />
       </div>
