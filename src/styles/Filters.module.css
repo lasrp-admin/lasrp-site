@@ -1,15 +1,19 @@
 .filtersContainer {
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
+  position: sticky;
+  top: 20px;
 
-  height: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 
   margin-top: 25px;
 
-  z-index: 10;
+  background-color: lightblue;
+
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .bar {
-  width: 25vw;
+  width: 20vw;
 }

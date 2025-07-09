@@ -1,7 +1,9 @@
 export type FilterSet = {
   resourceTypes: Set<ResourceType>;
-  resourceAudiences: Set<AudienceType>;
-  resourceLanguages: Set<LanguageType>;
+  resourceAudiences: Set<ResourceAudience>;
+  resourceLanguages: Set<ResourceLanguage>;
+  resourceNeighborhoods: Set<ResourceNeighborhood>;
+  resourceOthers: Set<ResourceOther>;
 };
 
 export type ResourceDatabase = {
@@ -12,9 +14,9 @@ export type Resource = {
   type: Set<ResourceType>;
   name: string;
   description: string;
-  audience: Set<AudienceType>;
-  language: Set<LanguageType>;
-  other: Set<OtherType>;
+  audience: Set<ResourceOther>;
+  language: Set<ResourceLanguage>;
+  other: Set<ResourceOther>;
   eligibility: string[];
   eligibilityText: string;
   email1: string;
@@ -26,7 +28,7 @@ export type Resource = {
   contactLink: string;
   website: string;
   address: string;
-  neighborhood: string;
+  neighborhood: Set<ResourceNeighborhood>;
   moreInfo: string;
   selected: boolean;
 };
@@ -94,7 +96,7 @@ export const ALL_RESOURCE_TYPES: ResourceType[] = [
   "Undocumented/Refugee/Asylum Services",
 ];
 
-export type AudienceType =
+export type ResourceAudience =
   | "Anyone"
   | "Adolescents & Young Adults (AYA)"
   | "BIPOC Communities"
@@ -117,7 +119,7 @@ export type AudienceType =
   | "Formerly Incarcerated Individuals"
   | "People with Medical Conditions";
 
-export const ALL_AUDIENCE_TYPES: AudienceType[] = [
+export const ALL_AUDIENCE_TYPES: ResourceAudience[] = [
   "Anyone",
   "Adolescents & Young Adults (AYA)",
   "BIPOC Communities",
@@ -141,7 +143,7 @@ export const ALL_AUDIENCE_TYPES: AudienceType[] = [
   "People with Medical Conditions",
 ];
 
-export type LanguageType =
+export type ResourceLanguage =
   | "Request Other Interpretation"
   | "Arabic"
   | "ASL"
@@ -166,7 +168,7 @@ export type LanguageType =
   | "Vietnamese"
   | "Ukranian";
 
-export const ALL_LANGUAGE_TYPES: LanguageType[] = [
+export const ALL_LANGUAGE_TYPES: ResourceLanguage[] = [
   "Request Other Interpretation",
   "Arabic",
   "ASL",
@@ -192,7 +194,7 @@ export const ALL_LANGUAGE_TYPES: LanguageType[] = [
   "Ukranian",
 ];
 
-export type OtherType =
+export type ResourceOther =
   | "Government Program"
   | "Emergency Services"
   | "Hotline Available"
@@ -201,3 +203,43 @@ export type OtherType =
   | "Online Services Only"
   | "Resource Database"
   | "Resist Oppression";
+
+export const ALL_OTHER_TYPES: ResourceOther[] = [
+  "Government Program",
+  "Emergency Services",
+  "Hotline Available",
+  "In-person Services Only",
+  "Long-Term Support",
+  "Online Services Only",
+  "Resource Database",
+  "Resist Oppression",
+];
+
+export type ResourceNeighborhood =
+  | "Central LA"
+  | "DTLA"
+  | "Eastside"
+  | "Harbor"
+  | "San Fernando Valley"
+  | "South Central"
+  | "Westside"
+  | "Pasadena"
+  | "Long Beach"
+  | "Orange County"
+  | "Remote"
+  | "Other";
+
+export const ALL_NEIGHBORHOOD_TYPES: ResourceNeighborhood[] = [
+  "Central LA",
+  "DTLA",
+  "Eastside",
+  "Harbor",
+  "San Fernando Valley",
+  "South Central",
+  "Westside",
+  "Pasadena",
+  "Long Beach",
+  "Orange County",
+  "Remote",
+  "Other",
+];

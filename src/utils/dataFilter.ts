@@ -1,12 +1,5 @@
 import type React from "react";
-import type {
-  FilterSet,
-  Resource,
-  ResourceDatabase,
-  ResourceType,
-  LanguageType,
-  AudienceType,
-} from "../types/types";
+import type { FilterSet, Resource, ResourceDatabase } from "../types/types";
 import type { SetStateAction } from "react";
 
 import { sorted } from "../utils/sorted";
@@ -20,45 +13,14 @@ export function handleFilterUpdate(
     Object.entries(database).filter(
       ([_, resource]) =>
         resource.selected ||
-        (typeMatch(resource, filterSet.resourceTypes) &&
-          audienceMatch(resource, filterSet.resourceAudiences) &&
-          languageMatch(resource, filterSet.resourceLanguages))
+        (isSubsetOf(filterSet.resourceTypes, resource.type) &&
+          isSubsetOf(filterSet.resourceAudiences, resource.audience) &&
+          isSubsetOf(filterSet.resourceLanguages, resource.language) &&
+          isSubsetOf(filterSet.resourceNeighborhoods, resource.neighborhood) &&
+          isSubsetOf(filterSet.resourceOthers, resource.other))
     )
   );
   setDisplayData(sorted(Object.values(filteredDatabase)));
-}
-
-/**
- *
- * @param resource
- * @param types
- */
-function typeMatch(resource: Resource, types: Set<ResourceType>): boolean {
-  return isSubsetOf(types, resource.type);
-}
-
-/**
- *
- * @param resource
- * @param types
- */
-function audienceMatch(
-  resource: Resource,
-  audiences: Set<AudienceType>
-): boolean {
-  return isSubsetOf(audiences, resource.audience);
-}
-
-/**
- *
- * @param resource
- * @param types
- */
-function languageMatch(
-  resource: Resource,
-  languages: Set<LanguageType>
-): boolean {
-  return isSubsetOf(languages, resource.language);
 }
 
 export function isSubsetOf<T>(a: Set<T>, b: Set<T>): boolean {

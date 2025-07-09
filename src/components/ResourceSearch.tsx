@@ -11,8 +11,10 @@ import type {
   FilterSet,
   Resource,
   ResourceType,
-  LanguageType,
-  AudienceType,
+  ResourceLanguage,
+  ResourceAudience,
+  ResourceNeighborhood,
+  ResourceOther,
 } from "../types/types";
 
 import useDatabaseStore from "../contexts/DatabaseStore.ts";
@@ -21,8 +23,10 @@ const ResourceSearch = () => {
   const [displayData, setDisplaydata] = useState<Resource[]>([]);
   const [filterSet, setFilterSet] = useState<FilterSet>({
     resourceTypes: new Set<ResourceType>(),
-    resourceAudiences: new Set<AudienceType>(),
-    resourceLanguages: new Set<LanguageType>(),
+    resourceAudiences: new Set<ResourceAudience>(),
+    resourceLanguages: new Set<ResourceLanguage>(),
+    resourceNeighborhoods: new Set<ResourceNeighborhood>(),
+    resourceOthers: new Set<ResourceOther>(),
   });
 
   const database = useDatabaseStore((state) => state.database);

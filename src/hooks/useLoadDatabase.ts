@@ -22,6 +22,7 @@ export default function useLoadDatabase() {
               audience: new Set(resource.audience),
               language: new Set(resource.language),
               other: new Set(resource.other),
+              neighborhood: new Set(resource.neighborhood),
             },
           ])
         );

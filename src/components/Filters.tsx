@@ -7,16 +7,29 @@ import {
   ALL_AUDIENCE_TYPES,
   ALL_LANGUAGE_TYPES,
   ALL_RESOURCE_TYPES,
-  type FilterSet,
-  type ResourceType,
-  type AudienceType,
-  type LanguageType,
+  ALL_NEIGHBORHOOD_TYPES,
+  ALL_OTHER_TYPES,
 } from "../types/types";
+
+import type {
+  FilterSet,
+  ResourceType,
+  ResourceAudience,
+  ResourceLanguage,
+  ResourceNeighborhood,
+  ResourceOther,
+} from "../types/types";
+
 import styles from "../styles/Filters.module.css";
 
 type Option = {
   label: string;
-  value: ResourceType | AudienceType | LanguageType;
+  value:
+    | ResourceType
+    | ResourceAudience
+    | ResourceLanguage
+    | ResourceNeighborhood
+    | ResourceOther;
 };
 
 interface FiltersProps {
@@ -28,12 +41,16 @@ const Filters: React.FC<FiltersProps> = ({ setFilterSet }) => {
   States & Constants
   ----------------*/
   const [selectedTypes, setSelectedTypes] = useState<ResourceType[]>([]);
-  const [selectedAudiences, setSelectedAudiences] = useState<AudienceType[]>(
+  const [selectedAudiences, setSelectedAudiences] = useState<ResourceAudience[]>(
     []
   );
-  const [selectedLanguages, setSelectedLanguages] = useState<LanguageType[]>(
+  const [selectedLanguages, setSelectedLanguages] = useState<ResourceLanguage[]>(
     []
   );
+  const [selectedNeighborhoods, setSelectedNeighborhoods] = useState<
+    ResourceNeighborhood[]
+  >([]);
+  const [selectedOthers, setSelectedOthers] = useState<ResourceOther[]>([]);
 
   const animated = makeAnimated();
 
@@ -51,6 +68,16 @@ const Filters: React.FC<FiltersProps> = ({ setFilterSet }) => {
       language !== "Request Other Interpretation"
         ? language
         : "Accepts Interpreter Requests",
+  }));
+  const neighborhoodOptions: Option[] = ALL_NEIGHBORHOOD_TYPES.map(
+    (neighborhood) => ({
+      value: neighborhood,
+      label: neighborhood,
+    })
+  );
+  const otherOptions: Option[] = ALL_OTHER_TYPES.map((other) => ({
+    value: other,
+    label: other,
   }));
 
   /*-----
@@ -78,58 +105,102 @@ const Filters: React.FC<FiltersProps> = ({ setFilterSet }) => {
     }));
   }, [selectedLanguages]);
 
+  useEffect(() => {
+    setFilterSet((prev) => ({
+      ...prev,
+      resourceNeighborhoods: new Set(selectedNeighborhoods),
+    }));
+  }, [selectedNeighborhoods]);
+
+  useEffect(() => {
+    setFilterSet((prev) => ({
+      ...prev,
+      resourceOthers: new Set(selectedOthers),
+    }));
+  }, [selectedOthers]);
+
   function handleChange(
     selected: readonly Option[],
-    filter: "type" | "audience" | "language"
+    filter: "type" | "audience" | "language" | "neighborhood" | "other"
   ) {
     if (filter === "type") {
       setSelectedTypes(selected.map((option) => option.value as ResourceType));
     } else if (filter === "audience") {
       setSelectedAudiences(
-        selected.map((option) => option.value as AudienceType)
+        selected.map((option) => option.value as ResourceAudience)
       );
     } else if (filter === "language") {
       setSelectedLanguages(
-        selected.map((option) => option.value as LanguageType)
+        selected.map((option) => option.value as ResourceLanguage)
       );
+    } else if (filter === "neighborhood") {
+      setSelectedNeighborhoods(
+        selected.map((neighborhood) => neighborhood.value as ResourceNeighborhood)
+      );
+    } else if (filter === "other") {
+      setSelectedOthers(selected.map((other) => other.value as ResourceOther));
     }
   }
 
   return (
-    <div className={styles.filtersContainer}>
-      <Select
-        placeholder="Filter by resource types..."
-        options={resourceOptions}
-        isSearchable
-        isMulti
-        components={animated}
-        className={styles.bar}
-        onChange={(selected: readonly Option[], _: ActionMeta<Option>) =>
-          handleChange(selected, "type")
-        }
-      />
-      <Select
-        placeholder="Filter by audience types..."
-        options={audienceOptions}
-        isSearchable
-        isMulti
-        components={animated}
-        className={styles.bar}
-        onChange={(selected: readonly Option[], _: ActionMeta<Option>) =>
-          handleChange(selected, "audience")
-        }
-      />
-      <Select
-        placeholder="Filter by supported languages..."
-        options={languageOptions}
-        isSearchable
-        isMulti
-        components={animated}
-        className={styles.bar}
-        onChange={(selected: readonly Option[], _: ActionMeta<Option>) =>
-          handleChange(selected, "language")
-        }
-      />
+    <div>
+      <div className={styles.filtersContainer}>
+        <Select
+          placeholder="Filter by resource types..."
+          options={resourceOptions}
+          isSearchable
+          isMulti
+          components={animated}
+          className={styles.bar}
+          onChange={(selected: readonly Option[], _: ActionMeta<Option>) =>
+            handleChange(selected, "type")
+          }
+        />
+        <Select
+          placeholder="Filter by audience types..."
+          options={audienceOptions}
+          isSearchable
+          isMulti
+          components={animated}
+          className={styles.bar}
+          onChange={(selected: readonly Option[], _: ActionMeta<Option>) =>
+            handleChange(selected, "audience")
+          }
+        />
+        <Select
+          placeholder="Filter by supported languages..."
+          options={languageOptions}
+          isSearchable
+          isMulti
+          components={animated}
+          className={styles.bar}
+          onChange={(selected: readonly Option[], _: ActionMeta<Option>) =>
+            handleChange(selected, "language")
+          }
+        />
+        <Select
+          placeholder="Filter by LA neighborhood..."
+          options={neighborhoodOptions}
+          isSearchable
+          isMulti
+          components={animated}
+          className={styles.bar}
+          onChange={(selected: readonly Option[], _: ActionMeta<Option>) =>
+            handleChange(selected, "neighborhood")
+          }
+        />
+        <Select
+          placeholder="Other filters..."
+          options={otherOptions}
+          isSearchable
+          isMulti
+          components={animated}
+          className={styles.bar}
+          onChange={(selected: readonly Option[], _: ActionMeta<Option>) =>
+            handleChange(selected, "other")
+          }
+        />
+      </div>
     </div>
   );
 };
