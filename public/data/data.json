@@ -40,7 +40,15 @@
     "contactLink": "",
     "website": "https://dpss.lacounty.gov/en/cash/calworks.html",
     "address": "DPSS Lincoln Heights Sub-Office 4077 N Mission Rd Los Angeles, CA 90032",
-    "neighborhood": "Central LA, DTLA, Westside, San Fernando Valley, Eastside, South Central, Harbor",
+    "neighborhood": [
+      "Central LA",
+      "DTLA",
+      "Westside",
+      "San Fernando Valley",
+      "Eastside",
+      "South Central",
+      "Harbor"
+    ],
     "moreInfo": "Other physical addresses can be found here"
   },
   "Cash Assistance Program for Immigrants (CAPI)": {
@@ -84,7 +92,16 @@
     "contactLink": "",
     "website": "https://dpss.lacounty.gov/en/cash/capi.html",
     "address": "DPSS Lincoln Heights Sub-Office 4077 N Mission Rd Los Angeles, CA 90032",
-    "neighborhood": "South Central, Eastside, Pasadena, DTLA, Other, Central LA, Westside, San Fernando Valley",
+    "neighborhood": [
+      "South Central",
+      "Eastside",
+      "Pasadena",
+      "DTLA",
+      "Other",
+      "Central LA",
+      "Westside",
+      "San Fernando Valley"
+    ],
     "moreInfo": "Other physical addresses can be found here"
   },
   "General Relief, Medi-Cal, and CalFresh (LA County Department of Public Social Services)": {
@@ -115,7 +132,16 @@
     "contactLink": "",
     "website": "https://dpss.lacounty.gov/en/cash/gr.html",
     "address": "DPSS Lincoln Heights Sub-Office 4077 N Mission Rd Los Angeles, CA 90032",
-    "neighborhood": "South Central, Eastside, Pasadena, DTLA, Other, Central LA, Westside, San Fernando Valley",
+    "neighborhood": [
+      "South Central",
+      "Eastside",
+      "Pasadena",
+      "DTLA",
+      "Other",
+      "Central LA",
+      "Westside",
+      "San Fernando Valley"
+    ],
     "moreInfo": "Other physical addresses can be found here"
   },
   "GR Housing Subsidy and Case Management Program (LA County DPSS)": {
@@ -160,7 +186,16 @@
     "contactLink": "",
     "website": "https://dpss.lacounty.gov/en/cash/gr/housing.html ",
     "address": "DPSS Lincoln Heights Sub-Office 4077 N Mission Rd Los Angeles, CA 90032",
-    "neighborhood": "South Central, Eastside, Pasadena, DTLA, Other, Central LA, Westside, San Fernando Valley",
+    "neighborhood": [
+      "South Central",
+      "Eastside",
+      "Pasadena",
+      "DTLA",
+      "Other",
+      "Central LA",
+      "Westside",
+      "San Fernando Valley"
+    ],
     "moreInfo": "Other physical addresses can be found here"
   },
   "Los Angeles County Patient Financial Services": {
@@ -201,7 +236,15 @@
     "contactLink": "",
     "website": "https://dhs.lacounty.gov/patient-information/get-coverage/financial-services-and-billing/ ",
     "address": "",
-    "neighborhood": "Central LA, DTLA, Eastside, Harbor, South Central, Westside, Other",
+    "neighborhood": [
+      "Central LA",
+      "DTLA",
+      "Eastside",
+      "Harbor",
+      "South Central",
+      "Westside",
+      "Other"
+    ],
     "moreInfo": "Pharmacy Clinic Tower Room A1C109 or see LAG Map to visit Financial Services: English or Espa\u00f1ol"
   },
   "Refugee Cash Assistance (RCA)": {
@@ -244,7 +287,15 @@
     "contactLink": "",
     "website": "https://dpss.lacounty.gov/en/cash/rca.html",
     "address": "DPSS Lincoln Heights Sub-Office 4077 N Mission Rd Los Angeles, CA 90032",
-    "neighborhood": "Central LA, DTLA, Westside, San Fernando Valley, Eastside, South Central, Harbor",
+    "neighborhood": [
+      "Central LA",
+      "DTLA",
+      "Westside",
+      "San Fernando Valley",
+      "Eastside",
+      "South Central",
+      "Harbor"
+    ],
     "moreInfo": "Other physical addresses can be found here"
   },
   "East Los Angeles Regional Center": {
@@ -275,7 +326,13 @@
     "contactLink": "",
     "website": "https://www.dor.ca.gov/Home/CCIRResources",
     "address": "1000 South Fremont Ave.Alhambra, CA 91803",
-    "neighborhood": "DTLA, Central LA, Eastside, Westside, South Central",
+    "neighborhood": [
+      "DTLA",
+      "Central LA",
+      "Eastside",
+      "Westside",
+      "South Central"
+    ],
     "moreInfo": "for other centers, please see https://www.dds.ca.gov/rc/listings/"
   },
   "WorkSource: from Los Angeles Economic & Workforce Development Department (EWDD)": {
@@ -314,7 +371,15 @@
     "contactLink": "",
     "website": "https://ewdd.lacity.gov/index.php/employment-services/adults-age-24-and-older/worksource-centers",
     "address": "",
-    "neighborhood": "Central LA, Eastside, DTLA, Harbor, San Fernando Valley, South Central, Westside",
+    "neighborhood": [
+      "Central LA",
+      "Eastside",
+      "DTLA",
+      "Harbor",
+      "San Fernando Valley",
+      "South Central",
+      "Westside"
+    ],
     "moreInfo": ""
   },
   "YouthSource: from Los Angeles Economic & Workforce Development Department (EWDD)": {
@@ -346,7 +411,12 @@
     "contactLink": "",
     "website": "https://ewdd.lacity.gov/index.php/employment-services/youth-age-16-24/youthsource-centers",
     "address": "",
-    "neighborhood": "Central LA, Eastside, Harbor, San Fernando Valley",
+    "neighborhood": [
+      "Central LA",
+      "Eastside",
+      "Harbor",
+      "San Fernando Valley"
+    ],
     "moreInfo": ""
   },
   "A Place Called Home": {
@@ -379,7 +449,9 @@
     "contactLink": "",
     "website": "apch.org",
     "address": "2830 S Central Ave, Los Angeles, CA 90011",
-    "neighborhood": "South Central",
+    "neighborhood": [
+      "South Central"
+    ],
     "moreInfo": "Membership Application:\r\nhttps://apch.org/what-we-do/membership\r\n"
   },
   "Assistance League of Los Angeles Programs - Preschool Learning Center": {
@@ -411,7 +483,9 @@
     "contactLink": "",
     "website": "https://assistanceleaguela.org/preschool-learning-center/",
     "address": "5436 Hollywood Blvd. Los Angeles, CA 90027",
-    "neighborhood": "Central LA",
+    "neighborhood": [
+      "Central LA"
+    ],
     "moreInfo": ""
   },
   "Assistance League of Los Angeles Programs - Operation School Bell": {
@@ -443,7 +517,9 @@
     "contactLink": "",
     "website": "https://assistanceleaguela.org/operation-school-bell/ ",
     "address": "6640 Sunset Blvd.\nLos Angeles, CA  90028",
-    "neighborhood": "Central LA",
+    "neighborhood": [
+      "Central LA"
+    ],
     "moreInfo": "Request services here: https://assistanceleaguela.org/operation-school-bell-request/ "
   },
   "Assistance League of Los Angeles Programs - Foster Children\u2019s Resource Center": {
@@ -475,7 +551,9 @@
     "contactLink": "",
     "website": "https://assistanceleaguela.org/foster-childrens-resource-center/ ",
     "address": "19441 Business Center Dr. #101\nNorthridge, CA 91324",
-    "neighborhood": "San Fernando Valley",
+    "neighborhood": [
+      "San Fernando Valley"
+    ],
     "moreInfo": ""
   },
   "Centro de Ni\u00f1os y Padres": {
@@ -508,7 +586,9 @@
     "contactLink": "",
     "website": "http://www.centrodeninos.org/centro_contact.htm",
     "address": "King Hall on the California State University Los Angeles campus: 5151 State University Drive\nLos Angeles, CA 90032",
-    "neighborhood": "Eastside",
+    "neighborhood": [
+      "Eastside"
+    ],
     "moreInfo": ""
   },
   "Los Angeles County Child Support Services": {
@@ -541,7 +621,15 @@
     "contactLink": "",
     "website": "https://cssd.lacounty.gov ",
     "address": "Commerce Division:\n5500 S. Eastern Ave.\nCommerce, CA 90040\n\nSouth Los Angeles Division:\n8300 S. Vermont Ave.\nLos Angeles, CA 90044",
-    "neighborhood": "Westside, South Central, San Fernando Valley, Harbor, Eastside, DTLA, Central LA",
+    "neighborhood": [
+      "Westside",
+      "South Central",
+      "San Fernando Valley",
+      "Harbor",
+      "Eastside",
+      "DTLA",
+      "Central LA"
+    ],
     "moreInfo": "Map of locations with appointment links: https://cssd.lacounty.gov/contact-us/\n\nLink for Commerce Division appointments:\nhttps://outlook.office365.com/book/CSSDCommerceOffice@lacounty.onmicrosoft.com/\n\nLink for South Los Angeles Division appointments:\nhttps://outlook.office365.com/book/CSSDSouthLAOffice@lacounty.onmicrosoft.com/"
   },
   "2024 Summer Meal Service Sites": {
@@ -573,7 +661,15 @@
     "contactLink": "",
     "website": "https://www.cde.ca.gov/ds/sh/sn/ap/summersites.asp?year=2024&countyname=Los_Angeles",
     "address": "Breed Street Elementary:\n2226 East Third St. Los Angeles, CA 90033-3906\n\nUtah Street Elementary:\n255 Gabriel Garcia Marquez St. Los Angeles, CA 90033-2746\n\nEvergreen Avenue Elementary: \n2730 Ganahl St. Los Angeles, CA 90033-2019\n\nPuente Charter:\n501 South Boyle Ave. Los Angeles, CA 90033",
-    "neighborhood": "Central LA, DTLA, Eastside, Harbor, San Fernando Valley, South Central, Westside",
+    "neighborhood": [
+      "Central LA",
+      "DTLA",
+      "Eastside",
+      "Harbor",
+      "San Fernando Valley",
+      "South Central",
+      "Westside"
+    ],
     "moreInfo": "Link for mobile app to find food locations: https://www.cde.ca.gov/re/mo/cameals.asp "
   },
   "AltaMed": {
@@ -605,7 +701,15 @@
     "contactLink": "",
     "website": "https://www.altamed.org/find/facility",
     "address": "Boyle Heights:\n3945 Whittier Blvd. Los Angeles, CA 90023\n\n\nEast Los Angeles, 1st Street:\n2219 E. 1st St. Los Angeles, CA 90033\n\nPasadena, Fair Oaks:\n1855 N. Fair Oaks Ave. Ste. 200 Pasadena, CA 91103\n",
-    "neighborhood": "Central LA, DTLA, Eastside, Harbor, San Fernando Valley, South Central, Westside",
+    "neighborhood": [
+      "Central LA",
+      "DTLA",
+      "Eastside",
+      "Harbor",
+      "San Fernando Valley",
+      "South Central",
+      "Westside"
+    ],
     "moreInfo": ""
   },
   "Harbor Community Health Centers": {
@@ -637,7 +741,9 @@
     "contactLink": "",
     "website": "https://www.harborchc.org/",
     "address": "593 W 6th St San Pedro, CA 90731 (Location 1)\n\n425 S Pacific Ave, San Pedro, CA 90731 (Location 2)\n",
-    "neighborhood": "Harbor",
+    "neighborhood": [
+      "Harbor"
+    ],
     "moreInfo": "Community resources page: https://www.harborchc.org/contents/resources "
   },
   "Mid-Valley Comprehensive Health Center": {
@@ -669,7 +775,9 @@
     "contactLink": "",
     "website": "https://dhs.lacounty.gov/midvalley/",
     "address": "7515 Van Nuys Blvd. Van Nuys, CA 91405",
-    "neighborhood": "San Fernando Valley",
+    "neighborhood": [
+      "San Fernando Valley"
+    ],
     "moreInfo": ""
   },
   "Northeast Valley Health Corporation": {
@@ -701,7 +809,9 @@
     "contactLink": "",
     "website": "https://nevhc.org/health-centers/ ",
     "address": "(Not inclusive)\nPacoima Health Center: 12756 Van Nuys Boulevard Pacoima, CA 91331\n\nSun Valley Health Center: 7223 N. Fair Avenue Sun Valley, CA 91352\n\nSan Fernando Health Center: 1600 San Fernando Road San Fernando, CA 91340",
-    "neighborhood": "San Fernando Valley",
+    "neighborhood": [
+      "San Fernando Valley"
+    ],
     "moreInfo": ""
   },
   "LA County Public Health Centers": {
@@ -732,7 +842,15 @@
     "contactLink": "",
     "website": "http://publichealth.lacounty.gov/chs/phcenters.htm ",
     "address": "Central:\n241 N. Figueroa Street Los Angeles, CA 90012 \n\nGlendale:\n501 N. Glendale Avenue Glendale, CA 91206  \n\nHollywood/Wilshire:\n5205 Melrose Avenue Los Angeles, CA 90038  \n\nRuth Temple:\n3834 S. Western Avenue Los Angeles, CA 90062",
-    "neighborhood": "Central LA, DTLA, Eastside, Harbor, San Fernando Valley, South Central, Westside",
+    "neighborhood": [
+      "Central LA",
+      "DTLA",
+      "Eastside",
+      "Harbor",
+      "San Fernando Valley",
+      "South Central",
+      "Westside"
+    ],
     "moreInfo": "For more locations, see: http://publichealth.lacounty.gov/chs/Docs/DPH-Clinics.pdf "
   },
   "Valley Community Healthcare": {
@@ -763,7 +881,9 @@
     "contactLink": "",
     "website": "https://valleycommunityhealthcare.org ",
     "address": "North Hollywood Center:\n6801 Coldwater Canyon Ave, North Hollywood, CA 91605\n\nNorth Hills Center:\n9119 Haskell Ave, North Hills, CA 91343 (located in James Monroe High School)",
-    "neighborhood": "San Fernando Valley",
+    "neighborhood": [
+      "San Fernando Valley"
+    ],
     "moreInfo": "For more locations, see:\nhttps://www.kyccla.org/contact/locations-maps/ "
   },
   "Koreatown Youth Community Center (KYCC)": {
@@ -798,7 +918,9 @@
     "contactLink": "",
     "website": "https://www.kyccla.org ",
     "address": "3727 West 6th St., Suite 300\nLos Angeles, CA 90020",
-    "neighborhood": "Central LA",
+    "neighborhood": [
+      "Central LA"
+    ],
     "moreInfo": ""
   },
   "Latino Resource Organization": {
@@ -836,7 +958,9 @@
     "contactLink": "",
     "website": "https://www.latinoresource.org ",
     "address": "6736 Laurel Canyon Blvd. #360\nNorth Hollywood. CA\n91606",
-    "neighborhood": "Central LA",
+    "neighborhood": [
+      "Central LA"
+    ],
     "moreInfo": ""
   },
   "Little Tokyo Service Center (LTSC)": {
@@ -871,7 +995,9 @@
     "contactLink": "",
     "website": "https://www.ltsc.org",
     "address": "231 E. Third St., Suite G-106\nLos Angeles, CA 90013",
-    "neighborhood": "DTLA",
+    "neighborhood": [
+      "DTLA"
+    ],
     "moreInfo": ""
   },
   "AbilityFirst": {
@@ -903,7 +1029,10 @@
     "contactLink": "",
     "website": "https://www.abilityfirst.org",
     "address": "789 North Fair Oaks Ave\nPasadena, CA 91103 (administration)\n154 N. Gage Ave. Los Angeles, CA 90063 (East LA Center)",
-    "neighborhood": "Pasadena, Eastside",
+    "neighborhood": [
+      "Pasadena",
+      "Eastside"
+    ],
     "moreInfo": "Flyer (English) with more locations: https://www.abilityfirst.org/wp-content/uploads/2024/11/Eng-Trifold-2024.pdf \nFlyer (Spanish) with more locations: https://www.abilityfirst.org/wp-content/uploads/2024/11/ABILITY-FIRST_Trifold_SPN_8.5x11-002-1-2.pdf"
   },
   "Amputee Coalition": {
@@ -934,7 +1063,9 @@
     "contactLink": "",
     "website": "https://amputee-coalition.org ",
     "address": "601 Pennsylvania Avenue NW, Suite 420, South Building\nWashington, DC 20004",
-    "neighborhood": "Other",
+    "neighborhood": [
+      "Other"
+    ],
     "moreInfo": "To find local resources: https://nllrc.amputee-coalition.org/resources?search%5Bfilter_by%5D=&search%5Bquery%5D=los+angeles&search%5Bradius%5D=100 "
   },
   "Angel City Sports": {
@@ -966,7 +1097,9 @@
     "contactLink": "",
     "website": "https://angelcitysports.org ",
     "address": "6060 Center Drive, 10th Floor, #17, Los Angeles, CA, 90045",
-    "neighborhood": "Westside",
+    "neighborhood": [
+      "Westside"
+    ],
     "moreInfo": ""
   },
   "Disability Rights Legal Center": {
@@ -999,7 +1132,10 @@
     "contactLink": "",
     "website": "https://thedrlc.org ",
     "address": "1001 Wilshire Blvd., Ste 100 \u2013 #3201, Los Angeles, CA 90017 [mailing address only]",
-    "neighborhood": "Other, Remote",
+    "neighborhood": [
+      "Other",
+      "Remote"
+    ],
     "moreInfo": "Legal handbook: https://thedrlc.org/cancer/wp-content/uploads/2022/03/clrc_plh_english_2018_digital-edit-3.11.2022.pdf "
   },
   "Hanger Clinic": {
@@ -1030,7 +1166,9 @@
     "contactLink": "",
     "website": "https://hangerclinic.com ",
     "address": "",
-    "neighborhood": "Other",
+    "neighborhood": [
+      "Other"
+    ],
     "moreInfo": "Find/contact local clinics: https://hangerclinic.com/contact/ "
   },
   "Supplemental Security Income (SSI)": {
@@ -1063,7 +1201,9 @@
     "contactLink": "",
     "website": "https://www.ssa.gov/ssi",
     "address": "",
-    "neighborhood": "Remote",
+    "neighborhood": [
+      "Remote"
+    ],
     "moreInfo": "Apply here:\nhttps://www.ssa.gov/apply/ssi "
   },
   "Social Security Disability Insurance (SSDI)": {
@@ -1095,7 +1235,9 @@
     "contactLink": "",
     "website": "https://www.ssa.gov/disability",
     "address": "",
-    "neighborhood": "Remote",
+    "neighborhood": [
+      "Remote"
+    ],
     "moreInfo": "Apply here: https://www.ssa.gov/apply?benefits=disability&age=adult"
   },
   "Amanecer Community Counseling Service": {
@@ -1130,7 +1272,11 @@
     "contactLink": "",
     "website": "https://amanecerla.org/",
     "address": "1200 Wilshire Blvd, Suite 300 Los Angeles, CA 90017",
-    "neighborhood": "Central LA, DTLA, South Central",
+    "neighborhood": [
+      "Central LA",
+      "DTLA",
+      "South Central"
+    ],
     "moreInfo": ""
   },
   "Peace Over Violence": {
@@ -1164,7 +1310,10 @@
     "contactLink": "",
     "website": "https://www.peaceoverviolence.org/about-us",
     "address": "1541 Wilshire Boulevard, 3 Fl, Los Angeles, CA 90017",
-    "neighborhood": "Central LA, DTLA",
+    "neighborhood": [
+      "Central LA",
+      "DTLA"
+    ],
     "moreInfo": ""
   },
   "YWCA of San Gabriel Valley": {
@@ -1201,7 +1350,9 @@
     "contactLink": "",
     "website": "https://www.ywcasgv.org/domestic-violence-services/",
     "address": "YWCA San Gabriel Valley 101 South Barranca Ave. Covina, CA 91723",
-    "neighborhood": "Other",
+    "neighborhood": [
+      "Other"
+    ],
     "moreInfo": ""
   },
   "Family PACT": {
@@ -1233,7 +1384,9 @@
     "contactLink": "",
     "website": "https://familypact.org",
     "address": "",
-    "neighborhood": "",
+    "neighborhood": [
+      ""
+    ],
     "moreInfo": ""
   },
   "HER Smart Choice - East Los Angeles": {
@@ -1265,7 +1418,10 @@
     "contactLink": "",
     "website": "https://hersmartchoice.com/",
     "address": "East LA: \n2226 E Cesar E Chavez Ave, Los Angeles, CA 90033\n\nHuntington Park:\n7024 Seville Ave Suite A, Huntington Park, CA 90255\n\nLong Beach:\n7024 Seville Ave Suite A, Huntington Park, CA 90255\n\nVan Nuys:\n7220 Woodman Ave #106, Van Nuys, CA 91405",
-    "neighborhood": "Eastside, Other",
+    "neighborhood": [
+      "Eastside",
+      "Other"
+    ],
     "moreInfo": ""
   },
   "Los Angeles Abortion Support Collective": {
@@ -1300,7 +1456,9 @@
     "contactLink": "",
     "website": "https://www.laabortionsupport.org/",
     "address": "",
-    "neighborhood": "",
+    "neighborhood": [
+      ""
+    ],
     "moreInfo": ""
   },
   "Los Angeles Regional Food Bank": {
@@ -1336,7 +1494,9 @@
     "contactLink": "",
     "website": "https://www.lafoodbank.org/",
     "address": "1734 East 41st Street, Los Angeles, CA 90058",
-    "neighborhood": "",
+    "neighborhood": [
+      ""
+    ],
     "moreInfo": ""
   },
   "M\u00e1s Fresco Program": {
@@ -1367,7 +1527,9 @@
     "contactLink": "",
     "website": "https://masfresco.org/",
     "address": "",
-    "neighborhood": "",
+    "neighborhood": [
+      ""
+    ],
     "moreInfo": ""
   },
   "California Women, Infants, and Children (WIC)": {
@@ -1401,7 +1563,9 @@
     "contactLink": "",
     "website": "https://www.phfewic.org/en/home/",
     "address": "",
-    "neighborhood": "",
+    "neighborhood": [
+      ""
+    ],
     "moreInfo": ""
   },
   "FEEDLA YMCA Metro LA": {
@@ -1432,7 +1596,9 @@
     "contactLink": "",
     "website": "https://www.ymcala.org/feedla ",
     "address": "",
-    "neighborhood": "",
+    "neighborhood": [
+      ""
+    ],
     "moreInfo": ""
   },
   "Aviva": {
@@ -1469,7 +1635,9 @@
     "contactLink": "",
     "website": "https://aviva.org/",
     "address": "7120 Franklin Ave, Los Angeles, CA 90046",
-    "neighborhood": "",
+    "neighborhood": [
+      ""
+    ],
     "moreInfo": ""
   },
   "In-Home Supportive Services (IHSS)": {
@@ -1501,7 +1669,9 @@
     "contactLink": "",
     "website": "https://www.cdss.ca.gov/in-home-supportive-services",
     "address": "",
-    "neighborhood": "",
+    "neighborhood": [
+      ""
+    ],
     "moreInfo": ""
   },
   "Los Angeles Homeless Services Authority (LAHSA)": {
@@ -1535,7 +1705,9 @@
     "contactLink": "",
     "website": "https://www.lahsa.org/",
     "address": "707 Wilshire Blvd Suite 1000, Los Angeles, CA 90017",
-    "neighborhood": "",
+    "neighborhood": [
+      ""
+    ],
     "moreInfo": ""
   },
   "PATH LA": {
@@ -1570,7 +1742,9 @@
     "contactLink": "",
     "website": "https://epath.org/regions/greater-los-angeles/",
     "address": "340 N. Madison Ave., Los Angeles, CA 90004",
-    "neighborhood": "",
+    "neighborhood": [
+      ""
+    ],
     "moreInfo": ""
   },
   "Union Rescue Mission": {
@@ -1613,7 +1787,9 @@
     "contactLink": "",
     "website": "https://urm.org/",
     "address": "545 San Pedro St., Los Angeles, CA 90013",
-    "neighborhood": "",
+    "neighborhood": [
+      ""
+    ],
     "moreInfo": ""
   },
   "California Against Slavery": {
@@ -1644,7 +1820,9 @@
     "contactLink": "",
     "website": "https://californiaagainstslavery.org",
     "address": "P.O. Box 19323 | San Diego CA 92159 (Mailing Address)",
-    "neighborhood": "",
+    "neighborhood": [
+      ""
+    ],
     "moreInfo": ""
   },
   "Coalition to Abolish Slavery and Trafficking (CAST)": {
@@ -1678,7 +1856,9 @@
     "contactLink": "",
     "website": "https://www.castla.org ",
     "address": "3580 Wilshire Blvd, #900-37\nLos Angeles CA 90010",
-    "neighborhood": "Central LA",
+    "neighborhood": [
+      "Central LA"
+    ],
     "moreInfo": "Report a tip: 1 (888) 373-7888"
   },
   "East Los Angeles Women\u2019s Center": {
@@ -1710,7 +1890,10 @@
     "contactLink": "https://www.elawc.org/contact_us",
     "website": "https://www.elawc.org",
     "address": "Main Office: 1431 S. Atlantic Blvd., Los Angeles, CA 90022\nCommerce Center: 1508 E. Washington Blvd., Commerce CA 90040\nThe Wellness Center at Los Angeles General Medical Center: 1200 State St. Suite 1049, Los Angeles, CA 90033",
-    "neighborhood": "Central LA, Eastside",
+    "neighborhood": [
+      "Central LA",
+      "Eastside"
+    ],
     "moreInfo": ""
   },
   "Gems Uncovered": {
@@ -1741,7 +1924,9 @@
     "contactLink": "https://gemsuncovered.org/contact/",
     "website": "https://gemsuncovered.org ",
     "address": "1 World Trade Center\nSuite 857\nLong Beach, CA 90831",
-    "neighborhood": "Long Beach",
+    "neighborhood": [
+      "Long Beach"
+    ],
     "moreInfo": ""
   },
   "Humansave": {
@@ -1772,7 +1957,9 @@
     "contactLink": "",
     "website": "https://humansave.org",
     "address": "",
-    "neighborhood": "",
+    "neighborhood": [
+      ""
+    ],
     "moreInfo": ""
   },
   "Journey Out": {
@@ -1803,7 +1990,9 @@
     "contactLink": "https://journeyout.org/contact-us/",
     "website": "https://journeyout.org",
     "address": "7136 Haskell Ave Suite 125, Van Nuys, CA 91406",
-    "neighborhood": "San Fernando Valley",
+    "neighborhood": [
+      "San Fernando Valley"
+    ],
     "moreInfo": ""
   },
   "LA Center for Law and Justice": {
@@ -1834,7 +2023,9 @@
     "contactLink": "",
     "website": "https://www.survivorjusticecenter.org/human-trafficking-project/",
     "address": "Survivor Justice Center\n5301 Whittier Blvd., 4th Floor\nLos Angeles, CA 90022",
-    "neighborhood": "Eastside",
+    "neighborhood": [
+      "Eastside"
+    ],
     "moreInfo": "Clients seen by appointment only, no walk-ins.\n\n"
   },
   "National Human Trafficking Hotline": {
@@ -1866,7 +2057,9 @@
     "contactLink": "",
     "website": "https://humantraffickinghotline.org/en",
     "address": "",
-    "neighborhood": "Remote",
+    "neighborhood": [
+      "Remote"
+    ],
     "moreInfo": ""
   },
   "Saving Innocence": {
@@ -1899,7 +2092,9 @@
     "contactLink": "https://savinginnocence.org/contact-us/",
     "website": "https://savinginnocence.org",
     "address": "PO BOX 93037, Los Angeles, CA 90093 (Mailing Address)",
-    "neighborhood": "",
+    "neighborhood": [
+      ""
+    ],
     "moreInfo": ""
   },
   "Carecen": {
@@ -1931,7 +2126,9 @@
     "contactLink": "",
     "website": "https://www.carecen-la.org/about_us ",
     "address": "2845 W 7th St\nLos Angeles, CA 90005",
-    "neighborhood": "DTLA",
+    "neighborhood": [
+      "DTLA"
+    ],
     "moreInfo": ""
   },
   "El Rescate Legal Services": {
@@ -1965,7 +2162,9 @@
     "contactLink": "",
     "website": "https://www.elrescate.org/english/ ",
     "address": "1605 W. Olympic Blvd. Suite 516 Los Angeles, CA 9001",
-    "neighborhood": "DTLA",
+    "neighborhood": [
+      "DTLA"
+    ],
     "moreInfo": ""
   },
   "Esperanza Immigrant Rights Project": {
@@ -1997,7 +2196,9 @@
     "contactLink": "",
     "website": "https://www.esperanza-la.org/our-story ",
     "address": "1530 James M Wood Blvd, Los Angeles, CA 90015",
-    "neighborhood": "DTLA",
+    "neighborhood": [
+      "DTLA"
+    ],
     "moreInfo": ""
   },
   "International Rescue Committee\u2014Los Angeles": {
@@ -2028,7 +2229,9 @@
     "contactLink": "",
     "website": "https://www.rescue.org/united-states/los-angeles-ca ",
     "address": "25 N. Maryland Ave\nGlendale, CA 91206",
-    "neighborhood": "San Fernando Valley",
+    "neighborhood": [
+      "San Fernando Valley"
+    ],
     "moreInfo": ""
   },
   "Keck Human Rights Clinic\r": {
@@ -2060,7 +2263,9 @@
     "contactLink": "",
     "website": "https://www.keckhumanrights.com ",
     "address": "",
-    "neighborhood": "DTLA",
+    "neighborhood": [
+      "DTLA"
+    ],
     "moreInfo": "Submit a referral: https://sites.usc.edu/keckhumanrights/direct-referral-case-submissions/ \n\nSocial Work Branch Website:\nhttps://dworakpeck.usc.edu/clinical-programs/sdp-keck-human-rights-clinic"
   },
   "USC First Gen Plus Success Center": {
@@ -2092,7 +2297,9 @@
     "contactLink": "",
     "website": "https://firstgenplussc.usc.edu ",
     "address": "3607 Trousdale Parkway, TCC 224\nLos Angeles, CA 90089",
-    "neighborhood": "DTLA",
+    "neighborhood": [
+      "DTLA"
+    ],
     "moreInfo": ""
   },
   "Los Angeles Area Pro Bono Directory | The State Bar of California": {
@@ -2124,7 +2331,10 @@
     "contactLink": "",
     "website": "https://www.calbar.ca.gov/Access-to-Justice/Pro-Bono/Pro-Bono-Directory/Los-Angeles-Area",
     "address": "845 S. Figueroa St.\nLos Angeles, CA 90017 [for LA Bar office, better to contact individuals in directory]",
-    "neighborhood": "Other, DTLA",
+    "neighborhood": [
+      "Other",
+      "DTLA"
+    ],
     "moreInfo": ""
   },
   "Neighborhood Legal Services of Los Angeles (NLSLA)": {
@@ -2155,7 +2365,11 @@
     "contactLink": "",
     "website": "https://nlsla.org/services/help/",
     "address": "Glendale:\n1104 East Chevy Chase Dr\nGlendale, CA 91205\n\nPacoima\n13327 Van Nuys Blvd\nPacoima, CA 91331\n\nEl Monte\n3629 Santa Anita Ave #109\nEl Monte, CA 91731\n\nThe Wellness Center\nHistoric General Hospital\n1200 N State St #1014\nLos Angeles, CA 90033",
-    "neighborhood": "Other, Central LA, DTLA",
+    "neighborhood": [
+      "Other",
+      "Central LA",
+      "DTLA"
+    ],
     "moreInfo": "Application: https://nlsla.org/services/help/"
   },
   "Los Angeles LGBT Center": {
@@ -2186,7 +2400,9 @@
     "contactLink": "https://lalgbtcenter.org/about/contact-us/",
     "website": "https://lalgbtcenter.org/",
     "address": "1625 N. Schrader Blvd, Los Angeles, CA 90028-6213 (McDonal/Wright Building - health and mental health services, and pharmacy)",
-    "neighborhood": "Central LA",
+    "neighborhood": [
+      "Central LA"
+    ],
     "moreInfo": "Locations and more phone numbers: https://lalgbtcenter.org/about/contact-us/"
   },
   "Youth Pride Association": {
@@ -2218,7 +2434,9 @@
     "contactLink": "",
     "website": "https://www.ypapride.org/",
     "address": "PO Box 3058 Camarillo, CA 93011-3058",
-    "neighborhood": "",
+    "neighborhood": [
+      ""
+    ],
     "moreInfo": ""
   },
   "CalHOPE ": {
@@ -2252,7 +2470,9 @@
     "contactLink": "https://www.calhopeconnect.org/#",
     "website": "https://www.calhope.org/",
     "address": "",
-    "neighborhood": "",
+    "neighborhood": [
+      ""
+    ],
     "moreInfo": ""
   },
   "Cal-MAP": {
@@ -2283,7 +2503,9 @@
     "contactLink": "https://cal-map.org/s/about-us/new-consult",
     "website": "https://cal-map.org/s/?language=en_US",
     "address": "",
-    "neighborhood": "",
+    "neighborhood": [
+      ""
+    ],
     "moreInfo": ""
   },
   "Crisis Text Line": {
@@ -2315,7 +2537,9 @@
     "contactLink": "https://connect.crisistextline.org/chat?utm_source=popup",
     "website": "https://www.crisistextline.org/",
     "address": "",
-    "neighborhood": "Remote",
+    "neighborhood": [
+      "Remote"
+    ],
     "moreInfo": ""
   },
   "CDC Disaster Distress Hotline": {
@@ -2350,7 +2574,9 @@
     "contactLink": "",
     "website": "https://www.samhsa.gov/find-help/helplines/disaster-distress-helpline",
     "address": "",
-    "neighborhood": "",
+    "neighborhood": [
+      ""
+    ],
     "moreInfo": ""
   },
   "Family Urgent Response System": {
@@ -2382,7 +2608,9 @@
     "contactLink": "",
     "website": "https://cal-furs.org/ ",
     "address": "",
-    "neighborhood": "",
+    "neighborhood": [
+      ""
+    ],
     "moreInfo": ""
   },
   "iPrevail Free Mental Health Support for LA County": {
@@ -2415,7 +2643,9 @@
     "contactLink": "",
     "website": "https://lacounty.iprevail.com/",
     "address": "",
-    "neighborhood": "",
+    "neighborhood": [
+      ""
+    ],
     "moreInfo": ""
   },
   "Los Angeles Homeless Outreach Portal": {
@@ -2447,7 +2677,9 @@
     "contactLink": "https://www.lahsa.org/portal/apps/la-hop/request",
     "website": "https://www.lahsa.org/portal/apps/la-hop/",
     "address": "",
-    "neighborhood": "Remote",
+    "neighborhood": [
+      "Remote"
+    ],
     "moreInfo": ""
   },
   "Mental Health Services and Referrals LA County": {
@@ -2479,7 +2711,9 @@
     "contactLink": "",
     "website": "https://dmh.lacounty.gov/get-help-now/",
     "address": "",
-    "neighborhood": "",
+    "neighborhood": [
+      ""
+    ],
     "moreInfo": ""
   },
   "National Suicide Prevention Hotline": {
@@ -2510,7 +2744,9 @@
     "contactLink": "",
     "website": "https://988lifeline.org/",
     "address": "",
-    "neighborhood": "Remote",
+    "neighborhood": [
+      "Remote"
+    ],
     "moreInfo": ""
   },
   "National Alliance on Mental Illness (NAMI)": {
@@ -2541,7 +2777,9 @@
     "contactLink": "https://www.nami.org/support-education/nami-helpline/",
     "website": "https://www.nami.org/",
     "address": "",
-    "neighborhood": "",
+    "neighborhood": [
+      ""
+    ],
     "moreInfo": ""
   },
   "TheHopeLine": {
@@ -2575,7 +2813,9 @@
     "contactLink": "https://www.thehopeline.com/contact-us/",
     "website": "https://www.thehopeline.com/",
     "address": "",
-    "neighborhood": "Remote",
+    "neighborhood": [
+      "Remote"
+    ],
     "moreInfo": ""
   },
   "The Trevor Project Lifeline": {
@@ -2608,7 +2848,9 @@
     "contactLink": "https://www.thetrevorproject.org/get-help/",
     "website": "https://www.thetrevorproject.org/",
     "address": "",
-    "neighborhood": "Remote",
+    "neighborhood": [
+      "Remote"
+    ],
     "moreInfo": ""
   },
   "Veterans Crisis Line": {
@@ -2639,7 +2881,9 @@
     "contactLink": "https://www.veteranscrisisline.net/get-help-now/chat/",
     "website": "https://www.veteranscrisisline.net/",
     "address": "",
-    "neighborhood": "Remote",
+    "neighborhood": [
+      "Remote"
+    ],
     "moreInfo": ""
   },
   "CORE (Connecting to Opportunities for Recovery and Engagement) Centers": {
@@ -2671,7 +2915,11 @@
     "contactLink": "http://publichealth.lacounty.gov/sapc/contactus.htm?tm (list of contacts)",
     "website": "http://publichealth.lacounty.gov/sapc/public/corecenter/?lang=en",
     "address": "1000 South Fremont Ave, Building A-9 East, 3rd Floor\nAlhambra, CA 91803 (Main office, not a CORE center)\n\n11833 S. Wilmington Avenue, Los Angeles, CA 90059\n(MLK Healing Center)",
-    "neighborhood": "Central LA, Other, San Fernando Valley",
+    "neighborhood": [
+      "Central LA",
+      "Other",
+      "San Fernando Valley"
+    ],
     "moreInfo": "Full list of locations: http://publichealth.lacounty.gov/sapc/public/corecenter/?lang=en"
   },
   "Harm Reduction Syringe Services Programs": {
@@ -2703,7 +2951,18 @@
     "contactLink": "",
     "website": "https://www.cdph.ca.gov/Programs/CID/DOA/pages/oa_prev_sepdirectory.aspx",
     "address": "1000 S. Fremont Avenue, Unit 22, Bldg. A-6, 4th Floor, Alhambra 91803 (USC Street Medicine\u200b)\n\n\u200b307 S. Central Avenue, Los Angeles 90013 (Los Angeles Centers for Alcohol and Drug Abuse (LA CADA)\u200b)",
-    "neighborhood": "Central LA, DTLA, Eastside, Harbor, San Fernando Valley, South Central, Westside, Pasadena, Long Beach, Other",
+    "neighborhood": [
+      "Central LA",
+      "DTLA",
+      "Eastside",
+      "Harbor",
+      "San Fernando Valley",
+      "South Central",
+      "Westside",
+      "Pasadena",
+      "Long Beach",
+      "Other"
+    ],
     "moreInfo": "Full list of locations on website"
   },
   "LA County Substance Abuse Service Helpline (SASH)": {
@@ -2736,7 +2995,17 @@
     "contactLink": "",
     "website": "https://sapccis.ph.lacounty.gov/sbat/",
     "address": "426 San Pedro Street,\nLos Angeles, CA 90013 (Los Angeles Centers for Alcohol and Drug Abuse)",
-    "neighborhood": "Central LA, DTLA, Eastside, Harbor, San Fernando Valley, South Central, Westside, Pasadena, Long Beach",
+    "neighborhood": [
+      "Central LA",
+      "DTLA",
+      "Eastside",
+      "Harbor",
+      "San Fernando Valley",
+      "South Central",
+      "Westside",
+      "Pasadena",
+      "Long Beach"
+    ],
     "moreInfo": "Full list of locations on website"
   },
   "Over-the-Counter Naloxone Access ": {
@@ -2767,7 +3036,18 @@
     "contactLink": "",
     "website": "https://narcan.com/en/buy",
     "address": "",
-    "neighborhood": "Central LA, DTLA, Eastside, Harbor, San Fernando Valley, South Central, Westside, Pasadena, Long Beach, Other",
+    "neighborhood": [
+      "Central LA",
+      "DTLA",
+      "Eastside",
+      "Harbor",
+      "San Fernando Valley",
+      "South Central",
+      "Westside",
+      "Pasadena",
+      "Long Beach",
+      "Other"
+    ],
     "moreInfo": "More information: http://publichealth.lacounty.gov/sapc/public/harm-reduction/\nFull list of locations on website"
   },
   "ACCESS Paratransit": {
@@ -2801,7 +3081,9 @@
     "contactLink": "",
     "website": "https://accessla.org/",
     "address": "3449 Santa Anita Ave., El Monte, 91731 (Access Services Headquarters)",
-    "neighborhood": "Other",
+    "neighborhood": [
+      "Other"
+    ],
     "moreInfo": "SoCal ADA Paratransit: https://accessla.org/other_mobility_resources/other_mobility_resourcessocala.html \n\nRegional transit routes: https://accessla.org/other_mobility_resources/links_to_local_transit_agencie.html"
   },
   "AMTRAK": {
@@ -2833,7 +3115,9 @@
     "contactLink": "",
     "website": "https://www.amtrak.com/accessible-travel-services ",
     "address": "",
-    "neighborhood": "Other",
+    "neighborhood": [
+      "Other"
+    ],
     "moreInfo": "Form: https://www.amtrak.com/contact-us/email.html, select \"Accessibility Requests/Feedback\" as subject option"
   },
   "Cityride Dial-A-Ride": {
@@ -2866,7 +3150,9 @@
     "contactLink": "",
     "website": "https://www.ladottransit.com/cityride/",
     "address": "Cityride P.O. Box 866003 Los Angeles, CA 90086 [mailing address only]",
-    "neighborhood": "Other",
+    "neighborhood": [
+      "Other"
+    ],
     "moreInfo": "Guide (English): https://www.ladottransit.com/cityride/pdf/Cityride_ProgramGuide_April2019.pdf \nGuide (Spanish): https://www.ladottransit.com/cityride/pdf/Cityride_ProgramGuide_April2019_esp.pdf "
   },
   "Dial-A-Ride Services (LA Public Works)": {
@@ -2900,7 +3186,9 @@
     "contactLink": "",
     "website": "https://pw.lacounty.gov/transit/DAR.aspx",
     "address": "",
-    "neighborhood": "Other",
+    "neighborhood": [
+      "Other"
+    ],
     "moreInfo": "Service areas shown here: https://pw.lacounty.gov/transit/DAR.aspx \n\nPart of ACCESS Paratransit"
   },
   "LA Care": {
@@ -2932,7 +3220,9 @@
     "contactLink": "",
     "website": "https://www.lacare.org/members/transportation",
     "address": "L.A. Care Health Plan\n1200 W. 7th Street\nLos Angeles, CA 90017",
-    "neighborhood": "Other",
+    "neighborhood": [
+      "Other"
+    ],
     "moreInfo": ""
   },
   "Los Angeles Metro": {
@@ -2964,7 +3254,9 @@
     "contactLink": "",
     "website": "https://www.taptogo.net/Reduced_Fare#senior (seniors)\nhttps://www.taptogo.net/Reduced_Fare#disability (disabilities)\nhttps://www.taptogo.net/Reduced_Fare#college (college students)\nhttps://www.taptogo.net/Reduced_Fare#student (K12 students)",
     "address": "TAP Reduced Fare Office\nOne Gateway Plaza\nMail Stop 99-PL-4\nLos Angeles, CA 90012-2952 [mailing address, multiple physical addresses]",
-    "neighborhood": "Other",
+    "neighborhood": [
+      "Other"
+    ],
     "moreInfo": ""
   },
   "Wellness Center at Historic General Hospital": {
@@ -3010,7 +3302,9 @@
     "contactLink": "",
     "website": "https://www.thewellnesscenterla.org/",
     "address": "Historic General Hospital, 1st Floor, 1200 N. State Street, Los Angeles , CA 90033",
-    "neighborhood": "Eastside",
+    "neighborhood": [
+      "Eastside"
+    ],
     "moreInfo": ""
   },
   "Mexican American Opportunity Foundation": {
@@ -3047,7 +3341,10 @@
     "contactLink": "https://maof.org/contact",
     "website": "https://maof.org",
     "address": "5100 S. Eastern Ave.,\n2nd Floor, Suite 200\nCommerce, CA 90040 (MAOF Los Angeles)\n\n401 N. Garfield Ave.,\nMontebello, CA 90640 (\nMAOF Headquarters)",
-    "neighborhood": "Eastside, Other",
+    "neighborhood": [
+      "Eastside",
+      "Other"
+    ],
     "moreInfo": "2130 Chester Ave., Suite 200\nBakersfield, CA 93301\n(661) 558-0103\n(MAOF Skill Center)\n\n11 Quail Run Circle, Suite 101\nSalinas, CA 93907\n(831) 424-6939 (MAOF Monterey County)"
   },
   "USC Street Medicine": {
@@ -3079,7 +3376,9 @@
     "contactLink": "",
     "website": "https://keck.usc.edu/street-medicine/",
     "address": "1975 Zonal Ave.\nLos Angeles, CA 90033 (Keck School of Medicine Address; Street Medicine team operates in many different neighborhoods)",
-    "neighborhood": "Central LA",
+    "neighborhood": [
+      "Central LA"
+    ],
     "moreInfo": "Service area map: https://www.google.com/maps/d/u/0/viewer?mid=14UIzy6695eW1RYwtGQamaqyKNkBDMfo&ll=34.03446502592245%2C-118.26730795129396&z=12"
   },
   "Violence Intervention Program (VIP)": {
@@ -3116,7 +3415,9 @@
     "contactLink": "",
     "website": "https://violenceinterventionprogram.org",
     "address": "1721 Griffin Avenue\nLos Angeles, CA 90031",
-    "neighborhood": "Eastside",
+    "neighborhood": [
+      "Eastside"
+    ],
     "moreInfo": ""
   },
   "Job Corps": {
@@ -3153,7 +3454,9 @@
     "contactLink": "https://www.jobcorps.gov/contact",
     "website": "https://www.jobcorps.gov",
     "address": "Multiple locations: https://www.jobcorps.gov/explore ",
-    "neighborhood": "",
+    "neighborhood": [
+      ""
+    ],
     "moreInfo": "Application portal: https://enroll.jobcorps.gov/?_gl=1*1qgjc24*_gcl_au*MjA1ODYyNDU5OC4xNzQ1MDM5MjEw*_ga*MTAyMjE4NjQ2NS4xNzQ1MDM5MjEw*_ga_5SSPYG6GYM*MTc0NTAzOTIwOS4xLjEuMTc0NTA0MDQxOC42MC4wLjA."
   },
   "Youth Build": {
@@ -3186,7 +3489,9 @@
     "contactLink": "https://youthbuild.org/contact-us/ ",
     "website": "https://youthbuild.org ",
     "address": "YouthBuild Global\n1785 Columbus Avenue\nSuite 500\nRoxbury, MA 02119 (mailing address)\n\nMultiple locations:\nhttps://youthbuild.org/our-programs/ ",
-    "neighborhood": "",
+    "neighborhood": [
+      ""
+    ],
     "moreInfo": "More information: https://www.dol.gov/agencies/eta/youth/youthbuild "
   },
   "Homeboy Industries": {
@@ -3221,7 +3526,9 @@
     "contactLink": "https://homeboyindustries.org/contact-us/contact/",
     "website": "https://homeboyindustries.org",
     "address": "130 W. Bruno St., Los Angeles, CA 30019",
-    "neighborhood": "DTLA",
+    "neighborhood": [
+      "DTLA"
+    ],
     "moreInfo": ""
   },
   "House of Ruth": {
@@ -3254,7 +3561,9 @@
     "contactLink": "",
     "website": "https://losangeleshouseofruth.com",
     "address": "Written communications only:\nLos Angeles House of Ruth\nPO Box 33288\nLos Angeles, CA 90033-1727\n\nLocations of houses confidential, but near Downtown LA",
-    "neighborhood": "DTLA",
+    "neighborhood": [
+      "DTLA"
+    ],
     "moreInfo": ""
   },
   "Jewish Family Service LA": {
@@ -3295,7 +3604,11 @@
     "contactLink": "",
     "website": "https://www.jfsla.org",
     "address": "330 N. Fairfax Avenue, Los Angeles, CA 90036 (Main, but there are mutliple locations)",
-    "neighborhood": "Westside, Central LA, San Fernando Valley",
+    "neighborhood": [
+      "Westside",
+      "Central LA",
+      "San Fernando Valley"
+    ],
     "moreInfo": ""
   },
   "Meals on Wheels America": {
@@ -3326,7 +3639,17 @@
     "contactLink": "https://www.mealsonwheelsamerica.org/find-meals#modal-subscription (newletter subscription)",
     "website": "https://www.mealsonwheelsamerica.org",
     "address": "1550 Crystal Drive, Suite 1004\nArlington, Virginia 22202 (Mailing address)",
-    "neighborhood": "Central LA, DTLA, Eastside, Harbor, San Fernando Valley, South Central, Westside, Pasadena, Long Beach",
+    "neighborhood": [
+      "Central LA",
+      "DTLA",
+      "Eastside",
+      "Harbor",
+      "San Fernando Valley",
+      "South Central",
+      "Westside",
+      "Pasadena",
+      "Long Beach"
+    ],
     "moreInfo": "Link to find meals: https://www.mealsonwheelsamerica.org/find-meals"
   },
   "Via Care LA": {
@@ -3362,7 +3685,10 @@
     "contactLink": "https://www.viacarela.org/contact-us/",
     "website": "https://www.viacarela.org ",
     "address": "Via Care\n3601 E. 1st Street\nLos Angeles, CA 90063 (Mailing address)",
-    "neighborhood": "Eastside, Central LA",
+    "neighborhood": [
+      "Eastside",
+      "Central LA"
+    ],
     "moreInfo": "Link to request an appointment: https://www.viacarela.org/patients-visitors/request-an-appointment/\n\nLocations with hours:\nhttps://www.viacarela.org/location-hours "
   },
   "Neighborhood Legal Services": {
@@ -3399,7 +3725,10 @@
     "contactLink": "",
     "website": "https://nlsla.org",
     "address": "Glendale:\n1104 East Chevy Chase Dr\nGlendale, CA 91205\n\nPacoima:\n13327 Van Nuys Blvd\nPacoima, CA 91331\n\nEl Monte:\n3629 Santa Anita Ave #109\nEl Monte, CA 91731\n\nThe Wellness Center:\nHistoric General Hospital\n1200 N State St #1014\nLos Angeles, CA 90033",
-    "neighborhood": "Central LA, San Fernando Valley",
+    "neighborhood": [
+      "Central LA",
+      "San Fernando Valley"
+    ],
     "moreInfo": "Apply here: https://nlslash.legalserver.org/modules/matter/extern_intake.php?pid=157&h=bcaf65&"
   },
   "Bet Tzedek": {
@@ -3438,7 +3767,9 @@
     "contactLink": "",
     "website": "https://bettzedek.org",
     "address": "3250 Wilshire Blvd.\n13th Floor\nLos Angeles, CA 90010",
-    "neighborhood": "Central LA",
+    "neighborhood": [
+      "Central LA"
+    ],
     "moreInfo": "Apply here: https://btlsoi.legalserver.org/modules/matter/extern_intake.php?pid=129&h=daa817&"
   },
   "Project Angel Food": {
@@ -3471,7 +3802,17 @@
     "contactLink": "",
     "website": "https://www.angelfood.org",
     "address": "922 Vine Street\nLos Angeles, California 90038",
-    "neighborhood": "Central LA, DTLA, Eastside, Harbor, San Fernando Valley, Westside, Pasadena, South Central, Long Beach",
+    "neighborhood": [
+      "Central LA",
+      "DTLA",
+      "Eastside",
+      "Harbor",
+      "San Fernando Valley",
+      "Westside",
+      "Pasadena",
+      "South Central",
+      "Long Beach"
+    ],
     "moreInfo": "Apply here (English): https://cdn.prod.website-files.com/5fd8e154f828cff928e57641/63222e422094be9a069ffbc2_PAF%20Client%20Application%20(English%20-%20Aug%202022).pdf\n\nApply here (Spanish): https://cdn.prod.website-files.com/5fd8e154f828cff928e57641/63222e5cee95dc7754d972f4_PAF%20Client%20Application%20(Spanish%20-%20Aug%202022).pdf"
   },
   "Housing for Health": {
@@ -3505,7 +3846,17 @@
     "contactLink": "",
     "website": "https://dhs.lacounty.gov/housing-for-health/our-services/housing-for-health/",
     "address": "",
-    "neighborhood": "Central LA, DTLA, Eastside, Harbor, San Fernando Valley, South Central, Westside, Pasadena, Long Beach",
+    "neighborhood": [
+      "Central LA",
+      "DTLA",
+      "Eastside",
+      "Harbor",
+      "San Fernando Valley",
+      "South Central",
+      "Westside",
+      "Pasadena",
+      "Long Beach"
+    ],
     "moreInfo": ""
   },
   "Illumination Foundation": {
@@ -3538,7 +3889,9 @@
     "contactLink": "",
     "website": "https://www.ifhomeless.org",
     "address": "Anaheim Service Center (Families needing housing)\n883 S. Anaheim Blvd., Anaheim, CA 92805\n\nStanton Housing Office (Individuals needing housing)\n7855 Katella Ave., Stanton, CA 90680\n\nSanta Ana Corporate Office (Corporate Contact)\n2871 Pullman St., Santa Ana, CA 92705",
-    "neighborhood": "Orange County",
+    "neighborhood": [
+      "Orange County"
+    ],
     "moreInfo": ""
   },
   "David L. Murphy Sobering Center": {
@@ -3569,7 +3922,9 @@
     "contactLink": "https://www.exodusrecovery.com/contact-us/ ",
     "website": "https://www.exodusrecovery.com/sobering-center-downtown-los-angeles/",
     "address": "640 Maple Avenue\nLos Angeles, CA  90014",
-    "neighborhood": "DTLA",
+    "neighborhood": [
+      "DTLA"
+    ],
     "moreInfo": "More Exodus locations here: https://www.exodusrecovery.com/locations/"
   },
   "Rancho Los Amigos": {
@@ -3603,7 +3958,9 @@
     "contactLink": "",
     "website": "https://dhs.lacounty.gov/rancho/",
     "address": "",
-    "neighborhood": "",
+    "neighborhood": [
+      ""
+    ],
     "moreInfo": "To make an appointment: https://dhs.lacounty.gov/rancho/patient-and-visitor/admissions-appointments/outpatient-referrals-and-appointments/"
   },
   "MAMA\u2019s Neighborhood Program": {
@@ -3638,7 +3995,17 @@
     "contactLink": "",
     "website": "https://dhs.lacounty.gov/womens-health/our-services/womens-health/prenatal/mamas-neighborhood/",
     "address": "",
-    "neighborhood": "Central LA, DTLA, Eastside, Harbor, San Fernando Valley, South Central, Westside, Pasadena, Long Beach",
+    "neighborhood": [
+      "Central LA",
+      "DTLA",
+      "Eastside",
+      "Harbor",
+      "San Fernando Valley",
+      "South Central",
+      "Westside",
+      "Pasadena",
+      "Long Beach"
+    ],
     "moreInfo": "Locations: https://dhs.lacounty.gov/womens-health/our-services/womens-health/find-a-clinic/"
   },
   "Al Otro Lado": {
@@ -3674,7 +4041,9 @@
     "contactLink": "",
     "website": "https://alotrolado.org",
     "address": "511 E. San Ysidro Blvd., # 333 \nSan Ysidro, CA 92173 (Mailing address)",
-    "neighborhood": "",
+    "neighborhood": [
+      ""
+    ],
     "moreInfo": ""
   },
   "Transition Age Youth (TAY)": {
@@ -3709,7 +4078,9 @@
     "contactLink": "",
     "website": "https://www.hcd.ca.gov/grants-and-funding/programs-active/transitional-age-youth-program",
     "address": "651 Bannon Street\nSacramento, CA 95811 (California Department of Housing & Community Development, Mailing address/office)",
-    "neighborhood": "",
+    "neighborhood": [
+      ""
+    ],
     "moreInfo": "Funding for agencies, not individuals"
   },
   "Adolescent Care and Transition (ACT) Clinic": {
@@ -3744,7 +4115,9 @@
     "contactLink": "",
     "website": "https://dhs.lacounty.gov/medical-hubs/our-services/home/medical-hubs-locations/lageneral-medical-center/",
     "address": "2010 Zonal Avenue, 3rd floor, 3P-40A, Los Angeles, CA 90033",
-    "neighborhood": "Central LA",
+    "neighborhood": [
+      "Central LA"
+    ],
     "moreInfo": ""
   },
   "National Maternal Mental Health Hotline": {
@@ -3778,7 +4151,9 @@
     "contactLink": "",
     "website": "https://mchb.hrsa.gov/programs-impact/national-maternal-mental-health-hotline",
     "address": "",
-    "neighborhood": "Remote",
+    "neighborhood": [
+      "Remote"
+    ],
     "moreInfo": ""
   },
   "New Familia": {
@@ -3812,7 +4187,9 @@
     "contactLink": "",
     "website": "https://linktr.ee/newfamiliahealth",
     "address": "2716 N Broadway Suite 203, \nLos Angeles, CA 90031",
-    "neighborhood": "Eastside",
+    "neighborhood": [
+      "Eastside"
+    ],
     "moreInfo": ""
   },
   "LAGMC CARES Mobile Food Pantry": {
@@ -3844,7 +4221,9 @@
     "contactLink": "",
     "website": "https://dhs.lacounty.gov/lageneral/pec-events/cares-food-distribution/",
     "address": "1200 N State Street, Los Angeles, CA 90033 (Walkway between Building B and Old General Hospital)",
-    "neighborhood": "Eastside",
+    "neighborhood": [
+      "Eastside"
+    ],
     "moreInfo": ""
   },
   "Postpartum Support International (PSI)": {
@@ -3877,7 +4256,9 @@
     "contactLink": "https://postpartum.net/get-help/",
     "website": "https://postpartum.net/",
     "address": "",
-    "neighborhood": "Remote",
+    "neighborhood": [
+      "Remote"
+    ],
     "moreInfo": ""
   },
   "Maternal Mental Health Now": {
@@ -3911,7 +4292,9 @@
     "contactLink": "",
     "website": "https://maternalmentalhealthnow.org",
     "address": "",
-    "neighborhood": "Remote",
+    "neighborhood": [
+      "Remote"
+    ],
     "moreInfo": ""
   },
   "Covered California": {
@@ -3944,7 +4327,9 @@
     "contactLink": "",
     "website": "https://www.coveredca.com",
     "address": "",
-    "neighborhood": "Remote",
+    "neighborhood": [
+      "Remote"
+    ],
     "moreInfo": "Enrollment available year-round for Medi-Cal; open enrollment and special enrollment periods for others."
   },
   "Al-Anon": {
@@ -3977,7 +4362,9 @@
     "contactLink": "",
     "website": "https://al-anon.org",
     "address": "",
-    "neighborhood": "",
+    "neighborhood": [
+      ""
+    ],
     "moreInfo": ""
   },
   "Alcoholics Anonymous": {
@@ -4009,7 +4396,9 @@
     "contactLink": "",
     "website": "https://www.aa.org",
     "address": "",
-    "neighborhood": "Remote",
+    "neighborhood": [
+      "Remote"
+    ],
     "moreInfo": ""
   },
   "Alzheimer's LA Support Services": {
@@ -4042,7 +4431,9 @@
     "contactLink": "",
     "website": "https://www.alzheimersla.org/",
     "address": "",
-    "neighborhood": "Remote",
+    "neighborhood": [
+      "Remote"
+    ],
     "moreInfo": ""
   },
   "Alzheimer's Association": {
@@ -4082,7 +4473,9 @@
     "contactLink": "",
     "website": "https://www.alz.org/",
     "address": "",
-    "neighborhood": "Remote",
+    "neighborhood": [
+      "Remote"
+    ],
     "moreInfo": ""
   },
   "Braille Institute": {
@@ -4117,7 +4510,9 @@
     "contactLink": "",
     "website": "https://www.brailleinstitute.org/locations/los-angeles/",
     "address": "741 North Vermont Avenue, Los Angeles, CA 90029",
-    "neighborhood": "Central LA",
+    "neighborhood": [
+      "Central LA"
+    ],
     "moreInfo": "Offers access to the National Library Service for the print-disabled; adjacent to LA City College and accessible via public transit."
   },
   "Glendale Adult Recreation Center": {
@@ -4153,7 +4548,9 @@
     "contactLink": "",
     "website": "https://www.glendaleca.gov/government/departments/community-services-parks/parks-facilities-historic-sites/adult-recreation-center#ad-image-1",
     "address": "201 E. Colorado St., Glendale, CA 91205",
-    "neighborhood": "San Fernando Valley",
+    "neighborhood": [
+      "San Fernando Valley"
+    ],
     "moreInfo": ""
   },
   "Forrest Lawn Grief Support": {
@@ -4186,7 +4583,9 @@
     "contactLink": "",
     "website": "https://forestlawn.com/about-us/grief-resources/understanding-grief/",
     "address": "",
-    "neighborhood": "Other",
+    "neighborhood": [
+      "Other"
+    ],
     "moreInfo": ""
   },
   "Our House Grief Support": {
@@ -4221,7 +4620,10 @@
     "contactLink": "",
     "website": "https://www.ourhouse-grief.org/",
     "address": "West LA: 3415 S Sepulveda Blvd, Suite 120, Los Angeles, CA 90034\n\nWoodland Hills: 21860 Burbank Blvd, Suite 195, Woodland Hills, CA 91367",
-    "neighborhood": "San Fernando Valley, Westside",
+    "neighborhood": [
+      "San Fernando Valley",
+      "Westside"
+    ],
     "moreInfo": ""
   },
   "Los Angeles Mission": {
@@ -4259,7 +4661,9 @@
     "contactLink": "https://losangelesmission.org/contact-us/",
     "website": "https://losangelesmission.org/",
     "address": "303 East 5th Street\nLos Angeles CA 90013",
-    "neighborhood": "DTLA",
+    "neighborhood": [
+      "DTLA"
+    ],
     "moreInfo": "Programs include long-term recovery, vocational training, and spiritual support. Offers three meals daily and overnight accommodations."
   },
   "Narcotics Anonymous": {
@@ -4291,7 +4695,9 @@
     "contactLink": "",
     "website": "https://na.org/",
     "address": "",
-    "neighborhood": "Remote",
+    "neighborhood": [
+      "Remote"
+    ],
     "moreInfo": ""
   },
   "Prenatal Classes at USC Arcadia Hospital": {
@@ -4324,7 +4730,9 @@
     "contactLink": "",
     "website": "https://www.uscarcadiahospital.org/events/",
     "address": "300 W Huntington Dr, Arcadia, CA 91007",
-    "neighborhood": "",
+    "neighborhood": [
+      ""
+    ],
     "moreInfo": ""
   },
   "Red Cross of Los Angeles": {
@@ -4359,7 +4767,9 @@
     "contactLink": "",
     "website": "https://www.redcross.org/local/california/los-angeles.html",
     "address": "317 N. Pass Ave., Burbank, CA 91505",
-    "neighborhood": "San Fernando Valley",
+    "neighborhood": [
+      "San Fernando Valley"
+    ],
     "moreInfo": ""
   },
   "Silver Sneakers": {
@@ -4391,7 +4801,9 @@
     "contactLink": "",
     "website": "https://www.silversneakers.com",
     "address": "",
-    "neighborhood": "Other",
+    "neighborhood": [
+      "Other"
+    ],
     "moreInfo": ""
   },
   "Special Olympics Los Angeles": {
@@ -4424,7 +4836,17 @@
     "contactLink": "",
     "website": "",
     "address": "1600 Forbes Way\nSuite 200\nLong Beach, CA\n90810",
-    "neighborhood": "Central LA, DTLA, Eastside, Harbor, San Fernando Valley, South Central, Westside, Pasadena, Long Beach",
+    "neighborhood": [
+      "Central LA",
+      "DTLA",
+      "Eastside",
+      "Harbor",
+      "San Fernando Valley",
+      "South Central",
+      "Westside",
+      "Pasadena",
+      "Long Beach"
+    ],
     "moreInfo": ""
   },
   "St James In-The-City Episcopal Church": {
@@ -4460,7 +4882,9 @@
     "contactLink": "https://stjla.org/contact-us/",
     "website": "https://stjla.org/greatfood/",
     "address": "3903 Wilshire Blvd.\nLos Angeles, CA 90010",
-    "neighborhood": "Central LA",
+    "neighborhood": [
+      "Central LA"
+    ],
     "moreInfo": ""
   },
   "Stepping Stones At Verdugo Hospital ": {
@@ -4492,7 +4916,9 @@
     "contactLink": "",
     "website": "https://uscvhh.org/hospital-services/geriatrics",
     "address": "1812 Verdugo Blvd, Glendale, CA 91208",
-    "neighborhood": "San Fernando Valley",
+    "neighborhood": [
+      "San Fernando Valley"
+    ],
     "moreInfo": ""
   },
   "Society of Asylum Medicine": {
@@ -4524,7 +4950,10 @@
     "contactLink": "https://asylummedicine.com/contact",
     "website": "https://asylummedicine.com",
     "address": "",
-    "neighborhood": "Eastside, Westside",
+    "neighborhood": [
+      "Eastside",
+      "Westside"
+    ],
     "moreInfo": ""
   },
   "Los Angeles Raids and Response Network (California Collaborative for Immigrant Justice)": {
@@ -4558,7 +4987,9 @@
     "contactLink": "",
     "website": "https://www.ccijustice.org/carrn",
     "address": "",
-    "neighborhood": "",
+    "neighborhood": [
+      ""
+    ],
     "moreInfo": "Under California Collaborative for Immigrant Justice"
   },
   "Seating Center at Rancho Los Amigos": {
@@ -4590,7 +5021,9 @@
     "contactLink": "",
     "website": "https://dhs.lacounty.gov/rancho/patient-programs-and-services/seating-center/",
     "address": "7601 Imperial Highway, Downey, CA 90242",
-    "neighborhood": "Other",
+    "neighborhood": [
+      "Other"
+    ],
     "moreInfo": "Please complete the Outpatient Therapy Referral Form \u2013 Community and send or fax these forms to the Seating Center prior to making an appointment."
   },
   "CicLAvia": {
@@ -4622,7 +5055,14 @@
     "contactLink": "",
     "website": "https://www.ciclavia.org",
     "address": "525 S. Hewitt St.\nLos Angeles, CA 90013",
-    "neighborhood": "Central LA, DTLA, Eastside, South Central, Westside, Pasadena",
+    "neighborhood": [
+      "Central LA",
+      "DTLA",
+      "Eastside",
+      "South Central",
+      "Westside",
+      "Pasadena"
+    ],
     "moreInfo": ""
   },
   "Safe Youth Zone": {
@@ -4655,7 +5095,15 @@
     "contactLink": "",
     "website": "https://dhs.lacounty.gov/safe-youth-zone-initiative/",
     "address": "",
-    "neighborhood": "DTLA, Central LA, South Central, Eastside, Harbor, Pasadena, San Fernando Valley",
+    "neighborhood": [
+      "DTLA",
+      "Central LA",
+      "South Central",
+      "Eastside",
+      "Harbor",
+      "Pasadena",
+      "San Fernando Valley"
+    ],
     "moreInfo": "All LA County sherriff's stations, hospitals, clinics, fire departments, schools are designated as Safe Youth Zones."
   }
 }
