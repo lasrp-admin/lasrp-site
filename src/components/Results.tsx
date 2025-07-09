@@ -69,7 +69,6 @@ const Results: React.FC<ResultsProps> = ({ data }) => {
                   eligibilityText={entry.eligibilityText}
                   website={entry.website}
                   phone1={entry.phone1}
-                  phone2={entry.phone2}
                   mail1={entry.email1}
                   mail2={entry.email2}
                   address={entry.address}

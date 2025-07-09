@@ -23,7 +23,6 @@ interface ResourceRowProps {
   eligibilityText: string;
   website: string;
   phone1: string;
-  phone2: string;
   mail1: string;
   mail2: string;
   address: string;
@@ -40,7 +39,6 @@ const ResourceRow: React.FC<ResourceRowProps> = React.memo(
     eligibilityText,
     website,
     phone1,
-    phone2,
     mail1,
     mail2,
     address,
@@ -165,8 +163,9 @@ const ResourceRow: React.FC<ResourceRowProps> = React.memo(
                       <FaPhoneFlip size={25} title={"Phone number(s)"} />
                     </div>
                     <div style={{ display: "flex", flexDirection: "column" }}>
-                      <span>{phone1}</span>
-                      <span>{phone2}</span>
+                      {phone1.split(",").map((number) => (
+                        <span key={number}>{number.trim()}</span>
+                      ))}
                     </div>
                   </div>
                 )}
