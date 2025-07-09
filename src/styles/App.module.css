@@ -15,15 +15,44 @@
   font-size: 1.1rem;
 }
 
-.iconBar {
+.iconBarRight {
   position: absolute;
   top: 10px;
-  right: 20px;
-  cursor: pointer;
+  right: 10px;
 
   display: flex;
   flex-direction: row;
   gap: 10px;
 
   width: fit-content;
+}
+
+.iconBarLeft {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+
+  width: fit-content;
+
+  align-items: center;
+}
+
+.archLogo {
+  cursor: pointer;
+  height: 45px;
+  border-radius: 20px;
+
+  background-color: white;
+}
+
+.uscLogo {
+  cursor: pointer;
+  height: 55px;
+  border-radius: 20px;
+
+  background-color: white;
 }
