@@ -17,6 +17,14 @@
   user-select: none;
 }
 
+.checkbox {
+  position: absolute;
+  left: 10px;
+  top: 18px;
+
+  cursor: pointer;
+}
+
 .spacer {
   height: 15px;
 }
@@ -31,31 +39,15 @@
   gap: 10px;
 }
 
-.checkbox {
-  position: absolute;
-  left: 10px;
-  top: 18px;
-
-  cursor: pointer;
-}
-
 .icon {
   cursor: pointer;
 }
 
-.rowContent {
+.expandedRowContent {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1.3fr 1fr;
 
-  column-gap: 100px;
-  row-gap: 30px;
-}
-
-.leftContent {
-  display: flex;
-  flex-direction: column;
-
-  gap: 10px;
+  column-gap: 80px;
 }
 
 .rightContent {

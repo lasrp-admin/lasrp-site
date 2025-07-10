@@ -1,19 +1,31 @@
 .filtersContainer {
   position: sticky;
-  top: 20px;
+  top: 25px;
 
   display: flex;
   flex-direction: column;
   gap: 20px;
 
-  margin-top: 25px;
+  margin-top: 50px;
 
-  background-color: lightblue;
+  background-color: #dcdfe3;
 
   padding: 10px;
+  padding-bottom: 25px;
   border-radius: 10px;
 }
 
 .bar {
   width: 20vw;
+}
+
+.label {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.tag {
+  position: sticky;
+  top: 97vh;
 }
