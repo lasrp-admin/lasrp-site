@@ -25,7 +25,7 @@ export const Printer: React.FC<PrinterProps> = ({ setPrinter }) => {
     if (selectedResources) {
       setReadyToRender(true);
       setResources(
-        Array.from(Object.keys(selectedResources)).map((name) => database[name])
+        Array.from(selectedResources).map((name) => database[name])
       );
     }
   }, [selectedResources]);
