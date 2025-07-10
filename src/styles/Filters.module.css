@@ -1,12 +1,7 @@
 .filtersContainer {
-  position: sticky;
-  top: 25px;
-
   display: flex;
   flex-direction: column;
   gap: 20px;
-
-  margin-top: 50px;
 
   background-color: #dcdfe3;
 
@@ -16,7 +11,7 @@
 }
 
 .bar {
-  width: 20vw;
+  width: 100%;
 }
 
 .label {

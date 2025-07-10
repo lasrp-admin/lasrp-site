@@ -30,24 +30,6 @@ export const Printer: React.FC<PrinterProps> = ({ setPrinter }) => {
     }
   }, [selectedResources]);
 
-  // const handlePrint = async () => {
-  //   let message = window.prompt(
-  //     "Add a custom message to include in the printout..."
-  //   );
-  //   if (message === null) message = "";
-  //   const blob = await pdf(
-  //     <PDF resources={resources} message={message} />
-  //   ).toBlob();
-  //   const url = URL.createObjectURL(blob);
-  //   const win = window.open(url);
-  //   if (win) {
-  //     win.onload = () => {
-  //       win.focus();
-  //       win.print();
-  //     };
-  //   }
-  // };
-
   return readyToRender ? (
     <div className={styles.overlay}>
       <div className={styles.mainBox}>

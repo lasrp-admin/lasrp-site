@@ -1,6 +1,39 @@
 .mainContainer {
+  position: relative;
   display: flex;
   flex-direction: row;
 
+  gap: 15px;
+}
+
+.leftPanel {
+  margin-top: 50px;
+  justify-content: space-between;
+
+  position: sticky;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  top: 30px;
+
+  gap: 15px;
+
+  max-width: 22vw;
+}
+
+.textBox {
+  display: flex;
+  flex-direction: column;
   gap: 20px;
+
+  background-color: #dcdfe3;
+
+  padding: 20px;
+  padding-bottom: 25px;
+  border-radius: 10px;
+}
+
+.tag {
+  position: absolute;
+  bottom: -80px;
 }

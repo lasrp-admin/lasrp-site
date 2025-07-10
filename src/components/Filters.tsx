@@ -41,12 +41,12 @@ const Filters: React.FC<FiltersProps> = ({ setFilterSet }) => {
   States & Constants
   ----------------*/
   const [selectedTypes, setSelectedTypes] = useState<ResourceType[]>([]);
-  const [selectedAudiences, setSelectedAudiences] = useState<ResourceAudience[]>(
-    []
-  );
-  const [selectedLanguages, setSelectedLanguages] = useState<ResourceLanguage[]>(
-    []
-  );
+  const [selectedAudiences, setSelectedAudiences] = useState<
+    ResourceAudience[]
+  >([]);
+  const [selectedLanguages, setSelectedLanguages] = useState<
+    ResourceLanguage[]
+  >([]);
   const [selectedNeighborhoods, setSelectedNeighborhoods] = useState<
     ResourceNeighborhood[]
   >([]);
@@ -135,7 +135,9 @@ const Filters: React.FC<FiltersProps> = ({ setFilterSet }) => {
       );
     } else if (filter === "neighborhood") {
       setSelectedNeighborhoods(
-        selected.map((neighborhood) => neighborhood.value as ResourceNeighborhood)
+        selected.map(
+          (neighborhood) => neighborhood.value as ResourceNeighborhood
+        )
       );
     } else if (filter === "other") {
       setSelectedOthers(selected.map((other) => other.value as ResourceOther));
@@ -145,8 +147,9 @@ const Filters: React.FC<FiltersProps> = ({ setFilterSet }) => {
   return (
     <div>
       <div className={styles.filtersContainer}>
+        <span className={styles.label}>Filters</span>
         <Select
-          placeholder="Filter by resource types..."
+          placeholder="Category"
           options={resourceOptions}
           isSearchable
           isMulti
@@ -157,7 +160,7 @@ const Filters: React.FC<FiltersProps> = ({ setFilterSet }) => {
           }
         />
         <Select
-          placeholder="Filter by audience types..."
+          placeholder="Audience"
           options={audienceOptions}
           isSearchable
           isMulti
@@ -168,7 +171,7 @@ const Filters: React.FC<FiltersProps> = ({ setFilterSet }) => {
           }
         />
         <Select
-          placeholder="Filter by supported languages..."
+          placeholder="Language"
           options={languageOptions}
           isSearchable
           isMulti
@@ -179,7 +182,7 @@ const Filters: React.FC<FiltersProps> = ({ setFilterSet }) => {
           }
         />
         <Select
-          placeholder="Filter by LA neighborhood..."
+          placeholder="Neighborhood"
           options={neighborhoodOptions}
           isSearchable
           isMulti
@@ -190,7 +193,7 @@ const Filters: React.FC<FiltersProps> = ({ setFilterSet }) => {
           }
         />
         <Select
-          placeholder="Other filters..."
+          placeholder="Other"
           options={otherOptions}
           isSearchable
           isMulti
