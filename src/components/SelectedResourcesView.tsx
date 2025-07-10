@@ -16,13 +16,15 @@ const SelectedResourcesView: React.FC<SelectedResourceViewProps> = ({
   const selectedResources = useDatabaseStore(
     (state) => state.selectedResources
   );
+  console.log(selectedResources);
+
   return (
     <div className={styles.overlay}>
       <div className={styles.mainBox}>
         <div className={styles.gridContainer}>
-          {Object.keys(selectedResources).length > 0 ? (
-            Array.from(Object.keys(selectedResources)).map((name) => (
-              <ResourceCard name={name} />
+          {selectedResources.size > 0 ? (
+            Array.from(selectedResources).map((name) => (
+              <ResourceCard name={name} key={name} />
             ))
           ) : (
             <span>No selected resources.</span>
