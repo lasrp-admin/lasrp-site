@@ -4,6 +4,13 @@ import type { SetStateAction } from "react";
 
 import { sorted } from "../utils/sorted";
 
+/**
+ * Triggered when filter criteria are updated, sets the data that should be
+ * displayed to the displayData state.
+ * @param database Resource database to be filtered
+ * @param filterSet FilterSet type containing filtering constraints
+ * @param setDisplayData React state setter to update data based on filters
+ */
 export function handleFilterUpdate(
   database: ResourceDatabase,
   filterSet: FilterSet,
@@ -23,6 +30,12 @@ export function handleFilterUpdate(
   setDisplayData(sorted(Object.values(filteredDatabase)));
 }
 
+/**
+ * Check if a set is a subset of another set.
+ * @param a
+ * @param b
+ * @returns True if a is a subset of b else false
+ */
 export function isSubsetOf<T>(a: Set<T>, b: Set<T>): boolean {
   let flag = true;
   for (const item of a) {
