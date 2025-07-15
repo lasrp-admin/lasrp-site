@@ -1,3 +1,7 @@
+import {
+  loadSelectedResources,
+  saveSelectedResources,
+} from "../utils/localStorage";
 import type { ResourceDatabase, Resource } from "../types/types";
 import { create } from "zustand";
 
@@ -19,10 +23,11 @@ const useDatabaseStore = create<DatabaseStore>((set, get) => ({
     set({ database: db, databaseSize: Object.keys(db).length });
   },
   databaseSize: 0,
-  selectedResources: new Set(),
+  selectedResources: loadSelectedResources(),
   selectAll: (data: Resource[]) => {
     const newSelected = new Set(get().selectedResources);
     data.forEach((resource) => newSelected.add(resource.name));
+    saveSelectedResources(newSelected);
     set({
       selectedResources: newSelected,
     });
@@ -30,6 +35,7 @@ const useDatabaseStore = create<DatabaseStore>((set, get) => ({
   addSelectedResource: (name: string) => {
     const newSelected = new Set(get().selectedResources);
     newSelected.add(name);
+    saveSelectedResources(newSelected);
     set({
       selectedResources: newSelected,
     });
@@ -37,6 +43,7 @@ const useDatabaseStore = create<DatabaseStore>((set, get) => ({
   delSelectedResource: (name: string) => {
     const newSelected = new Set(get().selectedResources);
     newSelected.delete(name);
+    saveSelectedResources(newSelected);
     set({
       selectedResources: newSelected,
     });
@@ -48,6 +55,7 @@ const useDatabaseStore = create<DatabaseStore>((set, get) => ({
   deselectAll: (data: Resource[]) => {
     const newSelected = new Set(get().selectedResources);
     data.forEach((resource) => newSelected.delete(resource.name));
+    saveSelectedResources(newSelected);
     set({
       selectedResources: newSelected,
     });
