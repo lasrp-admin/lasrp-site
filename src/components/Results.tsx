@@ -45,13 +45,25 @@ const Results: React.FC<ResultsProps> = ({ data }) => {
             <span className={styles.count}>{data.length} resources found.</span>
           </>
         ) : (
-          <div style={{ textAlign: "center" }}>
+          <div
+            style={{
+              textAlign: "center",
+              width: "40vw",
+              marginTop: "10vh",
+              display: "flex",
+              flexDirection: "column",
+              gap: "25px",
+            }}
+          >
+            <span>No resources matching your filters were found.</span>
             <span>
-              No resources matching your filters were found. If you represent a
-              resource or know of one that is missing in our database, please
-              reach out to contact[dot]lasrp[at]gmail[dot]com so that we can
-              look into adding it.
+              If you represent a resource or know of one that is missing in our
+              database, please reach out to
             </span>
+            <span style={{ fontWeight: "bold" }}>
+              contact[dot]lasrp[at]gmail[dot]com
+            </span>
+            <span>so that we can look into adding it.</span>
           </div>
         )}
       </div>
