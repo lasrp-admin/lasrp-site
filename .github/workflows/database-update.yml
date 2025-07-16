@@ -1,6 +1,8 @@
 name: gsheet.action test
-on: push
-
+on: 
+  - push
+  - workflow_dispatch
+    
 jobs:
   fetch:
     runs-on: ubuntu-latest
