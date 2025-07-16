@@ -5,6 +5,9 @@ jobs:
   fetch:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        
       - name: Get updated data
         id: 'update_data'
         uses: jroehl/gsheet.action@release
@@ -23,5 +26,19 @@ jobs:
           cat << 'EOF' > results.json
           ${{ steps.update_data.outputs.results }}
           EOF
-      - name: Format raw JSON
+          
+      - name: Run python script to format JSON
         run: python scripts/formatDatabase.py results.json public/data/data.json
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Sync database changes
+        run: |
+          git add public/data/data.json
+          git commit -m "Automatic database update from Google Sheets" || echo "No changes to commit"
+          git push
+        env: 
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
