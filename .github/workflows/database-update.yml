@@ -20,7 +20,7 @@ jobs:
         
       - name: Save results to file
         run: | 
-          echo "${{ steps.update_data.outputs.results }}" > results.json
+          printf '%s' "${{ steps.update_data.outputs.results }}" > results.json
       - name: Upload results.json artifact
         uses: actions/upload-artifact@v4
         with:
