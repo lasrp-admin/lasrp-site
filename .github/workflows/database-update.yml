@@ -5,18 +5,20 @@ jobs:
   fetch:
     runs-on: ubuntu-latest
     steps:
-      - id: 'update_worksheet'
+      - name: Get updated data
+        id: 'update_data'
         uses: jroehl/gsheet.action@release
         with:
           spreadsheetId: 1Bpe3AxJnxzBAjRTzWEMYaja1BqaMD1a5EiymTQ_EoHw
           commands: | 
             [
-              { "command": "getData", "args": { "range": "'LASRP Data'!A2:B3" } }
+              { "command": "getData", "args": { "range": "'LASRP Data'" } }
             ]
         env:
           GSHEET_CLIENT_EMAIL: ${{ secrets.GSHEET_CLIENT_EMAIL }}
           GSHEET_PRIVATE_KEY: ${{ secrets.GSHEET_PRIVATE_KEY }}
-      - name: dump results
+      - name: Save results
+        id: 'results'
         env:
           #  the output of the action can be found in ${{ steps.update_worksheet.outputs.results }}
           RESULTS: ${{ steps.update_worksheet.outputs.results }}
