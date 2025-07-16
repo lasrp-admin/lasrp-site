@@ -41,4 +41,4 @@ jobs:
           git commit -m "Automatic database update from Google Sheets" || echo "No changes to commit"
           git push
         env: 
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GHUB_PA_TOKEN }}
