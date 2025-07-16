@@ -7,26 +7,26 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-        
+
       - name: Get updated data
-        id: 'update_data'
+        id: "update_data"
         uses: jroehl/gsheet.action@release
         with:
           spreadsheetId: 1Bpe3AxJnxzBAjRTzWEMYaja1BqaMD1a5EiymTQ_EoHw
-          commands: | 
+          commands: |
             [
               { "command": "getData", "args": { "worksheetTitle": "LASRP Data", "range": "A2:R" } }
             ]
         env:
           GSHEET_CLIENT_EMAIL: ${{ secrets.GSHEET_CLIENT_EMAIL }}
           GSHEET_PRIVATE_KEY: ${{ secrets.GSHEET_PRIVATE_KEY }}
-        
+
       - name: Save results to file
-        run: | 
+        run: |
           cat << 'EOF' > results.json
           ${{ steps.update_data.outputs.results }}
           EOF
-          
+
       - name: Run python script to format JSON
         run: python scripts/formatDatabase.py results.json public/data/data.json
 
@@ -39,6 +39,7 @@ jobs:
         run: |
           git add public/data/data.json
           git commit -m "Automatic database update from Google Sheets" || echo "No changes to commit"
-          git push
-        env: 
-          GITHUB_TOKEN: ${{ secrets.GHUB_PA_TOKEN }}
+          git push https://x-access-token:${{ secrets.GHUB_PA_TOKEN }}@github.com/AtonalDev/lasrp.git
+
+        env:
+          PAT_TOKEN: ${{ secrets.GHUB_PA_TOKEN }}
