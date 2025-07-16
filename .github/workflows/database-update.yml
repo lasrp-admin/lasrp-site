@@ -21,5 +21,5 @@ jobs:
         id: 'results'
         env:
           #  the output of the action can be found in ${{ steps.update_worksheet.outputs.results }}
-          RESULTS: ${{ steps.update_worksheet.outputs.results }}
+          RESULTS: ${{ steps.update_data.outputs.results }}
         run: echo "$RESULTS" | jq
