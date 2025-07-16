@@ -1,35 +1,4 @@
 {
-  "TEST RESOURCE": {
-    "name": "TEST RESOURCE",
-    "type": [
-      "Addiction/Substance Use"
-    ],
-    "description": "",
-    "audience": [
-      ""
-    ],
-    "language": [
-      ""
-    ],
-    "other": [
-      ""
-    ],
-    "eligibility": [
-      ""
-    ],
-    "eligibilityText": "",
-    "email": "",
-    "phone": "",
-    "hours": "",
-    "contactPerson": "",
-    "contactLink": "",
-    "website": "",
-    "address": "",
-    "neighborhood": [
-      ""
-    ],
-    "moreInfo": ""
-  },
   "California Work Opportunity and Responsibility to Kids (CalWORKS)": {
     "name": "California Work Opportunity and Responsibility to Kids (CalWORKS)",
     "type": [
