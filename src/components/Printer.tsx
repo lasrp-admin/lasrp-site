@@ -106,14 +106,14 @@ const PDF: React.FC<PDFProps> = ({ resources }) => {
               Resource contact information:
             </Text>
             <Text style={pdfStyles.phone}>
-              {resource.phone1 &&
-                resource.phone1
+              {resource.phone &&
+                resource.phone
                   .split(",\n")
                   .map((phone) => <Text key={phone}>{phone}</Text>)}
             </Text>
             <Text style={pdfStyles.phone}>
-              {resource.email1 &&
-                resource.email1
+              {resource.email &&
+                resource.email
                   .split(",\n")
                   .map((email) => <Text key={email}>{email}</Text>)}
             </Text>
@@ -127,36 +127,6 @@ const PDF: React.FC<PDFProps> = ({ resources }) => {
 
 export default Printer;
 
-// const pdfStyles = StyleSheet.create({
-//   resource: {
-//     border: "2px solid black",
-//     borderRadius: "10px",
-//     margin: "10px",
-//     padding: "15px",
-//   },
-//   body: {
-//     paddingTop: 15,
-//     paddingBottom: 15,
-//     paddingHorizontal: 10,
-//   },
-//   titleText: {
-//     fontSize: 18,
-//     fontFamily: "Times-Roman",
-//     marginBottom: 2,
-//     fontWeight: "bold",
-//   },
-//   text: {
-//     fontSize: 14,
-//     fontFamily: "Times-Roman",
-//     marginBottom: 6,
-//   },
-//   header: {
-//     fontSize: 12,
-//     marginBottom: 20,
-//     textAlign: "center",
-//     color: "grey",
-//   },
-// });
 const pdfStyles = StyleSheet.create({
   body: {
     paddingTop: 40,

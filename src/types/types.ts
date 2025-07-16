@@ -19,10 +19,8 @@ export type Resource = {
   other: Set<ResourceOther>;
   eligibility: string[];
   eligibilityText: string;
-  email1: string;
-  email2: string;
-  phone1: string;
-  phone2: string;
+  email: string;
+  phone: string;
   hours: string;
   contactPerson: string;
   contactLink: string;

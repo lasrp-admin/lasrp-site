@@ -22,9 +22,8 @@ interface ResourceRowProps {
   eligibility: string[];
   eligibilityText: string;
   website: string;
-  phone1: string;
-  mail1: string;
-  mail2: string;
+  phone: string;
+  email: string;
   address: string;
   expandInit: boolean;
   color: 0 | 1;
@@ -38,9 +37,8 @@ const ResourceRow: React.FC<ResourceRowProps> = React.memo(
     eligibility,
     eligibilityText,
     website,
-    phone1,
-    mail1,
-    mail2,
+    phone,
+    email,
     address,
     color,
     expandInit,
@@ -169,27 +167,27 @@ const ResourceRow: React.FC<ResourceRowProps> = React.memo(
                   </div>
                 )}
                 <div className={styles.rightContent}>
-                  {phone1 && (
+                  {phone && (
                     <div className={styles.detail}>
                       <div>
                         <FaPhoneFlip size={25} title={"Phone number(s)"} />
                       </div>
                       <div style={{ display: "flex", flexDirection: "column" }}>
-                        {phone1.split(",").map((number) => (
+                        {phone.split(",").map((number) => (
                           <span key={number}>{number.trim()}</span>
                         ))}
                       </div>
                     </div>
                   )}
 
-                  {mail1 && (
+                  {email && (
                     <div className={styles.detail}>
                       <div>
                         <MdEmail size={25} title={"Email(s)"} />
                       </div>
                       <div style={{ display: "flex", flexDirection: "column" }}>
-                        <span>{mail1}</span>
-                        <span>{mail2}</span>
+                        <span>{email}</span>
+                        <span>{email}</span>
                       </div>
                     </div>
                   )}

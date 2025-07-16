@@ -80,9 +80,8 @@ const Results: React.FC<ResultsProps> = ({ data }) => {
                   eligibility={entry.eligibility}
                   eligibilityText={entry.eligibilityText}
                   website={entry.website}
-                  phone1={entry.phone1}
-                  mail1={entry.email1}
-                  mail2={entry.email2}
+                  phone={entry.phone}
+                  email={entry.email}
                   address={entry.address}
                   color={(i % 2) as 0 | 1}
                   expandInit={false}
