@@ -23,8 +23,5 @@ jobs:
           cat << 'EOF' > results.json
           ${{ steps.update_data.outputs.results }}
           EOF
-      - name: Upload results.json artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: gsheet-results
-          path: results.json
+      - name: Format raw JSON
+        run: python scripts/formatDatabase.py results.json public/data/data.json
