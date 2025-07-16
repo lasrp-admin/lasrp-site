@@ -34,9 +34,15 @@
 }
 
 .tableHeader {
-  position: relative;
+  position: sticky;
+  top: 70px;
   width: 100%;
   display: flex;
+
+  padding-bottom: 15px;
+
+  background-color: white;
+  z-index: 100;
 
   justify-content: center;
 }

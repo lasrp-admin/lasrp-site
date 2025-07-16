@@ -1,24 +1,47 @@
 .main {
   display: flex;
   flex-direction: column;
+  padding-top: 70px;
 
   align-items: center;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1000;
+
+  padding-bottom: 5px;
+
+  background-color: white;
 }
 
 .title {
   font-size: 2rem;
   font-weight: bold;
   margin: 10px;
+
+  text-align: center;
+  flex: 1;
 }
 
 .text {
   font-size: 1.1rem;
 }
 
+.stickyBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
 .iconBarRight {
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 30px;
 
   display: flex;
   flex-direction: row;
@@ -30,7 +53,7 @@
 .iconBarLeft {
   position: absolute;
   top: 5px;
-  left: 10px;
+  left: 20px;
 
   display: flex;
   flex-direction: row;
