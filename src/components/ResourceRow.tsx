@@ -5,7 +5,6 @@ import { AnimatePresence, motion } from "motion/react";
 import { IoMdExpand } from "react-icons/io";
 import { AiOutlineCompress } from "react-icons/ai";
 import { GoGlobe } from "react-icons/go";
-import { MdPeople } from "react-icons/md";
 import { MdCheckBoxOutlineBlank } from "react-icons/md";
 import { MdCheckBox } from "react-icons/md";
 import { FaPhoneFlip } from "react-icons/fa6";
@@ -134,32 +133,19 @@ const ResourceRow: React.FC<ResourceRowProps> = React.memo(
               <div className={styles.expandedRowContent}>
                 {(eligibility[0] || eligibilityText) && (
                   <div className={styles.detailElig}>
-                    <div
-                      style={{
-                        display: "flex",
-                        flexDirection: "column",
-                        alignItems: "center",
-                        textAlign: "center",
-                      }}
-                    >
-                      <div>
-                        <MdPeople size={35} title={"Eligibility details"} />
-                      </div>
-                      <span>Eligibility details</span>
-                    </div>
-
+                    <span style={{ fontSize: "1.1rem", fontWeight: "bold" }}>
+                      Eligibility details
+                    </span>
                     {eligibility && (
                       <div
                         style={{
                           display: "flex",
                           flexDirection: "column",
-                          gap: "5px",
+                          gap: "10px",
                         }}
                       >
                         {eligibility.map((x) => (
-                          <span key={x} style={{ fontWeight: "bold" }}>
-                            {x}
-                          </span>
+                          <span key={x}>{x}</span>
                         ))}
                         {eligibilityText && <span>{eligibilityText}</span>}
                       </div>
