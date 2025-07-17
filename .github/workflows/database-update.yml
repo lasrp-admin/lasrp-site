@@ -1,7 +1,8 @@
 name: Database update
 on:
-  - push
-  - workflow_dispatch
+  schedule:
+    - cron: '22 4 * * *'
+  workflow_dispatch:
 
 jobs:
   fetch:
