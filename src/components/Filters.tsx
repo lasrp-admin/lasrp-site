@@ -88,7 +88,6 @@ const Filters: React.FC<FiltersProps> = ({ setFilterSet }) => {
       ...prev,
       resourceTypes: new Set(selectedTypes),
     }));
-    console.log("new types:", selectedTypes);
   }, [selectedTypes]);
 
   useEffect(() => {

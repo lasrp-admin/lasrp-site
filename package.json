@@ -10,8 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@react-hookz/web": "^25.1.1",
     "@react-pdf/renderer": "^4.3.0",
     "bootstrap": "^5.3.7",
+    "fuse.js": "^7.1.0",
     "motion": "^12.19.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",

@@ -1,4 +1,5 @@
 export type FilterSet = {
+  searchBarMatches: Set<string>;
   resourceTypes: Set<ResourceType>;
   resourceAudiences: Set<ResourceAudience>;
   resourceLanguages: Set<ResourceLanguage>;

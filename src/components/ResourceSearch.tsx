@@ -18,10 +18,12 @@ import type {
 } from "../types/types";
 
 import useDatabaseStore from "../contexts/DatabaseStore.ts";
+import SearchBar from "./SearchBar.tsx";
 
 const ResourceSearch = () => {
   const [displayData, setDisplaydata] = useState<Resource[]>([]);
   const [filterSet, setFilterSet] = useState<FilterSet>({
+    searchBarMatches: new Set<string>(),
     resourceTypes: new Set<ResourceType>(),
     resourceAudiences: new Set<ResourceAudience>(),
     resourceLanguages: new Set<ResourceLanguage>(),
@@ -41,6 +43,7 @@ const ResourceSearch = () => {
   return (
     <div className={styles.mainContainer}>
       <div className={styles.leftPanel}>
+        <SearchBar setFilterSet={setFilterSet} />
         <Filters setFilterSet={setFilterSet} />
         <div className={styles.textBox}>
           <span className={styles.text}>

@@ -19,12 +19,13 @@ export function handleFilterUpdate(
   const filteredDatabase = Object.fromEntries(
     Object.entries(database).filter(
       ([_, resource]) =>
-        resource.selected ||
-        (isSubsetOf(filterSet.resourceTypes, resource.type) &&
-          isSubsetOf(filterSet.resourceAudiences, resource.audience) &&
-          isSubsetOf(filterSet.resourceLanguages, resource.language) &&
-          isSubsetOf(filterSet.resourceNeighborhoods, resource.neighborhood) &&
-          isSubsetOf(filterSet.resourceOthers, resource.other))
+        (filterSet.searchBarMatches.has(resource.name) ||
+          filterSet.searchBarMatches.has("PASS")) &&
+        isSubsetOf(filterSet.resourceTypes, resource.type) &&
+        isSubsetOf(filterSet.resourceAudiences, resource.audience) &&
+        isSubsetOf(filterSet.resourceLanguages, resource.language) &&
+        isSubsetOf(filterSet.resourceNeighborhoods, resource.neighborhood) &&
+        isSubsetOf(filterSet.resourceOthers, resource.other)
     )
   );
   setDisplayData(sorted(Object.values(filteredDatabase)));
