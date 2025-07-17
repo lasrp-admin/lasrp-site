@@ -17,21 +17,22 @@ const Info: React.FC<InfoProps> = ({ setHelp }) => {
           className={styles.toggle}
           size={30}
         />
-        <span>
+        <span className={styles.text}>
           Welcome to LASRP! We hope that our database will help make it easier
           for providers and patients to quickly find appropriate resources in
           the LA area.
         </span>
-        <span>
-          To use our search tool, simple add as many filters as you want using
+        <span className={styles.text}>
+          To use our search tool, simply add as many filters as you want using
           the drop down menus. We currently support filtering on the resource
-          type, intended audience and supported languages.
+          type, intended audience, supported languages and neighborhood of the
+          resource, along with a few miscellaneous categories.
         </span>
-        <span>
+        <span className={styles.text}>
           You can select resources by clicking on the empty square the left of
-          the names. Selected resources will stay at the top of the list
-          regardless of the filters, and you can print out selected resources by
-          clicking the printer icon.
+          the names. Selected resources can be viewed by clicking the star at
+          the top right of the page, and can be printed out by clicking the
+          printer icon.
         </span>
       </div>
     </div>

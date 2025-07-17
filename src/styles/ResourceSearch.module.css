@@ -18,19 +18,7 @@
 
   gap: 15px;
 
-  max-width: 22vw;
-}
-
-.textBox {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-
-  background-color: #dcdfe3;
-
-  padding: 20px;
-  padding-bottom: 25px;
-  border-radius: 10px;
+  width: 22vw;
 }
 
 .tag {
