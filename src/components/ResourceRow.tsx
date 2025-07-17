@@ -173,7 +173,6 @@ const ResourceRow: React.FC<ResourceRowProps> = React.memo(
                       </div>
                       <div style={{ display: "flex", flexDirection: "column" }}>
                         <span>{email}</span>
-                        <span>{email}</span>
                       </div>
                     </div>
                   )}
