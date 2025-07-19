@@ -1,6 +1,7 @@
 {
-  "California Work Opportunity and Responsibility to Kids (CalWORKS)": {
+  "6": {
     "name": "California Work Opportunity and Responsibility to Kids (CalWORKS)",
+    "id": "6",
     "type": [
       "Financial Assistance"
     ],
@@ -49,8 +50,9 @@
     ],
     "moreInfo": "Other physical addresses can be found here"
   },
-  "Cash Assistance Program for Immigrants (CAPI)": {
+  "7": {
     "name": "Cash Assistance Program for Immigrants (CAPI)",
+    "id": "7",
     "type": [
       "Financial Assistance"
     ],
@@ -100,8 +102,9 @@
     ],
     "moreInfo": "Other physical addresses can be found here"
   },
-  "General Relief, Medi-Cal, and CalFresh (LA County Department of Public Social Services)": {
+  "8": {
     "name": "General Relief, Medi-Cal, and CalFresh (LA County Department of Public Social Services)",
+    "id": "8",
     "type": [
       "Financial Assistance"
     ],
@@ -138,8 +141,9 @@
     ],
     "moreInfo": "Other physical addresses can be found here"
   },
-  "GR Housing Subsidy and Case Management Program (LA County DPSS)": {
+  "9": {
     "name": "GR Housing Subsidy and Case Management Program (LA County DPSS)",
+    "id": "9",
     "type": [
       "Housing & Shelters",
       "Financial Assistance",
@@ -190,8 +194,9 @@
     ],
     "moreInfo": "Other physical addresses can be found here"
   },
-  "Los Angeles County Patient Financial Services": {
+  "10": {
     "name": "Los Angeles County Patient Financial Services",
+    "id": "10",
     "type": [
       "Health Insurance"
     ],
@@ -237,8 +242,9 @@
     ],
     "moreInfo": "Pharmacy Clinic Tower Room A1C109 or see LAG Map to visit Financial Services: English or Espa\u00f1ol"
   },
-  "Refugee Cash Assistance (RCA)": {
+  "11": {
     "name": "Refugee Cash Assistance (RCA)",
+    "id": "11",
     "type": [
       "Financial Assistance",
       "Undocumented/Refugee/Asylum Services"
@@ -286,8 +292,9 @@
     ],
     "moreInfo": "Other physical addresses can be found here"
   },
-  "East Los Angeles Regional Center": {
+  "12": {
     "name": "East Los Angeles Regional Center",
+    "id": "12",
     "type": [
       "Career Development & Employment"
     ],
@@ -321,8 +328,9 @@
     ],
     "moreInfo": "for other centers, please see https://www.dds.ca.gov/rc/listings/"
   },
-  "WorkSource: from Los Angeles Economic & Workforce Development Department (EWDD)": {
+  "13": {
     "name": "WorkSource: from Los Angeles Economic & Workforce Development Department (EWDD)",
+    "id": "13",
     "type": [
       "Career Development & Employment"
     ],
@@ -366,8 +374,9 @@
     ],
     "moreInfo": ""
   },
-  "YouthSource: from Los Angeles Economic & Workforce Development Department (EWDD)": {
+  "14": {
     "name": "YouthSource: from Los Angeles Economic & Workforce Development Department (EWDD)",
+    "id": "14",
     "type": [
       "Career Development & Employment"
     ],
@@ -401,8 +410,9 @@
     ],
     "moreInfo": ""
   },
-  "A Place Called Home": {
+  "15": {
     "name": "A Place Called Home",
+    "id": "15",
     "type": [
       "Child Support & Youth Services"
     ],
@@ -434,8 +444,9 @@
     ],
     "moreInfo": "Membership Application:\r\nhttps://apch.org/what-we-do/membership\r\n"
   },
-  "Assistance League of Los Angeles Programs - Preschool Learning Center": {
+  "16": {
     "name": "Assistance League of Los Angeles Programs - Preschool Learning Center",
+    "id": "16",
     "type": [
       "Child Support & Youth Services",
       "Education"
@@ -466,8 +477,9 @@
     ],
     "moreInfo": ""
   },
-  "Assistance League of Los Angeles Programs - Operation School Bell": {
+  "17": {
     "name": "Assistance League of Los Angeles Programs - Operation School Bell",
+    "id": "17",
     "type": [
       "Child Support & Youth Services",
       "Free Items/Donations"
@@ -498,8 +510,9 @@
     ],
     "moreInfo": "Request services here: https://assistanceleaguela.org/operation-school-bell-request/ "
   },
-  "Assistance League of Los Angeles Programs - Foster Children\u2019s Resource Center": {
+  "18": {
     "name": "Assistance League of Los Angeles Programs - Foster Children\u2019s Resource Center",
+    "id": "18",
     "type": [
       "Child Support & Youth Services",
       "Free Items/Donations"
@@ -530,8 +543,9 @@
     ],
     "moreInfo": ""
   },
-  "Centro de Ni\u00f1os y Padres": {
+  "19": {
     "name": "Centro de Ni\u00f1os y Padres",
+    "id": "19",
     "type": [
       "Child Support & Youth Services",
       "Disability"
@@ -563,8 +577,9 @@
     ],
     "moreInfo": ""
   },
-  "Los Angeles County Child Support Services": {
+  "20": {
     "name": "Los Angeles County Child Support Services",
+    "id": "20",
     "type": [
       "Child Support & Youth Services"
     ],
@@ -602,8 +617,9 @@
     ],
     "moreInfo": "Map of locations with appointment links: https://cssd.lacounty.gov/contact-us/\n\nLink for Commerce Division appointments:\nhttps://outlook.office365.com/book/CSSDCommerceOffice@lacounty.onmicrosoft.com/\n\nLink for South Los Angeles Division appointments:\nhttps://outlook.office365.com/book/CSSDSouthLAOffice@lacounty.onmicrosoft.com/"
   },
-  "2024 Summer Meal Service Sites": {
+  "21": {
     "name": "2024 Summer Meal Service Sites",
+    "id": "21",
     "type": [
       "Child Support & Youth Services",
       "Food & Nutrition Assistance"
@@ -640,8 +656,9 @@
     ],
     "moreInfo": "Link for mobile app to find food locations: https://www.cde.ca.gov/re/mo/cameals.asp "
   },
-  "AltaMed": {
+  "22": {
     "name": "AltaMed",
+    "id": "22",
     "type": [
       "Community Health Center"
     ],
@@ -678,8 +695,9 @@
     ],
     "moreInfo": ""
   },
-  "Harbor Community Health Centers": {
+  "23": {
     "name": "Harbor Community Health Centers",
+    "id": "23",
     "type": [
       "Community Health Center"
     ],
@@ -710,8 +728,9 @@
     ],
     "moreInfo": "Community resources page: https://www.harborchc.org/contents/resources "
   },
-  "Mid-Valley Comprehensive Health Center": {
+  "24": {
     "name": "Mid-Valley Comprehensive Health Center",
+    "id": "24",
     "type": [
       "Community Health Center"
     ],
@@ -742,8 +761,9 @@
     ],
     "moreInfo": ""
   },
-  "Northeast Valley Health Corporation": {
+  "25": {
     "name": "Northeast Valley Health Corporation",
+    "id": "25",
     "type": [
       "Community Health Center"
     ],
@@ -774,8 +794,9 @@
     ],
     "moreInfo": ""
   },
-  "LA County Public Health Centers": {
+  "26": {
     "name": "LA County Public Health Centers",
+    "id": "26",
     "type": [
       "Community Health Center"
     ],
@@ -811,8 +832,9 @@
     ],
     "moreInfo": "For more locations, see: http://publichealth.lacounty.gov/chs/Docs/DPH-Clinics.pdf "
   },
-  "Valley Community Healthcare": {
+  "27": {
     "name": "Valley Community Healthcare",
+    "id": "27",
     "type": [
       "Community Health Center"
     ],
@@ -842,8 +864,9 @@
     ],
     "moreInfo": "For more locations, see:\nhttps://www.kyccla.org/contact/locations-maps/ "
   },
-  "Koreatown Youth Community Center (KYCC)": {
+  "28": {
     "name": "Koreatown Youth Community Center (KYCC)",
+    "id": "28",
     "type": [
       "Cultural & Language Services"
     ],
@@ -877,8 +900,9 @@
     ],
     "moreInfo": ""
   },
-  "Latino Resource Organization": {
+  "29": {
     "name": "Latino Resource Organization",
+    "id": "29",
     "type": [
       "Case Management & Resource Navigation",
       "Education",
@@ -915,8 +939,9 @@
     ],
     "moreInfo": ""
   },
-  "Little Tokyo Service Center (LTSC)": {
+  "30": {
     "name": "Little Tokyo Service Center (LTSC)",
+    "id": "30",
     "type": [
       "Cultural & Language Services"
     ],
@@ -950,8 +975,9 @@
     ],
     "moreInfo": ""
   },
-  "AbilityFirst": {
+  "31": {
     "name": "AbilityFirst",
+    "id": "31",
     "type": [
       "Disability"
     ],
@@ -983,8 +1009,9 @@
     ],
     "moreInfo": "Flyer (English) with more locations: https://www.abilityfirst.org/wp-content/uploads/2024/11/Eng-Trifold-2024.pdf \nFlyer (Spanish) with more locations: https://www.abilityfirst.org/wp-content/uploads/2024/11/ABILITY-FIRST_Trifold_SPN_8.5x11-002-1-2.pdf"
   },
-  "Amputee Coalition": {
+  "32": {
     "name": "Amputee Coalition",
+    "id": "32",
     "type": [
       "Disability"
     ],
@@ -1014,8 +1041,9 @@
     ],
     "moreInfo": "To find local resources: https://nllrc.amputee-coalition.org/resources?search%5Bfilter_by%5D=&search%5Bquery%5D=los+angeles&search%5Bradius%5D=100 "
   },
-  "Angel City Sports": {
+  "33": {
     "name": "Angel City Sports",
+    "id": "33",
     "type": [
       "Fitness & Wellness",
       "Disability"
@@ -1046,8 +1074,9 @@
     ],
     "moreInfo": ""
   },
-  "Disability Rights Legal Center": {
+  "34": {
     "name": "Disability Rights Legal Center",
+    "id": "34",
     "type": [
       "Disability",
       "Legal Services"
@@ -1080,8 +1109,9 @@
     ],
     "moreInfo": "Legal handbook: https://thedrlc.org/cancer/wp-content/uploads/2022/03/clrc_plh_english_2018_digital-edit-3.11.2022.pdf "
   },
-  "Hanger Clinic": {
+  "35": {
     "name": "Hanger Clinic",
+    "id": "35",
     "type": [
       "Medical Services"
     ],
@@ -1111,8 +1141,9 @@
     ],
     "moreInfo": "Find/contact local clinics: https://hangerclinic.com/contact/ "
   },
-  "Supplemental Security Income (SSI)": {
+  "36": {
     "name": "Supplemental Security Income (SSI)",
+    "id": "36",
     "type": [
       "Financial Assistance",
       "Disability"
@@ -1144,8 +1175,9 @@
     ],
     "moreInfo": "Apply here:\nhttps://www.ssa.gov/apply/ssi "
   },
-  "Social Security Disability Insurance (SSDI)": {
+  "37": {
     "name": "Social Security Disability Insurance (SSDI)",
+    "id": "37",
     "type": [
       "Financial Assistance",
       "Disability"
@@ -1176,8 +1208,9 @@
     ],
     "moreInfo": "Apply here: https://www.ssa.gov/apply?benefits=disability&age=adult"
   },
-  "Amanecer Community Counseling Service": {
+  "38": {
     "name": "Amanecer Community Counseling Service",
+    "id": "38",
     "type": [
       "Domestic Violence & Trauma Survivorship",
       "Case Management & Resource Navigation",
@@ -1213,8 +1246,9 @@
     ],
     "moreInfo": ""
   },
-  "Peace Over Violence": {
+  "39": {
     "name": "Peace Over Violence",
+    "id": "39",
     "type": [
       "Domestic Violence & Trauma Survivorship"
     ],
@@ -1248,8 +1282,9 @@
     ],
     "moreInfo": ""
   },
-  "YWCA of San Gabriel Valley": {
+  "40": {
     "name": "YWCA of San Gabriel Valley",
+    "id": "40",
     "type": [
       "Career Development & Employment",
       "Mental Health & Counseling",
@@ -1285,8 +1320,9 @@
     ],
     "moreInfo": ""
   },
-  "Family PACT": {
+  "41": {
     "name": "Family PACT",
+    "id": "41",
     "type": [
       "Family Planning & Reproductive Health"
     ],
@@ -1317,8 +1353,9 @@
     ],
     "moreInfo": ""
   },
-  "HER Smart Choice - East Los Angeles": {
+  "42": {
     "name": "HER Smart Choice - East Los Angeles",
+    "id": "42",
     "type": [
       "Family Planning & Reproductive Health"
     ],
@@ -1350,8 +1387,9 @@
     ],
     "moreInfo": ""
   },
-  "Los Angeles Abortion Support Collective": {
+  "43": {
     "name": "Los Angeles Abortion Support Collective",
+    "id": "43",
     "type": [
       "Family Planning & Reproductive Health"
     ],
@@ -1385,8 +1423,9 @@
     ],
     "moreInfo": ""
   },
-  "Los Angeles Regional Food Bank": {
+  "44": {
     "name": "Los Angeles Regional Food Bank",
+    "id": "44",
     "type": [
       "Family Planning & Reproductive Health",
       "Food & Nutrition Assistance"
@@ -1421,8 +1460,9 @@
     ],
     "moreInfo": ""
   },
-  "M\u00e1s Fresco Program": {
+  "45": {
     "name": "M\u00e1s Fresco Program",
+    "id": "45",
     "type": [
       "Food & Nutrition Assistance"
     ],
@@ -1452,8 +1492,9 @@
     ],
     "moreInfo": ""
   },
-  "California Women, Infants, and Children (WIC)": {
+  "46": {
     "name": "California Women, Infants, and Children (WIC)",
+    "id": "46",
     "type": [
       "Food & Nutrition Assistance",
       "Education"
@@ -1486,8 +1527,9 @@
     ],
     "moreInfo": ""
   },
-  "FEEDLA YMCA Metro LA": {
+  "47": {
     "name": "FEEDLA YMCA Metro LA",
+    "id": "47",
     "type": [
       "Food & Nutrition Assistance"
     ],
@@ -1517,8 +1559,9 @@
     ],
     "moreInfo": ""
   },
-  "Aviva": {
+  "48": {
     "name": "Aviva",
+    "id": "48",
     "type": [
       "Mental Health & Counseling",
       "Housing & Shelters"
@@ -1554,8 +1597,9 @@
     ],
     "moreInfo": ""
   },
-  "In-Home Supportive Services (IHSS)": {
+  "49": {
     "name": "In-Home Supportive Services (IHSS)",
+    "id": "49",
     "type": [
       "Financial Assistance"
     ],
@@ -1586,8 +1630,9 @@
     ],
     "moreInfo": ""
   },
-  "Los Angeles Homeless Services Authority (LAHSA)": {
+  "50": {
     "name": "Los Angeles Homeless Services Authority (LAHSA)",
+    "id": "50",
     "type": [
       "Housing & Shelters"
     ],
@@ -1620,8 +1665,9 @@
     ],
     "moreInfo": ""
   },
-  "PATH LA": {
+  "51": {
     "name": "PATH LA",
+    "id": "51",
     "type": [
       "Housing & Shelters",
       "Career Development & Employment",
@@ -1655,8 +1701,9 @@
     ],
     "moreInfo": ""
   },
-  "Union Rescue Mission": {
+  "52": {
     "name": "Union Rescue Mission",
+    "id": "52",
     "type": [
       "Housing & Shelters",
       "Food & Nutrition Assistance",
@@ -1698,8 +1745,9 @@
     ],
     "moreInfo": ""
   },
-  "California Against Slavery": {
+  "53": {
     "name": "California Against Slavery",
+    "id": "53",
     "type": [
       "Human Trafficking"
     ],
@@ -1729,8 +1777,9 @@
     ],
     "moreInfo": ""
   },
-  "Coalition to Abolish Slavery and Trafficking (CAST)": {
+  "54": {
     "name": "Coalition to Abolish Slavery and Trafficking (CAST)",
+    "id": "54",
     "type": [
       "Human Trafficking"
     ],
@@ -1763,8 +1812,9 @@
     ],
     "moreInfo": "Report a tip: 1 (888) 373-7888"
   },
-  "East Los Angeles Women\u2019s Center": {
+  "55": {
     "name": "East Los Angeles Women\u2019s Center",
+    "id": "55",
     "type": [
       "Human Trafficking"
     ],
@@ -1796,8 +1846,9 @@
     ],
     "moreInfo": ""
   },
-  "Gems Uncovered": {
+  "56": {
     "name": "Gems Uncovered",
+    "id": "56",
     "type": [
       "Human Trafficking"
     ],
@@ -1827,8 +1878,9 @@
     ],
     "moreInfo": ""
   },
-  "Humansave": {
+  "57": {
     "name": "Humansave",
+    "id": "57",
     "type": [
       "Human Trafficking"
     ],
@@ -1858,8 +1910,9 @@
     ],
     "moreInfo": ""
   },
-  "Journey Out": {
+  "58": {
     "name": "Journey Out",
+    "id": "58",
     "type": [
       "Human Trafficking"
     ],
@@ -1889,8 +1942,9 @@
     ],
     "moreInfo": ""
   },
-  "LA Center for Law and Justice": {
+  "59": {
     "name": "LA Center for Law and Justice",
+    "id": "59",
     "type": [
       "Human Trafficking"
     ],
@@ -1920,8 +1974,9 @@
     ],
     "moreInfo": "Clients seen by appointment only, no walk-ins.\n\n"
   },
-  "National Human Trafficking Hotline": {
+  "60": {
     "name": "National Human Trafficking Hotline",
+    "id": "60",
     "type": [
       "Human Trafficking"
     ],
@@ -1952,8 +2007,9 @@
     ],
     "moreInfo": ""
   },
-  "Saving Innocence": {
+  "61": {
     "name": "Saving Innocence",
+    "id": "61",
     "type": [
       "Human Trafficking"
     ],
@@ -1985,8 +2041,9 @@
     ],
     "moreInfo": ""
   },
-  "Carecen": {
+  "62": {
     "name": "Carecen",
+    "id": "62",
     "type": [
       "Undocumented/Refugee/Asylum Services"
     ],
@@ -2017,8 +2074,9 @@
     ],
     "moreInfo": ""
   },
-  "El Rescate Legal Services": {
+  "63": {
     "name": "El Rescate Legal Services",
+    "id": "63",
     "type": [
       "Undocumented/Refugee/Asylum Services"
     ],
@@ -2051,8 +2109,9 @@
     ],
     "moreInfo": ""
   },
-  "Esperanza Immigrant Rights Project": {
+  "64": {
     "name": "Esperanza Immigrant Rights Project",
+    "id": "64",
     "type": [
       "Undocumented/Refugee/Asylum Services"
     ],
@@ -2083,8 +2142,9 @@
     ],
     "moreInfo": ""
   },
-  "International Rescue Committee\u2014Los Angeles": {
+  "65": {
     "name": "International Rescue Committee\u2014Los Angeles",
+    "id": "65",
     "type": [
       "Undocumented/Refugee/Asylum Services"
     ],
@@ -2114,8 +2174,9 @@
     ],
     "moreInfo": ""
   },
-  "Keck Human Rights Clinic\r": {
+  "66": {
     "name": "Keck Human Rights Clinic\r",
+    "id": "66",
     "type": [
       "Undocumented/Refugee/Asylum Services"
     ],
@@ -2146,8 +2207,9 @@
     ],
     "moreInfo": "Submit a referral: https://sites.usc.edu/keckhumanrights/direct-referral-case-submissions/ \n\nSocial Work Branch Website:\nhttps://dworakpeck.usc.edu/clinical-programs/sdp-keck-human-rights-clinic"
   },
-  "USC First Gen Plus Success Center": {
+  "67": {
     "name": "USC First Gen Plus Success Center",
+    "id": "67",
     "type": [
       "Undocumented/Refugee/Asylum Services"
     ],
@@ -2178,8 +2240,9 @@
     ],
     "moreInfo": ""
   },
-  "Los Angeles Area Pro Bono Directory | The State Bar of California": {
+  "68": {
     "name": "Los Angeles Area Pro Bono Directory | The State Bar of California",
+    "id": "68",
     "type": [
       "Legal Services"
     ],
@@ -2211,8 +2274,9 @@
     ],
     "moreInfo": ""
   },
-  "Neighborhood Legal Services of Los Angeles (NLSLA)": {
+  "69": {
     "name": "Neighborhood Legal Services of Los Angeles (NLSLA)",
+    "id": "69",
     "type": [
       "Legal Services"
     ],
@@ -2244,17 +2308,19 @@
     ],
     "moreInfo": "Application: https://nlsla.org/services/help/"
   },
-  "Los Angeles LGBT Center": {
+  "70": {
     "name": "Los Angeles LGBT Center",
+    "id": "70",
     "type": [
       "LGBT Services"
     ],
-    "description": "Offers comprehensive care that's designed specifically for the queer and trans community, including housing, legal aid, healthcare, mental health, and other services for youth aged 18 to seniors aged 98.",
+    "description": "The Los Angeles LGBT Center is one of the nation's largest and most experienced providers of LGBT health and mental healthcare. We're also the only Federally Qualified Health Center in California--and of the few in the nation--specifically for LGBT people. All of our providers specialize in caring for lesbian, gay, bisexual and transgender people and we work as partners to address the unique health needs of our community including: HIV/AIDS specialty care; HIV and STD testing; HIV prevention programs; individual and group counseling; crystal meth, alcohol and other drug recovery services; on-site pharmacy; health research.",
     "audience": [
       "LGBTQ+ Community"
     ],
     "language": [
-      "English"
+      "English",
+      "Spanish"
     ],
     "other": [
       ""
@@ -2262,21 +2328,24 @@
     "eligibility": [
       ""
     ],
-    "eligibilityText": "Age 18-98",
-    "email": "webmaster@lalgbtcenter.org",
-    "phone": "(323) 993-7500,\n\n(323) 933-7400 (Primary care line)",
+    "eligibilityText": "",
+    "email": "",
+    "phone": "(323) 993-7400",
     "hours": "",
     "contactPerson": "",
-    "contactLink": "https://lalgbtcenter.org/about/contact-us/",
+    "contactLink": "",
     "website": "https://lalgbtcenter.org/",
-    "address": "1625 N. Schrader Blvd, Los Angeles, CA 90028-6213 (McDonal/Wright Building - health and mental health services, and pharmacy)",
+    "address": "Trans Wellness Center: 3055 Wilshire Blvd., Suite 360, Los Angeles, CA 90010\n\nYouth and Senior Services: 1118 N. McCadden Pl., Los Angeles, CA 90038\n\nLGBTQ+ Housing: 1602 N. Ivar Ave., Los Angeles, CA 90028\n",
     "neighborhood": [
-      "Central LA"
+      "DTLA",
+      "Westside",
+      "South Central"
     ],
-    "moreInfo": "Locations and more phone numbers: https://lalgbtcenter.org/about/contact-us/"
+    "moreInfo": ""
   },
-  "Youth Pride Association": {
+  "71": {
     "name": "Youth Pride Association",
+    "id": "71",
     "type": [
       "LGBT Services"
     ],
@@ -2307,8 +2376,9 @@
     ],
     "moreInfo": ""
   },
-  "CalHOPE ": {
+  "72": {
     "name": "CalHOPE ",
+    "id": "72",
     "type": [
       "Mental Health & Counseling",
       "Education"
@@ -2341,8 +2411,9 @@
     ],
     "moreInfo": ""
   },
-  "Cal-MAP": {
+  "73": {
     "name": "Cal-MAP",
+    "id": "73",
     "type": [
       "Mental Health & Counseling"
     ],
@@ -2372,8 +2443,9 @@
     ],
     "moreInfo": ""
   },
-  "Crisis Text Line": {
+  "74": {
     "name": "Crisis Text Line",
+    "id": "74",
     "type": [
       "Mental Health & Counseling"
     ],
@@ -2404,8 +2476,9 @@
     ],
     "moreInfo": ""
   },
-  "CDC Disaster Distress Hotline": {
+  "75": {
     "name": "CDC Disaster Distress Hotline",
+    "id": "75",
     "type": [
       "Mental Health & Counseling",
       "Extreme Weather/Wildfires & Disaster Relief"
@@ -2439,8 +2512,9 @@
     ],
     "moreInfo": ""
   },
-  "Family Urgent Response System": {
+  "76": {
     "name": "Family Urgent Response System",
+    "id": "76",
     "type": [
       "Mental Health & Counseling"
     ],
@@ -2471,8 +2545,9 @@
     ],
     "moreInfo": ""
   },
-  "iPrevail Free Mental Health Support for LA County": {
+  "77": {
     "name": "iPrevail Free Mental Health Support for LA County",
+    "id": "77",
     "type": [
       "Mental Health & Counseling"
     ],
@@ -2504,8 +2579,9 @@
     ],
     "moreInfo": ""
   },
-  "Los Angeles Homeless Outreach Portal": {
+  "78": {
     "name": "Los Angeles Homeless Outreach Portal",
+    "id": "78",
     "type": [
       "Mental Health & Counseling",
       "Case Management & Resource Navigation"
@@ -2536,8 +2612,9 @@
     ],
     "moreInfo": ""
   },
-  "Mental Health Services and Referrals LA County": {
+  "79": {
     "name": "Mental Health Services and Referrals LA County",
+    "id": "79",
     "type": [
       "Mental Health & Counseling"
     ],
@@ -2568,8 +2645,9 @@
     ],
     "moreInfo": ""
   },
-  "National Suicide Prevention Hotline": {
+  "80": {
     "name": "National Suicide Prevention Hotline",
+    "id": "80",
     "type": [
       "Mental Health & Counseling"
     ],
@@ -2599,8 +2677,9 @@
     ],
     "moreInfo": ""
   },
-  "National Alliance on Mental Illness (NAMI)": {
+  "81": {
     "name": "National Alliance on Mental Illness (NAMI)",
+    "id": "81",
     "type": [
       "Mental Health & Counseling"
     ],
@@ -2630,8 +2709,9 @@
     ],
     "moreInfo": ""
   },
-  "TheHopeLine": {
+  "82": {
     "name": "TheHopeLine",
+    "id": "82",
     "type": [
       "Mental Health & Counseling",
       "Domestic Violence & Trauma Survivorship",
@@ -2664,8 +2744,9 @@
     ],
     "moreInfo": ""
   },
-  "The Trevor Project Lifeline": {
+  "83": {
     "name": "The Trevor Project Lifeline",
+    "id": "83",
     "type": [
       "Mental Health & Counseling",
       "LGBT Services"
@@ -2697,8 +2778,9 @@
     ],
     "moreInfo": ""
   },
-  "Veterans Crisis Line": {
+  "84": {
     "name": "Veterans Crisis Line",
+    "id": "84",
     "type": [
       "Mental Health & Counseling"
     ],
@@ -2728,8 +2810,9 @@
     ],
     "moreInfo": ""
   },
-  "CORE (Connecting to Opportunities for Recovery and Engagement) Centers": {
+  "85": {
     "name": "CORE (Connecting to Opportunities for Recovery and Engagement) Centers",
+    "id": "85",
     "type": [
       "Addiction/Substance Use"
     ],
@@ -2762,8 +2845,9 @@
     ],
     "moreInfo": "Full list of locations: http://publichealth.lacounty.gov/sapc/public/corecenter/?lang=en"
   },
-  "Harm Reduction Syringe Services Programs": {
+  "86": {
     "name": "Harm Reduction Syringe Services Programs",
+    "id": "86",
     "type": [
       "Addiction/Substance Use"
     ],
@@ -2803,8 +2887,9 @@
     ],
     "moreInfo": "Full list of locations on website"
   },
-  "LA County Substance Abuse Service Helpline (SASH)": {
+  "87": {
     "name": "LA County Substance Abuse Service Helpline (SASH)",
+    "id": "87",
     "type": [
       "Addiction/Substance Use"
     ],
@@ -2844,8 +2929,9 @@
     ],
     "moreInfo": "Full list of locations on website"
   },
-  "Over-the-Counter Naloxone Access ": {
+  "88": {
     "name": "Over-the-Counter Naloxone Access ",
+    "id": "88",
     "type": [
       "Addiction/Substance Use"
     ],
@@ -2884,8 +2970,9 @@
     ],
     "moreInfo": "More information: http://publichealth.lacounty.gov/sapc/public/harm-reduction/\nFull list of locations on website"
   },
-  "ACCESS Paratransit": {
+  "89": {
     "name": "ACCESS Paratransit",
+    "id": "89",
     "type": [
       "Transportation",
       "Disability"
@@ -2918,8 +3005,9 @@
     ],
     "moreInfo": "SoCal ADA Paratransit: https://accessla.org/other_mobility_resources/other_mobility_resourcessocala.html \n\nRegional transit routes: https://accessla.org/other_mobility_resources/links_to_local_transit_agencie.html"
   },
-  "AMTRAK": {
+  "90": {
     "name": "AMTRAK",
+    "id": "90",
     "type": [
       "Transportation",
       "Disability"
@@ -2950,8 +3038,9 @@
     ],
     "moreInfo": "Form: https://www.amtrak.com/contact-us/email.html, select \"Accessibility Requests/Feedback\" as subject option"
   },
-  "Cityride Dial-A-Ride": {
+  "91": {
     "name": "Cityride Dial-A-Ride",
+    "id": "91",
     "type": [
       "Transportation"
     ],
@@ -2983,8 +3072,9 @@
     ],
     "moreInfo": "Guide (English): https://www.ladottransit.com/cityride/pdf/Cityride_ProgramGuide_April2019.pdf \nGuide (Spanish): https://www.ladottransit.com/cityride/pdf/Cityride_ProgramGuide_April2019_esp.pdf "
   },
-  "Dial-A-Ride Services (LA Public Works)": {
+  "92": {
     "name": "Dial-A-Ride Services (LA Public Works)",
+    "id": "92",
     "type": [
       "Transportation",
       "Disability"
@@ -3017,8 +3107,9 @@
     ],
     "moreInfo": "Service areas shown here: https://pw.lacounty.gov/transit/DAR.aspx \n\nPart of ACCESS Paratransit"
   },
-  "LA Care": {
+  "93": {
     "name": "LA Care",
+    "id": "93",
     "type": [
       "Medical Services",
       "Transportation"
@@ -3049,8 +3140,9 @@
     ],
     "moreInfo": ""
   },
-  "Los Angeles Metro": {
+  "94": {
     "name": "Los Angeles Metro",
+    "id": "94",
     "type": [
       "Transportation"
     ],
@@ -3081,8 +3173,9 @@
     ],
     "moreInfo": ""
   },
-  "Wellness Center at Historic General Hospital": {
+  "95": {
     "name": "Wellness Center at Historic General Hospital",
+    "id": "95",
     "type": [
       "Mental Health & Counseling",
       "Food & Nutrition Assistance",
@@ -3127,8 +3220,9 @@
     ],
     "moreInfo": ""
   },
-  "Mexican American Opportunity Foundation": {
+  "96": {
     "name": "Mexican American Opportunity Foundation",
+    "id": "96",
     "type": [
       "Career Development & Employment",
       "Cultural & Language Services",
@@ -3165,8 +3259,9 @@
     ],
     "moreInfo": "2130 Chester Ave., Suite 200\nBakersfield, CA 93301\n(661) 558-0103\n(MAOF Skill Center)\n\n11 Quail Run Circle, Suite 101\nSalinas, CA 93907\n(831) 424-6939 (MAOF Monterey County)"
   },
-  "USC Street Medicine": {
+  "97": {
     "name": "USC Street Medicine",
+    "id": "97",
     "type": [
       "Medical Services"
     ],
@@ -3197,8 +3292,9 @@
     ],
     "moreInfo": "Service area map: https://www.google.com/maps/d/u/0/viewer?mid=14UIzy6695eW1RYwtGQamaqyKNkBDMfo&ll=34.03446502592245%2C-118.26730795129396&z=12"
   },
-  "Violence Intervention Program (VIP)": {
+  "98": {
     "name": "Violence Intervention Program (VIP)",
+    "id": "98",
     "type": [
       "Domestic Violence & Trauma Survivorship",
       "Child Support & Youth Services"
@@ -3234,8 +3330,9 @@
     ],
     "moreInfo": ""
   },
-  "Job Corps": {
+  "99": {
     "name": "Job Corps",
+    "id": "99",
     "type": [
       "Career Development & Employment",
       "Education"
@@ -3271,8 +3368,9 @@
     ],
     "moreInfo": "Application portal: https://enroll.jobcorps.gov/?_gl=1*1qgjc24*_gcl_au*MjA1ODYyNDU5OC4xNzQ1MDM5MjEw*_ga*MTAyMjE4NjQ2NS4xNzQ1MDM5MjEw*_ga_5SSPYG6GYM*MTc0NTAzOTIwOS4xLjEuMTc0NTA0MDQxOC42MC4wLjA."
   },
-  "Youth Build": {
+  "100": {
     "name": "Youth Build",
+    "id": "100",
     "type": [
       "Career Development & Employment",
       "Education"
@@ -3304,8 +3402,9 @@
     ],
     "moreInfo": "More information: https://www.dol.gov/agencies/eta/youth/youthbuild "
   },
-  "Homeboy Industries": {
+  "101": {
     "name": "Homeboy Industries",
+    "id": "101",
     "type": [
       "Addiction/Substance Use",
       "Career Development & Employment",
@@ -3339,8 +3438,9 @@
     ],
     "moreInfo": ""
   },
-  "House of Ruth": {
+  "102": {
     "name": "House of Ruth",
+    "id": "102",
     "type": [
       "Housing & Shelters",
       "Domestic Violence & Trauma Survivorship"
@@ -3372,8 +3472,9 @@
     ],
     "moreInfo": ""
   },
-  "Jewish Family Service LA": {
+  "103": {
     "name": "Jewish Family Service LA",
+    "id": "103",
     "type": [
       "Mental Health & Counseling",
       "Child Support & Youth Services",
@@ -3415,8 +3516,9 @@
     ],
     "moreInfo": ""
   },
-  "Meals on Wheels America": {
+  "104": {
     "name": "Meals on Wheels America",
+    "id": "104",
     "type": [
       "Food & Nutrition Assistance"
     ],
@@ -3454,8 +3556,9 @@
     ],
     "moreInfo": "Link to find meals: https://www.mealsonwheelsamerica.org/find-meals"
   },
-  "Via Care LA": {
+  "105": {
     "name": "Via Care LA",
+    "id": "105",
     "type": [
       "Community Health Center",
       "Medical Services",
@@ -3491,8 +3594,9 @@
     ],
     "moreInfo": "Link to request an appointment: https://www.viacarela.org/patients-visitors/request-an-appointment/\n\nLocations with hours:\nhttps://www.viacarela.org/location-hours "
   },
-  "Neighborhood Legal Services": {
+  "106": {
     "name": "Neighborhood Legal Services",
+    "id": "106",
     "type": [
       "Legal Services"
     ],
@@ -3529,8 +3633,9 @@
     ],
     "moreInfo": "Apply here: https://nlslash.legalserver.org/modules/matter/extern_intake.php?pid=157&h=bcaf65&"
   },
-  "Bet Tzedek": {
+  "107": {
     "name": "Bet Tzedek",
+    "id": "107",
     "type": [
       "Legal Services"
     ],
@@ -3568,8 +3673,9 @@
     ],
     "moreInfo": "Apply here: https://btlsoi.legalserver.org/modules/matter/extern_intake.php?pid=129&h=daa817&"
   },
-  "Project Angel Food": {
+  "108": {
     "name": "Project Angel Food",
+    "id": "108",
     "type": [
       "Food & Nutrition Assistance"
     ],
@@ -3609,8 +3715,9 @@
     ],
     "moreInfo": "Apply here (English): https://cdn.prod.website-files.com/5fd8e154f828cff928e57641/63222e422094be9a069ffbc2_PAF%20Client%20Application%20(English%20-%20Aug%202022).pdf\n\nApply here (Spanish): https://cdn.prod.website-files.com/5fd8e154f828cff928e57641/63222e5cee95dc7754d972f4_PAF%20Client%20Application%20(Spanish%20-%20Aug%202022).pdf"
   },
-  "Housing for Health": {
+  "109": {
     "name": "Housing for Health",
+    "id": "109",
     "type": [
       "Housing & Shelters",
       "Medical Services"
@@ -3651,8 +3758,9 @@
     ],
     "moreInfo": ""
   },
-  "Illumination Foundation": {
+  "110": {
     "name": "Illumination Foundation",
+    "id": "110",
     "type": [
       "Housing & Shelters",
       "Medical Services"
@@ -3684,8 +3792,9 @@
     ],
     "moreInfo": ""
   },
-  "David L. Murphy Sobering Center": {
+  "111": {
     "name": "David L. Murphy Sobering Center",
+    "id": "111",
     "type": [
       "Addiction/Substance Use"
     ],
@@ -3715,8 +3824,9 @@
     ],
     "moreInfo": "More Exodus locations here: https://www.exodusrecovery.com/locations/"
   },
-  "Rancho Los Amigos": {
+  "112": {
     "name": "Rancho Los Amigos",
+    "id": "112",
     "type": [
       "Medical Services",
       "Disability"
@@ -3749,8 +3859,9 @@
     ],
     "moreInfo": "To make an appointment: https://dhs.lacounty.gov/rancho/patient-and-visitor/admissions-appointments/outpatient-referrals-and-appointments/"
   },
-  "MAMA\u2019s Neighborhood Program": {
+  "113": {
     "name": "MAMA\u2019s Neighborhood Program",
+    "id": "113",
     "type": [
       "Child Support & Youth Services",
       "Family Planning & Reproductive Health",
@@ -3792,8 +3903,41 @@
     ],
     "moreInfo": "Locations: https://dhs.lacounty.gov/womens-health/our-services/womens-health/find-a-clinic/"
   },
-  "Al Otro Lado": {
+  "114": {
+    "name": "Los Angeles LGBT Center",
+    "id": "114",
+    "type": [
+      "LGBT Services"
+    ],
+    "description": "Offers comprehensive care that's designed specifically for the queer and trans community, including housing, legal aid, healthcare, mental health, and other services for youth aged 18 to seniors aged 98.",
+    "audience": [
+      "LGBTQ+ Community"
+    ],
+    "language": [
+      "English"
+    ],
+    "other": [
+      ""
+    ],
+    "eligibility": [
+      ""
+    ],
+    "eligibilityText": "Age 18-98",
+    "email": "webmaster@lalgbtcenter.org",
+    "phone": "(323) 993-7500,\n\n(323) 933-7400 (Primary care line)",
+    "hours": "",
+    "contactPerson": "",
+    "contactLink": "https://lalgbtcenter.org/about/contact-us/",
+    "website": "https://lalgbtcenter.org/",
+    "address": "1625 N. Schrader Blvd, Los Angeles, CA 90028-6213 (McDonal/Wright Building - health and mental health services, and pharmacy)",
+    "neighborhood": [
+      "Central LA"
+    ],
+    "moreInfo": "Locations and more phone numbers: https://lalgbtcenter.org/about/contact-us/"
+  },
+  "115": {
     "name": "Al Otro Lado",
+    "id": "115",
     "type": [
       "Legal Services",
       "Undocumented/Refugee/Asylum Services"
@@ -3828,8 +3972,9 @@
     ],
     "moreInfo": ""
   },
-  "Transition Age Youth (TAY)": {
+  "116": {
     "name": "Transition Age Youth (TAY)",
+    "id": "116",
     "type": [
       "Housing & Shelters"
     ],
@@ -3863,8 +4008,9 @@
     ],
     "moreInfo": "Funding for agencies, not individuals"
   },
-  "Adolescent Care and Transition (ACT) Clinic": {
+  "117": {
     "name": "Adolescent Care and Transition (ACT) Clinic",
+    "id": "117",
     "type": [
       "LGBT Services",
       "Medical Services",
@@ -3898,8 +4044,9 @@
     ],
     "moreInfo": ""
   },
-  "National Maternal Mental Health Hotline": {
+  "118": {
     "name": "National Maternal Mental Health Hotline",
+    "id": "118",
     "type": [
       "Mental Health & Counseling"
     ],
@@ -3932,8 +4079,9 @@
     ],
     "moreInfo": ""
   },
-  "New Familia": {
+  "120": {
     "name": "New Familia",
+    "id": "120",
     "type": [
       "Case Management & Resource Navigation",
       "Medical Services",
@@ -3966,8 +4114,9 @@
     ],
     "moreInfo": ""
   },
-  "LAGMC CARES Mobile Food Pantry": {
+  "121": {
     "name": "LAGMC CARES Mobile Food Pantry",
+    "id": "121",
     "type": [
       "Food & Nutrition Assistance"
     ],
@@ -3998,8 +4147,9 @@
     ],
     "moreInfo": ""
   },
-  "Postpartum Support International (PSI)": {
+  "122": {
     "name": "Postpartum Support International (PSI)",
+    "id": "122",
     "type": [
       "Mental Health & Counseling",
       "Case Management & Resource Navigation"
@@ -4031,8 +4181,9 @@
     ],
     "moreInfo": ""
   },
-  "Maternal Mental Health Now": {
+  "123": {
     "name": "Maternal Mental Health Now",
+    "id": "123",
     "type": [
       "Mental Health & Counseling",
       "Case Management & Resource Navigation"
@@ -4065,8 +4216,9 @@
     ],
     "moreInfo": ""
   },
-  "Covered California": {
+  "124": {
     "name": "Covered California",
+    "id": "124",
     "type": [
       "Health Insurance"
     ],
@@ -4098,8 +4250,9 @@
     ],
     "moreInfo": "Enrollment available year-round for Medi-Cal; open enrollment and special enrollment periods for others."
   },
-  "Al-Anon": {
+  "126": {
     "name": "Al-Anon",
+    "id": "126",
     "type": [
       "Addiction/Substance Use"
     ],
@@ -4131,8 +4284,9 @@
     ],
     "moreInfo": ""
   },
-  "Alcoholics Anonymous": {
+  "127": {
     "name": "Alcoholics Anonymous",
+    "id": "127",
     "type": [
       "Addiction/Substance Use"
     ],
@@ -4163,8 +4317,9 @@
     ],
     "moreInfo": ""
   },
-  "Alzheimer's LA Support Services": {
+  "128": {
     "name": "Alzheimer's LA Support Services",
+    "id": "128",
     "type": [
       "Mental Health & Counseling",
       "Education"
@@ -4196,8 +4351,9 @@
     ],
     "moreInfo": ""
   },
-  "Alzheimer's Association": {
+  "129": {
     "name": "Alzheimer's Association",
+    "id": "129",
     "type": [
       "Legal Services",
       "Financial Assistance",
@@ -4236,8 +4392,9 @@
     ],
     "moreInfo": ""
   },
-  "Braille Institute": {
+  "130": {
     "name": "Braille Institute",
+    "id": "130",
     "type": [
       "Case Management & Resource Navigation",
       "Career Development & Employment",
@@ -4271,8 +4428,9 @@
     ],
     "moreInfo": "Offers access to the National Library Service for the print-disabled; adjacent to LA City College and accessible via public transit."
   },
-  "Glendale Adult Recreation Center": {
+  "131": {
     "name": "Glendale Adult Recreation Center",
+    "id": "131",
     "type": [
       "Arts & Entertainment",
       "Education",
@@ -4307,8 +4465,9 @@
     ],
     "moreInfo": ""
   },
-  "Forrest Lawn Grief Support": {
+  "132": {
     "name": "Forrest Lawn Grief Support",
+    "id": "132",
     "type": [
       "Mental Health & Counseling",
       "Education"
@@ -4340,8 +4499,9 @@
     ],
     "moreInfo": ""
   },
-  "Our House Grief Support": {
+  "133": {
     "name": "Our House Grief Support",
+    "id": "133",
     "type": [
       "Mental Health & Counseling",
       "Education",
@@ -4376,8 +4536,9 @@
     ],
     "moreInfo": ""
   },
-  "Los Angeles Mission": {
+  "134": {
     "name": "Los Angeles Mission",
+    "id": "134",
     "type": [
       "Housing & Shelters",
       "Food & Nutrition Assistance",
@@ -4414,8 +4575,9 @@
     ],
     "moreInfo": "Programs include long-term recovery, vocational training, and spiritual support. Offers three meals daily and overnight accommodations."
   },
-  "Narcotics Anonymous": {
+  "135": {
     "name": "Narcotics Anonymous",
+    "id": "135",
     "type": [
       "Addiction/Substance Use"
     ],
@@ -4446,8 +4608,9 @@
     ],
     "moreInfo": ""
   },
-  "Prenatal Classes at USC Arcadia Hospital": {
+  "136": {
     "name": "Prenatal Classes at USC Arcadia Hospital",
+    "id": "136",
     "type": [
       "Education",
       "Family Planning & Reproductive Health"
@@ -4479,8 +4642,9 @@
     ],
     "moreInfo": ""
   },
-  "Red Cross of Los Angeles": {
+  "137": {
     "name": "Red Cross of Los Angeles",
+    "id": "137",
     "type": [
       "Case Management & Resource Navigation",
       "Extreme Weather/Wildfires & Disaster Relief",
@@ -4514,8 +4678,9 @@
     ],
     "moreInfo": ""
   },
-  "Silver Sneakers": {
+  "138": {
     "name": "Silver Sneakers",
+    "id": "138",
     "type": [
       "Fitness & Wellness",
       "Education"
@@ -4546,8 +4711,9 @@
     ],
     "moreInfo": ""
   },
-  "Special Olympics Los Angeles": {
+  "139": {
     "name": "Special Olympics Los Angeles",
+    "id": "139",
     "type": [
       "Disability",
       "Fitness & Wellness"
@@ -4587,8 +4753,9 @@
     ],
     "moreInfo": ""
   },
-  "St James In-The-City Episcopal Church": {
+  "140": {
     "name": "St James In-The-City Episcopal Church",
+    "id": "140",
     "type": [
       "Food & Nutrition Assistance",
       "Spiritual Services",
@@ -4623,8 +4790,9 @@
     ],
     "moreInfo": ""
   },
-  "Stepping Stones At Verdugo Hospital ": {
+  "141": {
     "name": "Stepping Stones At Verdugo Hospital ",
+    "id": "141",
     "type": [
       "Medical Services",
       "Mental Health & Counseling"
@@ -4655,8 +4823,9 @@
     ],
     "moreInfo": ""
   },
-  "Society of Asylum Medicine": {
+  "142": {
     "name": "Society of Asylum Medicine",
+    "id": "142",
     "type": [
       "Undocumented/Refugee/Asylum Services"
     ],
@@ -4688,8 +4857,9 @@
     ],
     "moreInfo": ""
   },
-  "Los Angeles Raids and Response Network (California Collaborative for Immigrant Justice)": {
+  "143": {
     "name": "Los Angeles Raids and Response Network (California Collaborative for Immigrant Justice)",
+    "id": "143",
     "type": [
       "Legal Services",
       "Undocumented/Refugee/Asylum Services"
@@ -4722,8 +4892,9 @@
     ],
     "moreInfo": "Under California Collaborative for Immigrant Justice"
   },
-  "Seating Center at Rancho Los Amigos": {
+  "146": {
     "name": "Seating Center at Rancho Los Amigos",
+    "id": "146",
     "type": [
       "Disability"
     ],
@@ -4754,8 +4925,9 @@
     ],
     "moreInfo": "Please complete the Outpatient Therapy Referral Form \u2013 Community and send or fax these forms to the Seating Center prior to making an appointment."
   },
-  "CicLAvia": {
+  "147": {
     "name": "CicLAvia",
+    "id": "147",
     "type": [
       "Arts & Entertainment",
       "Fitness & Wellness"
@@ -4791,8 +4963,9 @@
     ],
     "moreInfo": ""
   },
-  "Safe Youth Zone": {
+  "148": {
     "name": "Safe Youth Zone",
+    "id": "148",
     "type": [
       "Child Support & Youth Services"
     ],

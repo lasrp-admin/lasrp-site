@@ -8,12 +8,13 @@ export type FilterSet = {
 };
 
 export type ResourceDatabase = {
-  [name: string]: Resource;
+  [id: number]: Resource;
 };
 
 export type Resource = {
   type: Set<ResourceType>;
   name: string;
+  id: number;
   description: string;
   audience: Set<ResourceOther>;
   language: Set<ResourceLanguage>;

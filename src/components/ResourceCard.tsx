@@ -4,12 +4,12 @@ import IconList from "./IconList";
 import useDatabaseStore from "../contexts/DatabaseStore";
 
 interface ResourceCardType {
-  name: string;
+  id: number;
 }
 
-const ResourceCard: React.FC<ResourceCardType> = ({ name }) => {
+const ResourceCard: React.FC<ResourceCardType> = ({ id }) => {
   const database = useDatabaseStore((state) => state.database);
-  const resource = database[name];
+  const resource = database[id];
 
   return (
     <div className={styles.cardContainer}>

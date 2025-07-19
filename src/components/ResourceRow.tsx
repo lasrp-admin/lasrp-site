@@ -16,6 +16,7 @@ import useDatabaseStore from "../contexts/DatabaseStore";
 
 interface ResourceRowProps {
   name: string;
+  id: number;
   description: string;
   categories: string;
   eligibility: string[];
@@ -31,6 +32,7 @@ interface ResourceRowProps {
 const ResourceRow: React.FC<ResourceRowProps> = React.memo(
   ({
     name,
+    id,
     description,
     categories,
     eligibility,
@@ -45,7 +47,7 @@ const ResourceRow: React.FC<ResourceRowProps> = React.memo(
     const [expand, setExpand] = useState<boolean>(expandInit);
     const [linkHover, setLinkHover] = useState<boolean>(false);
     const selected = useDatabaseStore((state) =>
-      state.selectedResources.has(name)
+      state.selectedResources.has(id)
     );
     const addSelectedResource = useDatabaseStore(
       (state) => state.addSelectedResource
@@ -82,14 +84,14 @@ const ResourceRow: React.FC<ResourceRowProps> = React.memo(
             <MdCheckBox
               size={20}
               onClick={() => {
-                delSelectedResource(name);
+                delSelectedResource(id);
               }}
             />
           ) : (
             <MdCheckBoxOutlineBlank
               size={20}
               onClick={() => {
-                addSelectedResource(name);
+                addSelectedResource(id);
               }}
             />
           )}

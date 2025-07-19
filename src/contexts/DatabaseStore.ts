@@ -2,19 +2,24 @@ import {
   loadSelectedResources,
   saveSelectedResources,
 } from "../utils/localStorage";
-import type { ResourceDatabase, Resource } from "../types/types";
+import type { ResourceDatabase } from "../types/types";
 import { create } from "zustand";
+import { readURL, updateURL } from "../utils/urlEncoding";
 
 interface DatabaseStore {
   database: ResourceDatabase;
   setDatabase: (db: ResourceDatabase) => void;
   databaseSize: number;
-  selectedResources: Set<string>;
-  addSelectedResource: (name: string) => void;
-  delSelectedResource: (name: string) => void;
-  areAllSelected: (resources: Resource[]) => boolean;
-  selectAll: (data: Resource[]) => void;
-  deselectAll: (data: Resource[]) => void;
+  favoriteResources: Set<number>;
+  addFavoriteResources: (resources?: number[]) => void;
+  delFavoriteResources: (resources: number[]) => void;
+  selectedResources: Set<number>;
+  addSelectedResource: (id: number) => void;
+  delSelectedResource: (id: number) => void;
+  areAllSelected: (ids: number[]) => boolean;
+  areAnySelected: () => boolean;
+  selectAll: (ids: number[]) => void;
+  deselectAll: (ids: number[]) => void;
 }
 
 const useDatabaseStore = create<DatabaseStore>((set, get) => ({
@@ -23,38 +28,63 @@ const useDatabaseStore = create<DatabaseStore>((set, get) => ({
     set({ database: db, databaseSize: Object.keys(db).length });
   },
   databaseSize: 0,
+  favoriteResources: readURL(),
+  addFavoriteResources: (resources?: number[]) => {
+    let newFavorites = new Set(get().favoriteResources);
+    if (resources) {
+      resources.forEach((resource) => newFavorites.add(resource));
+    } else {
+      const toBeAdded = get().selectedResources;
+      newFavorites = new Set([...newFavorites, ...toBeAdded]);
+    }
+    updateURL(newFavorites);
+    set({
+      favoriteResources: newFavorites,
+    });
+  },
+  delFavoriteResources: (resources: number[]) => {
+    const newFavorites = new Set(get().favoriteResources);
+    resources.forEach((resource) => newFavorites.delete(resource));
+    updateURL(newFavorites);
+    set({
+      favoriteResources: newFavorites,
+    });
+  },
   selectedResources: loadSelectedResources(),
-  selectAll: (data: Resource[]) => {
+  selectAll: (ids: number[]) => {
     const newSelected = new Set(get().selectedResources);
-    data.forEach((resource) => newSelected.add(resource.name));
+    ids.forEach((id) => newSelected.add(id));
     saveSelectedResources(newSelected);
     set({
       selectedResources: newSelected,
     });
   },
-  addSelectedResource: (name: string) => {
+  addSelectedResource: (id: number) => {
     const newSelected = new Set(get().selectedResources);
-    newSelected.add(name);
+    newSelected.add(id);
     saveSelectedResources(newSelected);
     set({
       selectedResources: newSelected,
     });
   },
-  delSelectedResource: (name: string) => {
+  delSelectedResource: (id: number) => {
     const newSelected = new Set(get().selectedResources);
-    newSelected.delete(name);
+    newSelected.delete(id);
     saveSelectedResources(newSelected);
     set({
       selectedResources: newSelected,
     });
   },
-  areAllSelected: (resources: Resource[]) => {
+  areAllSelected: (ids: number[]) => {
     const selected = get().selectedResources;
-    return resources.every((resource) => selected.has(resource.name));
+    return ids.every((id) => selected.has(id));
   },
-  deselectAll: (data: Resource[]) => {
+  areAnySelected: () => {
+    return get().selectedResources.size > 0;
+  },
+  deselectAll: (ids: number[]) => {
     const newSelected = new Set(get().selectedResources);
-    data.forEach((resource) => newSelected.delete(resource.name));
+    ids.forEach((id) => newSelected.delete(id));
     saveSelectedResources(newSelected);
     set({
       selectedResources: newSelected,

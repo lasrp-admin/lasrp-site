@@ -15,7 +15,7 @@ export default function useLoadDatabase() {
         const json: ResourceDatabase = await response.json();
         const convertLists: ResourceDatabase = Object.fromEntries(
           Object.entries(json).map(([key, resource]) => [
-            key,
+            Number(key),
             {
               ...resource,
               type: new Set(resource.type),
@@ -23,6 +23,7 @@ export default function useLoadDatabase() {
               language: new Set(resource.language),
               other: new Set(resource.other),
               neighborhood: new Set(resource.neighborhood),
+              id: resource.id,
             },
           ])
         );

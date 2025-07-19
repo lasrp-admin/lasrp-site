@@ -3,7 +3,6 @@ import { useState } from "react";
 import ResourceSearch from "./components/ResourceSearch";
 import styles from "./styles/App.module.css";
 import { FaRegQuestionCircle } from "react-icons/fa";
-import { FiPrinter } from "react-icons/fi";
 import { FaRegStar } from "react-icons/fa6";
 import { FiTable } from "react-icons/fi";
 import ArchLogo from "./assets/images/arch_collaborative.svg?react";
@@ -47,13 +46,7 @@ const App = () => {
             <FaRegStar
               onClick={() => setFavorite(true)}
               size={40}
-              title={"View selected resources"}
-              style={{ cursor: "pointer" }}
-            />
-            <FiPrinter
-              onClick={() => setPrinter(true)}
-              size={40}
-              title={"Print selected resources"}
+              title={"View favorite resources"}
               style={{ cursor: "pointer" }}
             />
             <FiTable

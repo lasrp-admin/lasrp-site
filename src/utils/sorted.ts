@@ -1,15 +1,17 @@
-import type { Resource } from "../types/types";
+import type { ResourceDatabase } from "../types/types";
 
 /**
- * Sorting function to get an array of type Resource[] sorted by resource.name
- * @param resources Array of Resource objects to be sorted by the name property
+ * Sorting function to take in a list of IDs and sort the IDs based on their
+ * associated resource name.
+ * @param resources Array of IDs to be sorted by their associated name
  */
-export function sorted(resources: Resource[]): Resource[] {
-  function resourceCompare(a: Resource, b: Resource): number {
-    if (a.name < b.name) return -1;
-    else if (a.name > b.name) return 1;
+export function sorted(ids: number[], db: ResourceDatabase): number[] {
+  function resourceCompare(a: number, b: number): number {
+    if (db[a].name[0].toLowerCase() < db[b].name[0].toLowerCase()) return -1;
+    else if (db[a].name[0].toLowerCase() > db[b].name[0].toLowerCase())
+      return 1;
     else return 0;
   }
 
-  return resources.toSorted(resourceCompare);
+  return ids.toSorted(resourceCompare);
 }

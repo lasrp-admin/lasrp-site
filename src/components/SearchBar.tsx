@@ -55,7 +55,6 @@ const SearchBar: React.FC<SearchBarProps> = ({ setFilterSet }) => {
     <div className={styles.searchContainer}>
       <span className={styles.label}>Search</span>
       <input
-        title="Hi"
         placeholder="Search resource name, description or address"
         onChange={(e) => setSearchText(e.target.value)}
         className={styles.bar}

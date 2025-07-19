@@ -1,5 +1,5 @@
 import type React from "react";
-import type { FilterSet, Resource, ResourceDatabase } from "../types/types";
+import type { FilterSet, ResourceDatabase } from "../types/types";
 import type { SetStateAction } from "react";
 
 import { sorted } from "../utils/sorted";
@@ -14,7 +14,7 @@ import { sorted } from "../utils/sorted";
 export function handleFilterUpdate(
   database: ResourceDatabase,
   filterSet: FilterSet,
-  setDisplayData: React.Dispatch<SetStateAction<Resource[]>>
+  setDisplayData: React.Dispatch<SetStateAction<number[]>>
 ): void {
   const filteredDatabase = Object.fromEntries(
     Object.entries(database).filter(
@@ -28,7 +28,12 @@ export function handleFilterUpdate(
         isSubsetOf(filterSet.resourceOthers, resource.other)
     )
   );
-  setDisplayData(sorted(Object.values(filteredDatabase)));
+  setDisplayData(
+    sorted(
+      Object.values(filteredDatabase).map((resource) => resource.id),
+      database
+    )
+  );
 }
 
 /**

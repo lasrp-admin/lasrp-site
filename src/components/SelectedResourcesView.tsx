@@ -23,8 +23,8 @@ const SelectedResourcesView: React.FC<SelectedResourceViewProps> = ({
       <div className={styles.mainBox}>
         <div className={styles.gridContainer}>
           {selectedResources.size > 0 ? (
-            Array.from(selectedResources).map((name) => (
-              <ResourceCard name={name} key={name} />
+            Array.from(selectedResources).map((id) => (
+              <ResourceCard id={id} key={id} />
             ))
           ) : (
             <span>No selected resources.</span>

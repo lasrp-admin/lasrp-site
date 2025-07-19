@@ -33,6 +33,13 @@
   z-index: 1;
 }
 
+.selectedOptions {
+  display: flex;
+  flex-direction: row;
+
+  gap: 15px;
+}
+
 .tableHeader {
   position: sticky;
   top: 70px;

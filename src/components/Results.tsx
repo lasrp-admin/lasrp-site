@@ -1,33 +1,39 @@
 import React from "react";
 import { AnimatePresence, motion } from "motion/react";
 
-import type { Resource } from "../types/types";
 import ResourceRow from "./ResourceRow";
 
 import styles from "../styles/Results.module.css";
 
 import { MdCheckBox, MdCheckBoxOutlineBlank } from "react-icons/md";
 import useDatabaseStore from "../contexts/DatabaseStore";
+import { FiPrinter } from "react-icons/fi";
+import { FaRegStar } from "react-icons/fa6";
 
 interface ResultsProps {
-  data: Resource[];
+  ids: number[];
 }
 
-const Results: React.FC<ResultsProps> = ({ data }) => {
-  const allSelected = useDatabaseStore((state) => state.areAllSelected(data));
+const Results: React.FC<ResultsProps> = ({ ids }) => {
+  const database = useDatabaseStore((state) => state.database);
+  const addFavoriteResources = useDatabaseStore(
+    (state) => state.addFavoriteResources
+  );
+  const allSelected = useDatabaseStore((state) => state.areAllSelected(ids));
   const selectAll = useDatabaseStore((state) => state.selectAll);
   const deselectAll = useDatabaseStore((state) => state.deselectAll);
+  const areAnySelected = useDatabaseStore((state) => state.areAnySelected());
 
   return (
     <div className={styles.resultsContainer}>
       <div className={styles.tableHeader}>
-        {data.length > 0 ? (
+        {ids.length > 0 ? (
           <>
             {allSelected ? (
               <div className={styles.checkBox}>
                 <MdCheckBox
                   size={25}
-                  onClick={() => deselectAll(data)}
+                  onClick={() => deselectAll(ids)}
                   style={{ cursor: "pointer" }}
                 />
                 <span>Deselect All</span>
@@ -36,13 +42,32 @@ const Results: React.FC<ResultsProps> = ({ data }) => {
               <div className={styles.checkBox}>
                 <MdCheckBoxOutlineBlank
                   size={25}
-                  onClick={() => selectAll(data)}
+                  onClick={() => selectAll(ids)}
                   style={{ cursor: "pointer" }}
                 />
                 <span>Select All</span>
               </div>
             )}
-            <span className={styles.count}>{data.length} resources found.</span>
+            <span className={styles.count}>{ids.length} resources found.</span>
+            <div className={styles.selectedOptions}>
+              <FaRegStar
+                size={30}
+                title={"Add selected resources to favorites"}
+                style={{
+                  cursor: areAnySelected ? "pointer" : "not-allowed",
+                  color: areAnySelected ? "black" : "lightgray",
+                }}
+                onClick={() => addFavoriteResources()}
+              />
+              <FiPrinter
+                size={30}
+                title={"Print selected resources"}
+                style={{
+                  cursor: areAnySelected ? "pointer" : "not-allowed",
+                  color: areAnySelected ? "black" : "lightgray",
+                }}
+              />
+            </div>
           </>
         ) : (
           <div
@@ -69,12 +94,15 @@ const Results: React.FC<ResultsProps> = ({ data }) => {
       </div>
       <motion.div className={styles.table} layout>
         <AnimatePresence>
-          {data.length > 0 &&
-            data.map((entry, i) => {
+          {ids.length > 0 &&
+            ids.map((id, i) => {
+              const entry = database[id];
+              console.log("Entry: ", id, entry);
               return (
                 <ResourceRow
                   key={entry.name}
                   name={entry.name}
+                  id={entry.id}
                   description={entry.description}
                   categories={Array.from(entry.type).join(", ")}
                   eligibility={entry.eligibility}

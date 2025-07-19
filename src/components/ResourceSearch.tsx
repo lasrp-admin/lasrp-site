@@ -9,7 +9,6 @@ import styles from "../styles/ResourceSearch.module.css";
 
 import type {
   FilterSet,
-  Resource,
   ResourceType,
   ResourceLanguage,
   ResourceAudience,
@@ -22,7 +21,7 @@ import SearchBar from "./SearchBar.tsx";
 import Contact from "./Contact.tsx";
 
 const ResourceSearch = () => {
-  const [displayData, setDisplaydata] = useState<Resource[]>([]);
+  const [displayData, setDisplaydata] = useState<number[]>([]);
   const [filterSet, setFilterSet] = useState<FilterSet>({
     searchBarMatches: new Set<string>(),
     resourceTypes: new Set<ResourceType>(),
@@ -33,8 +32,9 @@ const ResourceSearch = () => {
   });
 
   const database = useDatabaseStore((state) => state.database);
+
   useEffect(() => {
-    setDisplaydata(sorted(Object.entries(database).map((entry) => entry[1])));
+    setDisplaydata(sorted(Object.keys(database).map(Number), database));
   }, [database]);
 
   useEffect(() => {
@@ -66,7 +66,7 @@ const ResourceSearch = () => {
           </a>
         </div>
       </div>
-      <Results data={displayData} />
+      <Results ids={displayData} />
     </div>
   );
 };
