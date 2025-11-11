@@ -5395,5 +5395,43 @@
       "Eastside"
     ],
     "moreInfo": ""
+  },
+  "164": {
+    "name": "Cl\u00ednica Romero",
+    "id": "164",
+    "type": [
+      "Addiction/Substance Use",
+      "Community Health Center",
+      "Medical Services",
+      "Mental Health & Counseling",
+      "Case Management & Resource Navigation"
+    ],
+    "description": "To provide quality, affordable, community-sensitive health care and other services to the underserved communities of greater Los Angeles, regardless of their ability to pay, by upholding the legacy and teachings of Monse\u00f1or Oscar A. Romero. We are driven to educate and empower all community members through community organizing, health education, social justice, and exchange programs in El Salvador.\n",
+    "audience": [
+      "Anyone"
+    ],
+    "language": [
+      "English",
+      "Spanish"
+    ],
+    "other": [
+      ""
+    ],
+    "eligibility": [
+      "Requires proof of CA residency (not specific to county)"
+    ],
+    "eligibilityText": "The Eligibility/Enrollment Department assists with Medi-Cal application. There are various documents that may be helpful for this process. Find more info here: https://clinicaromero.com/eligibility-enrollment-department/\n\nHowever, some services are provided even if no insurance",
+    "email": "",
+    "phone": "(213) 989-7700",
+    "hours": "Hours differ based on location. Generally, M-F: 7AM-5PM",
+    "contactPerson": "",
+    "contactLink": "https://clinicaromero.com/contact-us/",
+    "website": "https://clinicaromero.com/",
+    "address": "123 S. Alvarado St., Los Angeles, CA 90057 (Headquarters)",
+    "neighborhood": [
+      "Eastside",
+      "San Fernando Valley"
+    ],
+    "moreInfo": "Other clinic location addresses: https://clinicaromero.com/our-locations/"
   }
 }
