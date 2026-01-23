@@ -1,4 +1,200 @@
 {
+  "0": {
+    "name": "Jenesse Center",
+    "id": "0",
+    "type": [
+      "Domestic Violence & Trauma Survivorship"
+    ],
+    "description": "Provides services for family wellness, legal services, workforce development programs, youth programs, emergency housing (families may reside for 30 days), transitional housing (families may reside up to 24mo), and educational centers for victims of domestic and family violence.",
+    "audience": [
+      "Students & Youth",
+      "Families & Parents"
+    ],
+    "language": [
+      "English"
+    ],
+    "other": [
+      "Hotline Available"
+    ],
+    "eligibility": [
+      ""
+    ],
+    "eligibilityText": "",
+    "email": "",
+    "phone": "(800) 479-7328",
+    "hours": "24/7 Hotline",
+    "contactPerson": "",
+    "contactLink": "",
+    "website": "https://jenesse.org/",
+    "address": "",
+    "neighborhood": [
+      ""
+    ],
+    "moreInfo": ""
+  },
+  "1": {
+    "name": "FPA Women\u2019s Health",
+    "id": "1",
+    "type": [
+      "Family Planning & Reproductive Health"
+    ],
+    "description": "Telehealth and in-person services for gynecology, birth control, abortion, and STI testing services, with financial assistance available.",
+    "audience": [
+      "Women"
+    ],
+    "language": [
+      "English",
+      "Spanish"
+    ],
+    "other": [
+      ""
+    ],
+    "eligibility": [
+      ""
+    ],
+    "eligibilityText": "Requires insurance or other forms of payment.",
+    "email": "info@fpawomenshealth.com",
+    "phone": "(877) 883-7264 (for text)",
+    "hours": "",
+    "contactPerson": "",
+    "contactLink": "",
+    "website": "https://www.fpawomenshealth.com/",
+    "address": "",
+    "neighborhood": [
+      "DTLA",
+      "Eastside",
+      "Other",
+      "Long Beach",
+      "Westside",
+      "Orange County"
+    ],
+    "moreInfo": ""
+  },
+  "2": {
+    "name": "Planned Parenthood",
+    "id": "2",
+    "type": [
+      "Family Planning & Reproductive Health"
+    ],
+    "description": "Telehealth and in-person services for abortion, birth control, emergency contraception, HIV services, pregnancy testing and planning, prenatal and postpartum services, sexual and reproductive concerns, STD testing and treatment, gender-affirming care, some vaccines, wellness and preventive care, as well as mental health services at some centers.",
+    "audience": [
+      "Students & Youth",
+      "Families & Parents"
+    ],
+    "language": [
+      "English",
+      "Spanish"
+    ],
+    "other": [
+      ""
+    ],
+    "eligibility": [
+      ""
+    ],
+    "eligibilityText": "",
+    "email": "",
+    "phone": "(800) 230-PLAN (to reach the Planned Parenthood health center nearest you)",
+    "hours": "Varies by location",
+    "contactPerson": "",
+    "contactLink": "",
+    "website": "https://www.plannedparenthood.org",
+    "address": "Varies by location",
+    "neighborhood": [
+      "Eastside",
+      "Westside",
+      "DTLA",
+      "Pasadena",
+      "South Central",
+      "Long Beach",
+      "Orange County",
+      "Remote",
+      "Other"
+    ],
+    "moreInfo": ""
+  },
+  "4": {
+    "name": "CalFresh Restaurant Meals Program",
+    "id": "4",
+    "type": [
+      "Food & Nutrition Assistance"
+    ],
+    "description": "Allows eligible older adults aged 60 or older, people with disabilities, and homeless persons, and their spouses CalFresh benefit recipients to use their CalFresh benefits to purchase hot, prepared food from participating restaurants in California.",
+    "audience": [
+      "Seniors",
+      "Disabled Individuals",
+      "Unhoused Individuals",
+      "Families & Parents"
+    ],
+    "language": [
+      "English"
+    ],
+    "other": [
+      "Government Program"
+    ],
+    "eligibility": [
+      ""
+    ],
+    "eligibilityText": "To qualify for the CalFresh Restaurant Meals Program (RMP), all household members must be either: (1) age 60 or older, (2) disabled, or (3) experiencing homelessness. Spouses of eligible individuals also qualify. Households with any member not meeting these criteria are not eligible. The program is available statewide in California and allows eligible recipients to use their EBT cards at participating restaurants. No separate application is needed\u2014activation is handled through the county CalFresh office.",
+    "email": "CDSSRMP@dss.ca.gov",
+    "phone": "(877) 847-3663",
+    "hours": "",
+    "contactPerson": "",
+    "contactLink": "",
+    "website": "https://www.cdss.ca.gov/rmp",
+    "address": "Multiple locations",
+    "neighborhood": [
+      "Central LA",
+      "DTLA",
+      "Eastside",
+      "Harbor",
+      "San Fernando Valley",
+      "South Central",
+      "Westside",
+      "Pasadena",
+      "Long Beach",
+      "Other"
+    ],
+    "moreInfo": "List of eligible restaurants in county and map of Restaurant Meal Program (RMP) is available on the website"
+  },
+  "5": {
+    "name": "LA County District Attorney\u2019s Bureau of Victim Services",
+    "id": "5",
+    "type": [
+      "Human Trafficking"
+    ],
+    "description": "Services include court case information, court accompaniment, mental health referrals, relocation assistance, home security reimbursement, medical and dental expenses, and California Victim Compensation Board Application Assistance. ",
+    "audience": [
+      "Anyone"
+    ],
+    "language": [
+      "English"
+    ],
+    "other": [
+      "Government Program"
+    ],
+    "eligibility": [
+      ""
+    ],
+    "eligibilityText": "",
+    "email": "",
+    "phone": "(800) 380-3811",
+    "hours": "",
+    "contactPerson": "",
+    "contactLink": "",
+    "website": "https://da.lacounty.gov/victims",
+    "address": "Administrative Office: \n1000 South Fremont Avenue Unit 36, Bldg. A9E, 1st Floor,\nSuite E9150\nAlhambra, CA 91803",
+    "neighborhood": [
+      "DTLA",
+      "Eastside",
+      "San Fernando Valley",
+      "Central LA",
+      "Pasadena",
+      "Westside",
+      "South Central",
+      "Other"
+    ],
+    "moreInfo": ""
+  },
   "6": {
     "name": "California Work Opportunity and Responsibility to Kids (CalWORKS)",
     "id": "6",
@@ -4079,6 +4275,53 @@
     ],
     "moreInfo": ""
   },
+  "119": {
+    "name": "Community Assessment Service Center (CASC)",
+    "id": "119",
+    "type": [
+      "Case Management & Resource Navigation",
+      "Mental Health & Counseling",
+      "Housing & Shelters",
+      "Career Development & Employment"
+    ],
+    "description": "LA County program offering substance use assessments, treatment referrals, and support services like housing, job training, and mental health care through 20+ sites.",
+    "audience": [
+      "Anyone"
+    ],
+    "language": [
+      "English",
+      "Spanish"
+    ],
+    "other": [
+      "Government Program",
+      "In-person services only",
+      "Long-Term Support"
+    ],
+    "eligibility": [
+      ""
+    ],
+    "eligibilityText": "",
+    "email": "ldyer@ph.lacounty.gov\n",
+    "phone": "(626) 299-4109",
+    "hours": "",
+    "contactPerson": "Linda Dyer",
+    "contactLink": "",
+    "website": "https://peerta.acf.hhs.gov/upitoolkit/content/county-los-angeles-community-assessment-service-center",
+    "address": "1000 S. Fremont Avenue, Bldg. A-9 East, 3rd Floor Alhambra, CA 91803",
+    "neighborhood": [
+      "Central LA",
+      "DTLA",
+      "Eastside",
+      "Harbor",
+      "San Fernando Valley",
+      "South Central",
+      "Westside",
+      "Pasadena",
+      "Long Beach",
+      "Other"
+    ],
+    "moreInfo": ""
+  },
   "120": {
     "name": "New Familia",
     "id": "120",
@@ -4249,6 +4492,44 @@
       "Remote"
     ],
     "moreInfo": "Enrollment available year-round for Medi-Cal; open enrollment and special enrollment periods for others."
+  },
+  "125": {
+    "name": "American Association of Retired Persons (AARP)",
+    "id": "125",
+    "type": [
+      "Case Management & Resource Navigation",
+      "Legal Services",
+      "Career Development & Employment",
+      "Health Insurance",
+      "Financial Assistance"
+    ],
+    "description": "National nonprofit that supports adults 50+ with benefits, advocacy, insurance options, work resources, and discounts to promote healthy, independent aging.",
+    "audience": [
+      "Seniors"
+    ],
+    "language": [
+      "English",
+      "Spanish"
+    ],
+    "other": [
+      "Online services only",
+      "Resource Database"
+    ],
+    "eligibility": [
+      "Seniors only"
+    ],
+    "eligibilityText": "Open to all for basic access; full membership benefits for those aged 50 and older.",
+    "email": "",
+    "phone": "(888) 687-2277",
+    "hours": "M-F, 8AM\u20138PM (EST)",
+    "contactPerson": "",
+    "contactLink": "",
+    "website": "https://www.aarp.org",
+    "address": "",
+    "neighborhood": [
+      "Remote"
+    ],
+    "moreInfo": ""
   },
   "126": {
     "name": "Al-Anon",
@@ -4892,6 +5173,43 @@
     ],
     "moreInfo": "Under California Collaborative for Immigrant Justice"
   },
+  "144": {
+    "name": "Immigrant Defenders Law Center",
+    "id": "144",
+    "type": [
+      "Legal Services",
+      "Undocumented/Refugee/Asylum Services"
+    ],
+    "description": "Immigrant Defenders Law Center (ImmDef) is a next-generation social justice law firm that defends our immigrant communities against injustices in the immigration system. ImmDef is Southern California's largest deportation defense non-profit organization. Our team provides full\u2010scale deportation defense, legal representation, legal education, and connections to social services to thousands of detained and non-detained adults and children in Southern California annually.",
+    "audience": [
+      "Immigrants & Refugees"
+    ],
+    "language": [
+      "English",
+      "Spanish",
+      "Request Other Interpretation"
+    ],
+    "other": [
+      "Hotline Available",
+      "Resist Oppression"
+    ],
+    "eligibility": [
+      "Requires proof of refugee/asylum status"
+    ],
+    "eligibilityText": "",
+    "email": "info@immdef.org",
+    "phone": "(213) 833-8283 (Rapid Response Line),\n\n(213) 634-0999 (Main Phone Line)",
+    "hours": "M-F: 9AM-4PM",
+    "contactPerson": "",
+    "contactLink": "https://www.immdef.org/contact",
+    "website": "https://www.immdef.org/",
+    "address": "Main Headquarters:\nLos Angeles, CA\n634 S. Spring St. 10th Fl.\nLos Angeles, CA 90014",
+    "neighborhood": [
+      "Remote",
+      "DTLA"
+    ],
+    "moreInfo": "Immigrant Defenders Law Center (ImmDef) will NEVER charge our clients any money to receive services. As a nonprofit organization, we will always provide free legal services. "
+  },
   "146": {
     "name": "Seating Center at Rancho Los Amigos",
     "id": "146",
@@ -5002,5 +5320,118 @@
       "San Fernando Valley"
     ],
     "moreInfo": "All LA County sherriff's stations, hospitals, clinics, fire departments, schools are designated as Safe Youth Zones."
+  },
+  "162": {
+    "name": "LA County Department of Mental Health (LACDMH)",
+    "id": "162",
+    "type": [
+      "Mental Health & Counseling",
+      "Extreme Weather/Wildfires & Disaster Relief"
+    ],
+    "description": "The Los Angeles County Department of Mental Health (LACDMH) operates more than 85 programs and contracts with  providers to provide a spectrum of mental health services to people of all ages. Mental health services provided include assessments, case management, crisis intervention, medication support, peer support and other rehabilitative services. Services are provided in multiple settings including residential facilities, clinics, schools, hospitals, juvenile halls and camps, mental health courts, board and care homes, in the field and in people\u2019s homes. Special emphasis is placed on addressing co-occurring mental health disorders and other health problems such as addiction. The department also provides counseling to victims of natural or manmade disasters, their families and emergency first responders. The Director of Mental Health is responsible for protecting patients\u2019 rights in all public and private hospitals and programs providing voluntary mental health care and treatment, and all contracted community-based programs. The Director also serves as the public guardian for individuals gravely disabled by mental illness, and is the conservatorship investigation officer for the County.",
+    "audience": [
+      "Anyone"
+    ],
+    "language": [
+      "English"
+    ],
+    "other": [
+      "Government Program",
+      "Emergency Services",
+      "Hotline Available"
+    ],
+    "eligibility": [
+      ""
+    ],
+    "eligibilityText": "",
+    "email": "Housing and Job Development Division: HJDD@dmh.lacounty.gov",
+    "phone": "(800) 854-7771 (24/7 help line)",
+    "hours": "",
+    "contactPerson": "",
+    "contactLink": "",
+    "website": "https://dmh.lacounty.gov/",
+    "address": "550 S Vermont Ave., Los Angeles, CA 90020",
+    "neighborhood": [
+      ""
+    ],
+    "moreInfo": "Enter your zip code on the website and find location close to home (https://dmh.lacounty.gov/our-services/)"
+  },
+  "163": {
+    "name": "Barrio Action Youth and Family Center",
+    "id": "163",
+    "type": [
+      "Case Management & Resource Navigation",
+      "Child Support & Youth Services",
+      "Education",
+      "Arts & Entertainment",
+      "Domestic Violence & Trauma Survivorship"
+    ],
+    "description": "Barrio Action was established to empower young people to succeed both academically and socially, working with people of all ages, with a special emphasis on helping high-risk and at-risk youth, young adults, and their families. The staff of Barrio Action works in partnership with youth and their families, seeking to increase the youth\u2019s understanding of the life choices available to them.",
+    "audience": [
+      "Adolescents & Young Adults (AYA)",
+      "Families & Parents",
+      "Students & Youth"
+    ],
+    "language": [
+      "English",
+      "Spanish"
+    ],
+    "other": [
+      ""
+    ],
+    "eligibility": [
+      "Requires proof of LA county residence",
+      "\u2264 certain % FPL"
+    ],
+    "eligibilityText": "Eligibility requirements differ based on the service provided. The following services are provided even if no insurance: \n- Mental health services: individuals, families, may also be provided at home\n- Parenting classes\n- Behavioral management (e.g., school issues, substance use, gang involvement)\n- Tutoring, college process\n- DV support group\n- Computer and financial literacy\n- Exercise classes",
+    "email": "info@barrioaction.org",
+    "phone": "(323) 221-0779",
+    "hours": "M-Sat: 9AM-6PM",
+    "contactPerson": "",
+    "contactLink": "",
+    "website": "https://barrioaction.org/",
+    "address": "4927 Huntington Dr. N #200, Los Angeles, CA 90032",
+    "neighborhood": [
+      "Eastside"
+    ],
+    "moreInfo": ""
+  },
+  "164": {
+    "name": "Cl\u00ednica Romero",
+    "id": "164",
+    "type": [
+      "Addiction/Substance Use",
+      "Community Health Center",
+      "Medical Services",
+      "Mental Health & Counseling",
+      "Case Management & Resource Navigation"
+    ],
+    "description": "To provide quality, affordable, community-sensitive health care and other services to the underserved communities of greater Los Angeles, regardless of their ability to pay, by upholding the legacy and teachings of Monse\u00f1or Oscar A. Romero. We are driven to educate and empower all community members through community organizing, health education, social justice, and exchange programs in El Salvador.\n",
+    "audience": [
+      "Anyone"
+    ],
+    "language": [
+      "English",
+      "Spanish"
+    ],
+    "other": [
+      ""
+    ],
+    "eligibility": [
+      "Requires proof of CA residency (not specific to county)"
+    ],
+    "eligibilityText": "The Eligibility/Enrollment Department assists with Medi-Cal application. There are various documents that may be helpful for this process. Find more info here: https://clinicaromero.com/eligibility-enrollment-department/\n\nHowever, some services are provided even if no insurance",
+    "email": "",
+    "phone": "(213) 989-7700",
+    "hours": "Hours differ based on location. Generally, M-F: 7AM-5PM",
+    "contactPerson": "",
+    "contactLink": "https://clinicaromero.com/contact-us/",
+    "website": "https://clinicaromero.com/",
+    "address": "123 S. Alvarado St., Los Angeles, CA 90057 (Headquarters)",
+    "neighborhood": [
+      "Eastside",
+      "San Fernando Valley"
+    ],
+    "moreInfo": "Other clinic location addresses: https://clinicaromero.com/our-locations/"
   }
 }
