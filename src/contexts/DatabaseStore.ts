@@ -53,7 +53,7 @@ const useDatabaseStore = create<DatabaseStore>((set, get) => ({
   selectedResources: loadSelectedResources(),
   selectAll: (ids: number[]) => {
     const newSelected = new Set(get().selectedResources);
-    ids.forEach((id) => newSelected.add(id));
+    ids.forEach((id) => newSelected.add(Number(id)));
     saveSelectedResources(newSelected);
     set({
       selectedResources: newSelected,
@@ -61,7 +61,7 @@ const useDatabaseStore = create<DatabaseStore>((set, get) => ({
   },
   addSelectedResource: (id: number) => {
     const newSelected = new Set(get().selectedResources);
-    newSelected.add(id);
+    newSelected.add(Number(id));
     saveSelectedResources(newSelected);
     set({
       selectedResources: newSelected,
@@ -69,7 +69,7 @@ const useDatabaseStore = create<DatabaseStore>((set, get) => ({
   },
   delSelectedResource: (id: number) => {
     const newSelected = new Set(get().selectedResources);
-    newSelected.delete(id);
+    newSelected.delete(Number(id));
     saveSelectedResources(newSelected);
     set({
       selectedResources: newSelected,
@@ -77,14 +77,14 @@ const useDatabaseStore = create<DatabaseStore>((set, get) => ({
   },
   areAllSelected: (ids: number[]) => {
     const selected = get().selectedResources;
-    return ids.every((id) => selected.has(id));
+    return ids.every((id) => selected.has(Number(id)));
   },
   areAnySelected: () => {
     return get().selectedResources.size > 0;
   },
   deselectAll: (ids: number[]) => {
     const newSelected = new Set(get().selectedResources);
-    ids.forEach((id) => newSelected.delete(id));
+    ids.forEach((id) => newSelected.delete(Number(id)));
     saveSelectedResources(newSelected);
     set({
       selectedResources: newSelected,

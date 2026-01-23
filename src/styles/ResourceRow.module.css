@@ -17,6 +17,69 @@
   user-select: none;
 }
 
+.description {
+  margin-top: 6px;
+  color: #333;
+}
+
+.leftPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.rightPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 240px;
+}
+
+.panelHeader {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.panelBody {
+  color: #333;
+}
+
+.eligPanel {
+  background: #fffaf6;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.descPanel {
+  background: #ffffff;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.infoRow {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  background: #fafafa;
+}
+
+.infoLabel {
+  font-weight: 700;
+  width: 90px;
+  color: #333;
+}
+
+.infoValue {
+  color: #222;
+  flex: 1;
+}
+
 .checkbox {
   position: absolute;
   left: 10px;
@@ -45,9 +108,9 @@
 
 .expandedRowContent {
   display: grid;
-  grid-template-columns: 1.3fr 1fr;
-
-  column-gap: 80px;
+  grid-template-columns: 1.4fr 1fr;
+  column-gap: 48px;
+  align-items: start;
 }
 
 .rightContent {
@@ -60,24 +123,41 @@
 .detail {
   display: flex;
   flex-direction: row;
-  align-items: center;
-
-  gap: 25px;
+  align-items: flex-start;
+  gap: 16px;
+  background: #fafafa;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .detailElig {
   display: flex;
   flex-direction: column;
-  align-items: center;
-
-  text-align: center;
-
-  gap: 20px;
+  align-items: flex-start;
+  text-align: left;
+  gap: 12px;
+  background: #fffaf6;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
 }
 
 .container {
   display: flex;
-
   flex-direction: column;
-  gap: 25px;
+  gap: 18px;
+  padding: 12px 0 6px 0;
+  border-top: 1px dashed rgba(0, 0, 0, 0.06);
+}
+
+.detail strong {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.contactItem {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }

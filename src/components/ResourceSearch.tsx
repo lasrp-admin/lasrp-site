@@ -19,6 +19,8 @@ import type {
 import useDatabaseStore from "../contexts/DatabaseStore.ts";
 import SearchBar from "./SearchBar.tsx";
 import Contact from "./Contact.tsx";
+import Acknowledgements from "./Acknowledgements";
+import AboutUs from "./AboutUs";
 
 const ResourceSearch = () => {
   const [displayData, setDisplaydata] = useState<number[]>([]);
@@ -30,6 +32,15 @@ const ResourceSearch = () => {
     resourceNeighborhoods: new Set<ResourceNeighborhood>(),
     resourceOthers: new Set<ResourceOther>(),
   });
+  const [isMobile, setIsMobile] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
+
+  useEffect(() => {
+    const checkWidth = () => setIsMobile(window.innerWidth < 1500);
+    checkWidth();
+    window.addEventListener("resize", checkWidth);
+    return () => window.removeEventListener("resize", checkWidth);
+  }, []);
 
   const database = useDatabaseStore((state) => state.database);
 
@@ -43,30 +54,35 @@ const ResourceSearch = () => {
 
   return (
     <div className={styles.mainContainer}>
-      <div className={styles.leftPanel}>
-        <SearchBar setFilterSet={setFilterSet} />
-        <Filters setFilterSet={setFilterSet} />
-        <Contact />
-        <div className={styles.tag}>
-          <a
-            href="https://github.com/AtonalDev/lasrp"
-            target="_blank"
-            style={{ color: "#007AFF" }}
+      {isMobile ? (
+        <>
+          <button
+            className={styles.menuButton}
+            onClick={() => setShowMenu((prev) => !prev)}
           >
-            Code{" "}
-          </a>
-          by
-          <a
-            href="https://github.com/AtonalDev"
-            target="_blank"
-            style={{ color: "#007AFF" }}
-          >
-            {" "}
-            Atonal
-          </a>
+            {showMenu ? "Close filters" : "Open filters"}
+          </button>
+          {showMenu && (
+            <div className={styles.leftPanel}>
+              <SearchBar setFilterSet={setFilterSet} />
+              <Filters setFilterSet={setFilterSet} />
+              <Contact />
+            </div>
+          )}
+        </>
+      ) : (
+        <div className={styles.leftPanel}>
+          <SearchBar setFilterSet={setFilterSet} />
+          <Filters setFilterSet={setFilterSet} />
+          <Contact />
+          <Acknowledgements />
+          <AboutUs />
         </div>
+      )}
+
+      <div className={styles.results}>
+        <Results ids={displayData} />
       </div>
-      <Results ids={displayData} />
     </div>
   );
 };

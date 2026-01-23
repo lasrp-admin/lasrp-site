@@ -10,6 +10,15 @@ interface ResourceCardType {
 const ResourceCard: React.FC<ResourceCardType> = ({ id }) => {
   const database = useDatabaseStore((state) => state.database);
   const resource = database[id];
+  if (!resource) {
+    return (
+      <div className={styles.cardContainer}>
+        <div style={{ fontStyle: "italic", color: "#666" }}>
+          Resource not found
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className={styles.cardContainer}>

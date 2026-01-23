@@ -45,58 +45,97 @@ const IconList: React.FC<IconListProps> = ({ categories }) => {
 };
 
 const iconMap: { [key in ResourceType]: React.ReactNode } = {
-  "Addiction/Substance Use": <CgPill title="Addiction & Substance Abuse" />,
-  "Animal & Pet Services": <PiDogFill title="Animal & Pet Services" />,
-  "Arts & Entertainment": <FaTheaterMasks title="Arts & Entertainment" />,
+  "Addiction/Substance Use": (
+    <CgPill
+      title="Addiction & Substance Abuse"
+      key="Addiction & Substance Abuse"
+    />
+  ),
+  "Animal & Pet Services": (
+    <PiDogFill title="Animal & Pet Services" key="Animal" />
+  ),
+  "Arts & Entertainment": (
+    <FaTheaterMasks title="Arts & Entertainment" key="Arts" />
+  ),
   "Career Development & Employment": (
-    <FaBriefcase title="Career Development & Employment" />
+    <FaBriefcase title="Career Development & Employment" key="Career" />
   ),
   "Case Management & Resource Navigation": (
-    <FaBriefcaseMedical title="Case Management & Resource Navigation" />
+    <FaBriefcaseMedical
+      title="Case Management & Resource Navigation"
+      key="Case"
+    />
   ),
   "Child Support & Youth Services": (
-    <FaChildren title="Child Support & Youth Services" />
+    <FaChildren title="Child Support & Youth Services" key="Child" />
   ),
   "Community Health Center": (
-    <PiHospitalFill title="Community Health Centers" />
+    <PiHospitalFill title="Community Health Centers" key="Community" />
   ),
   "Cultural & Language Services": (
-    <FaEarthAfrica title="Cultural & Language Services" />
+    <FaEarthAfrica title="Cultural & Language Services" key="Cultural" />
   ),
-  Disability: <BiHandicap title="Disability" />,
+  Disability: <BiHandicap title="Disability" key="Disability" />,
   "Domestic Violence & Trauma Survivorship": (
-    <PiBandaidsFill title="Domestic Violence & Trauma Survivorship" />
+    <PiBandaidsFill
+      title="Domestic Violence & Trauma Survivorship"
+      key="Domestic"
+    />
   ),
-  Education: <IoSchool title="Education" />,
+  Education: <IoSchool title="Education" key="Education" />,
   "Environmentalism & Sustainability": (
-    <RiPlantFill title="Environmentalism & Sustainability" />
+    <RiPlantFill
+      title="Environmentalism & Sustainability"
+      key="Environmentalism"
+    />
   ),
   "Extreme Weather/Wildfires & Disaster Relief": (
-    <PiFireTruckFill title="Extreme Weather/Wildfires & Disaster Relief" />
+    <PiFireTruckFill
+      title="Extreme Weather/Wildfires & Disaster Relief"
+      key="Extreme"
+    />
   ),
   "Family Planning & Reproductive Health": (
-    <MdOutlineFamilyRestroom title="Family Planning & Reproductive Health" />
+    <MdOutlineFamilyRestroom
+      title="Family Planning & Reproductive Health"
+      key="FamilyPlanning"
+    />
   ),
-  "Financial Assistance": <AiFillDollarCircle title="Financial Assistance" />,
-  "Fitness & Wellness": <IoFitnessSharp title="Fitness & Wellness" />,
+  "Financial Assistance": (
+    <AiFillDollarCircle title="Financial Assistance" key="Financial" />
+  ),
+  "Fitness & Wellness": (
+    <IoFitnessSharp title="Fitness & Wellness" key="Fitness" />
+  ),
   "Food & Nutrition Assistance": (
-    <TbAppleFilled title="Food & Nutrition Assistance" />
+    <TbAppleFilled title="Food & Nutrition Assistance" key="Food & Nutrition" />
   ),
-  "Free Items/Donations": <BsFillBoxSeamFill title="Free Items/Donations" />,
-  "Health Insurance": <RiHealthBookFill title="Health Insurance" />,
-  "Housing & Shelters": <FaHouseChimney title="Housing & Shelters" />,
-  "Human Trafficking": <FaHandHoldingHeart title="Human Trafficking" />,
-  Hygiene: <FaBath title="Hygiene" />,
-  "Legal Services": <VscLaw title="Legal Services" />,
-  "LGBT Services": <FaRainbow title="LGBT Services" />,
-  "Medical Services": <FaTruckMedical title="Medical Services" />,
+  "Free Items/Donations": (
+    <BsFillBoxSeamFill
+      title="Free Items/Donations"
+      key="Free Items/Donations"
+    />
+  ),
+  "Health Insurance": (
+    <RiHealthBookFill title="Health Insurance" key="Health" />
+  ),
+  "Housing & Shelters": (
+    <FaHouseChimney title="Housing & Shelters" key="Housing" />
+  ),
+  "Human Trafficking": (
+    <FaHandHoldingHeart title="Human Trafficking" key="Trafficking" />
+  ),
+  Hygiene: <FaBath title="Hygiene" key="Hygiene" />,
+  "Legal Services": <VscLaw title="Legal Services" key="Legal" />,
+  "LGBT Services": <FaRainbow title="LGBT Services" key="LGBT" />,
+  "Medical Services": <FaTruckMedical title="Medical Services" key="Medical" />,
   "Mental Health & Counseling": (
-    <RiMentalHealthFill title="Mental Health & Counseling" />
+    <RiMentalHealthFill title="Mental Health & Counseling" key="Mental" />
   ),
-  "Spiritual Services": <FaPray title="Spiritual Services" />,
-  Transportation: <FaBusAlt title="Transportation" />,
+  "Spiritual Services": <FaPray title="Spiritual Services" key="Spiritual" />,
+  Transportation: <FaBusAlt title="Transportation" key="Transportation" />,
   "Undocumented/Refugee/Asylum Services": (
-    <FaRibbon title="Undocumented/Refugee/Asylum Services" />
+    <FaRibbon title="Undocumented/Refugee/Asylum Services" key="Undocumented" />
   ),
 };
 

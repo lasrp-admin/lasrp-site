@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import ResourceSearch from "./components/ResourceSearch";
 import styles from "./styles/App.module.css";
@@ -10,13 +10,20 @@ import USCLogo from "./assets/images/usc_logo.png";
 
 import Info from "./components/Info";
 import SelectedResourcesView from "./components/SelectedResourcesView";
-import Printer from "./components/Printer";
 import useLoadDatabase from "./hooks/useLoadDatabase";
 
 const App = () => {
   const [help, setHelp] = useState<boolean>(false);
   const [favorite, setFavorite] = useState<boolean>(false);
-  const [printer, setPrinter] = useState<boolean>(false);
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkWidth = () => setIsMobile(window.innerWidth < 950);
+    checkWidth();
+    window.addEventListener("resize", checkWidth);
+    return () => window.removeEventListener("resize", checkWidth);
+  }, []);
 
   useLoadDatabase();
 
@@ -69,9 +76,8 @@ const App = () => {
           </div>
           {help && <Info setHelp={setHelp} />}
           {favorite && <SelectedResourcesView setFavorite={setFavorite} />}
-          {printer && <Printer setPrinter={setPrinter} />}
           <span className={styles.title}>
-            Los Angeles Social Resources for Patients
+            {isMobile ? "LASRP" : "Los Angeles Social Resources for Patients"}
           </span>
         </div>
       </div>

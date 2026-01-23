@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 
 import ResourceRow from "./ResourceRow";
@@ -8,17 +8,16 @@ import styles from "../styles/Results.module.css";
 import { MdCheckBox, MdCheckBoxOutlineBlank } from "react-icons/md";
 import useDatabaseStore from "../contexts/DatabaseStore";
 import { FiPrinter } from "react-icons/fi";
-import { FaRegStar } from "react-icons/fa6";
+import Printer from "./Printer";
 
 interface ResultsProps {
   ids: number[];
 }
 
 const Results: React.FC<ResultsProps> = ({ ids }) => {
+  const [printer, setPrinter] = useState<boolean>(false);
+
   const database = useDatabaseStore((state) => state.database);
-  const addFavoriteResources = useDatabaseStore(
-    (state) => state.addFavoriteResources
-  );
   const allSelected = useDatabaseStore((state) => state.areAllSelected(ids));
   const selectAll = useDatabaseStore((state) => state.selectAll);
   const deselectAll = useDatabaseStore((state) => state.deselectAll);
@@ -50,7 +49,7 @@ const Results: React.FC<ResultsProps> = ({ ids }) => {
             )}
             <span className={styles.count}>{ids.length} resources found.</span>
             <div className={styles.selectedOptions}>
-              <FaRegStar
+              {/* <FaRegStar
                 size={30}
                 title={"Add selected resources to favorites"}
                 style={{
@@ -58,7 +57,7 @@ const Results: React.FC<ResultsProps> = ({ ids }) => {
                   color: areAnySelected ? "black" : "lightgray",
                 }}
                 onClick={() => addFavoriteResources()}
-              />
+              /> */}
               <FiPrinter
                 size={30}
                 title={"Print selected resources"}
@@ -66,6 +65,7 @@ const Results: React.FC<ResultsProps> = ({ ids }) => {
                   cursor: areAnySelected ? "pointer" : "not-allowed",
                   color: areAnySelected ? "black" : "lightgray",
                 }}
+                onClick={() => setPrinter((prev) => !prev)}
               />
             </div>
           </>
@@ -97,10 +97,9 @@ const Results: React.FC<ResultsProps> = ({ ids }) => {
           {ids.length > 0 &&
             ids.map((id, i) => {
               const entry = database[id];
-              console.log("Entry: ", id, entry);
               return (
                 <ResourceRow
-                  key={entry.name}
+                  key={entry.id}
                   name={entry.name}
                   id={entry.id}
                   description={entry.description}
@@ -118,6 +117,7 @@ const Results: React.FC<ResultsProps> = ({ ids }) => {
             })}
         </AnimatePresence>
       </motion.div>
+      {printer && <Printer setPrinter={setPrinter} />}
     </div>
   );
 };

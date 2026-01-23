@@ -7,9 +7,7 @@ import { AiOutlineCompress } from "react-icons/ai";
 import { GoGlobe } from "react-icons/go";
 import { MdCheckBoxOutlineBlank } from "react-icons/md";
 import { MdCheckBox } from "react-icons/md";
-import { FaPhoneFlip } from "react-icons/fa6";
-import { IoMdPin } from "react-icons/io";
-import { MdEmail } from "react-icons/md";
+// icons removed; kept UI minimal for labeled panel
 
 import IconList from "./IconList";
 import useDatabaseStore from "../contexts/DatabaseStore";
@@ -46,8 +44,9 @@ const ResourceRow: React.FC<ResourceRowProps> = React.memo(
   }) => {
     const [expand, setExpand] = useState<boolean>(expandInit);
     const [linkHover, setLinkHover] = useState<boolean>(false);
+
     const selected = useDatabaseStore((state) =>
-      state.selectedResources.has(id)
+      state.selectedResources.has(Number(id))
     );
     const addSelectedResource = useDatabaseStore(
       (state) => state.addSelectedResource
@@ -59,7 +58,8 @@ const ResourceRow: React.FC<ResourceRowProps> = React.memo(
     return (
       <motion.div
         className={styles.rowContainer}
-        style={{ backgroundColor: color === 0 ? "#bfbfbf" : "#e3e3e3" }}
+        // style={{ backgroundColor: color === 0 ? "#bfbfbf" : "#e3e3e3" }}
+        style={{ backgroundColor: color === 0 ? "#e3e3e3" : "#c6d3a7ff" }}
         layout
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -84,14 +84,14 @@ const ResourceRow: React.FC<ResourceRowProps> = React.memo(
             <MdCheckBox
               size={20}
               onClick={() => {
-                delSelectedResource(id);
+                delSelectedResource(Number(id));
               }}
             />
           ) : (
             <MdCheckBoxOutlineBlank
               size={20}
               onClick={() => {
-                addSelectedResource(id);
+                addSelectedResource(Number(id));
               }}
             />
           )}
@@ -133,58 +133,74 @@ const ResourceRow: React.FC<ResourceRowProps> = React.memo(
             >
               <div className={styles.spacer}></div>
               <div className={styles.expandedRowContent}>
-                {(eligibility[0] || eligibilityText) && (
-                  <div className={styles.detailElig}>
-                    <span style={{ fontSize: "1.1rem", fontWeight: "bold" }}>
-                      Eligibility details
-                    </span>
-                    {eligibility && (
-                      <div
-                        style={{
-                          display: "flex",
-                          flexDirection: "column",
-                          gap: "10px",
-                        }}
-                      >
-                        {eligibility.map((x) => (
-                          <span key={x}>{x}</span>
-                        ))}
-                        {eligibilityText && <span>{eligibilityText}</span>}
+                <div className={styles.leftPanel}>
+                  {(eligibility && eligibility.length > 0) ||
+                  eligibilityText ? (
+                    <div className={styles.eligPanel}>
+                      <div className={styles.panelHeader}>Eligibility</div>
+                      <div className={styles.panelBody}>
+                        {eligibility && eligibility.length > 0 && (
+                          <ul>
+                            {eligibility.map((x) => (
+                              <li key={x}>{x}</li>
+                            ))}
+                          </ul>
+                        )}
+                        {eligibilityText && (
+                          <div className={styles.eligText}>
+                            {eligibilityText}
+                          </div>
+                        )}
                       </div>
-                    )}
+                    </div>
+                  ) : null}
+
+                  <div className={styles.descPanel}>
+                    <div className={styles.panelHeader}>Description</div>
+                    <div className={styles.panelBody}>
+                      <div className={styles.description}>{description}</div>
+                    </div>
                   </div>
-                )}
-                <div className={styles.rightContent}>
+                </div>
+
+                <div className={styles.rightPanel}>
                   {phone && (
-                    <div className={styles.detail}>
-                      <div>
-                        <FaPhoneFlip size={25} title={"Phone number(s)"} />
-                      </div>
-                      <div style={{ display: "flex", flexDirection: "column" }}>
+                    <div className={styles.infoRow}>
+                      <div className={styles.infoLabel}>Phone</div>
+                      <div className={styles.infoValue}>
                         {phone.split(",").map((number) => (
-                          <span key={number}>{number.trim()}</span>
+                          <div key={number}>{number.trim()}</div>
                         ))}
                       </div>
                     </div>
                   )}
 
                   {email && (
-                    <div className={styles.detail}>
-                      <div>
-                        <MdEmail size={25} title={"Email(s)"} />
-                      </div>
-                      <div style={{ display: "flex", flexDirection: "column" }}>
-                        <span>{email}</span>
+                    <div className={styles.infoRow}>
+                      <div className={styles.infoLabel}>Email</div>
+                      <div className={styles.infoValue}>{email}</div>
+                    </div>
+                  )}
+
+                  {website && (
+                    <div className={styles.infoRow}>
+                      <div className={styles.infoLabel}>Website</div>
+                      <div className={styles.infoValue}>
+                        <a
+                          href={website}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {website}
+                        </a>
                       </div>
                     </div>
                   )}
 
                   {address && (
-                    <div className={styles.detail}>
-                      <div>
-                        <IoMdPin size={25} title={"Address"} />
-                      </div>
-                      <span>{address}</span>
+                    <div className={styles.infoRow}>
+                      <div className={styles.infoLabel}>Address</div>
+                      <div className={styles.infoValue}>{address}</div>
                     </div>
                   )}
                 </div>

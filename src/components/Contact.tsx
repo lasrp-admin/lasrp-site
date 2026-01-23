@@ -10,12 +10,15 @@ const Contact = () => {
         <span>contact[dot]lasrp[at]gmail[dot]com</span>
       </div>
       <a
-        href="https://docs.google.com/document/d/1JNMMq1FswgdPg07xm0NN4nwO5YSHqbGY3eFjxF8VCbY/edit?tab=t.0"
+        href="https://forms.gle/5hTqrY8TymYpTxcD8"
         target="_blank"
+        rel="noopener noreferrer"
         style={{ color: "#007AFF" }}
       >
         Feedback form
       </a>
+
+      {/* contact-only card (acknowledgements moved to separate tile) */}
     </div>
   );
 };

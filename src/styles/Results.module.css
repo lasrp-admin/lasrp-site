@@ -9,7 +9,7 @@
   margin-bottom: 30px;
   margin-top: 15px;
 }
-
+ 
 .table {
   width: 100%;
 }
@@ -46,9 +46,11 @@
   width: 100%;
   display: flex;
 
+  padding-top: 10px;
   padding-bottom: 15px;
+  padding-right: 15px;
 
-  background-color: white;
+  background-color: #9fb9c5;
   z-index: 100;
 
   justify-content: center;

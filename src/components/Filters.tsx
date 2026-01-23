@@ -21,6 +21,9 @@ import type {
 } from "../types/types";
 
 import styles from "../styles/Filters.module.css";
+import { AiOutlineQuestionCircle } from "react-icons/ai";
+import ReactDOM from "react-dom";
+import { IoMdClose } from "react-icons/io";
 
 type Option = {
   label: string;
@@ -40,6 +43,7 @@ const Filters: React.FC<FiltersProps> = ({ setFilterSet }) => {
   /*----------------
   States & Constants
   ----------------*/
+  const [showHelp, setShowHelp] = useState<boolean>(false);
   const [selectedTypes, setSelectedTypes] = useState<ResourceType[]>([]);
   const [selectedAudiences, setSelectedAudiences] = useState<
     ResourceAudience[]
@@ -146,7 +150,36 @@ const Filters: React.FC<FiltersProps> = ({ setFilterSet }) => {
   return (
     <div>
       <div className={styles.filtersContainer}>
-        <span className={styles.label}>Filters</span>
+        <div className={styles.headerRow}>
+          <AiOutlineQuestionCircle
+            className={styles.helpIcon}
+            onClick={() => setShowHelp((prev) => !prev)}
+            title="Help"
+          />
+          <span className={styles.label}>Filters</span>
+        </div>
+        {showHelp &&
+          ReactDOM.createPortal(
+            <div className={styles.overlay}>
+              <div className={styles.infoBox}>
+                <IoMdClose
+                  onClick={() => setShowHelp(false)}
+                  className={styles.toggle}
+                  size={30}
+                />
+                <span className={styles.text}>
+                  Select one of the drop down menus to add filters!
+                </span>
+                <span className={styles.text}>
+                  You can use multiple filter categories at once, and also use
+                  multiple options within each category. Filters are additive,
+                  so you will only see resources that match ALL your selected
+                  filters.
+                </span>
+              </div>
+            </div>,
+            document.body
+          )}
         <Select
           placeholder="Category"
           options={resourceOptions}
