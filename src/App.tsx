@@ -6,7 +6,7 @@ import { FaRegQuestionCircle } from "react-icons/fa";
 import { FaRegStar } from "react-icons/fa6";
 import { FiTable } from "react-icons/fi";
 import ArchLogo from "./assets/images/arch_collaborative.svg?react";
-import USCLogo from "./assets/images/usc_logo.png";
+import KHRCLogo from "./assets/images/KHRC_Logo.png";
 
 import Info from "./components/Info";
 import SelectedResourcesView from "./components/SelectedResourcesView";
@@ -46,7 +46,7 @@ const App = () => {
                 window.open("https://sites.usc.edu/keckhumanrights/home/");
               }}
             >
-              <img src={USCLogo} className={styles.uscLogo} />
+              <img src={KHRCLogo} className={styles.uscLogo} />
             </div>
           </div>
           <div className={styles.iconBarRight}>
