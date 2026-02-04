@@ -18,7 +18,7 @@ jobs:
           spreadsheetId: 1Bpe3AxJnxzBAjRTzWEMYaja1BqaMD1a5EiymTQ_EoHw
           commands: |
             [
-              { "command": "getData", "args": { "worksheetTitle": "LASRP Data", "range": "A2:S" } }
+              { "command": "getData", "args": { "worksheetTitle": "LASRP Data (EN)", "range": "A2:S" } }
             ]
         env:
           GSHEET_CLIENT_EMAIL: ${{ secrets.GSHEET_CLIENT_EMAIL }}
