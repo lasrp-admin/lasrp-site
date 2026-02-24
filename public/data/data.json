@@ -814,7 +814,7 @@
     "moreInfo": "Map of locations with appointment links: https://cssd.lacounty.gov/contact-us/\n\nLink for Commerce Division appointments:\nhttps://outlook.office365.com/book/CSSDCommerceOffice@lacounty.onmicrosoft.com/\n\nLink for South Los Angeles Division appointments:\nhttps://outlook.office365.com/book/CSSDSouthLAOffice@lacounty.onmicrosoft.com/"
   },
   "21": {
-    "name": "2024 Summer Meal Service Sites",
+    "name": "2025 Summer Meal Service Sites",
     "id": "21",
     "type": [
       "Child Support & Youth Services",
@@ -835,12 +835,12 @@
     ],
     "eligibilityText": "Children 18 years of age and younger during periods when they are out of school for fifteen (15) or more consecutive school days.",
     "email": "SFSP@cde.ca.gov",
-    "phone": "(213) 241-2993 (Breed Street Elementary),\n\n(213) 241-2993 (Utah Street Elementary),\n\n(213) 241-2993 (Evergreen Avenue Elementary),\n\n(323) 780-0076 (Puente Charter)",
-    "hours": "Breed Street Elementary:\nBreakfast, Lunch\n\nUtah Street Elementary:\nBreakfast, Lunch\n\nEvergreen Avenue Elementary: \nBreakfast, Lunch\n\nPuente Charter:\nBreakfast, Lunch",
-    "contactPerson": "Breed Street Elementary:\nManish Singh\n\nUtah Street Elementary:\nFlorence Simpson\n\nEvergreen Avenue Elementary: \nManish Singh\n\nPuente Charter:\nJerome Greening",
+    "phone": "(213) 241-2993 (Breed Street Elementary),\n\n(213) 241-2993 (Evergreen Avenue Elementary),\n\n(323) 780-0076 (Puente Charter)",
+    "hours": "Breed Street Elementary:\nBreakfast, Lunch\n\nEvergreen Avenue Elementary: \nBreakfast, Lunch\n\nPuente Charter:\nBreakfast, Lunch",
+    "contactPerson": "Breed Street Elementary:\nManish Singh\n\nEvergreen Avenue Elementary: \nManish Singh\n\nPuente Charter:\nJerome Greening",
     "contactLink": "",
-    "website": "https://www.cde.ca.gov/ds/sh/sn/ap/summersites.asp?year=2024&countyname=Los_Angeles",
-    "address": "Breed Street Elementary:\n2226 East Third St. Los Angeles, CA 90033-3906\n\nUtah Street Elementary:\n255 Gabriel Garcia Marquez St. Los Angeles, CA 90033-2746\n\nEvergreen Avenue Elementary: \n2730 Ganahl St. Los Angeles, CA 90033-2019\n\nPuente Charter:\n501 South Boyle Ave. Los Angeles, CA 90033",
+    "website": "https://www.cde.ca.gov/ds/sh/sn/ap/summersites.asp?year=2025&countyname=Los_Angeles",
+    "address": "Breed Street Elementary:\n2226 East Third St. Los Angeles, CA 90033-3906\n\nEvergreen Avenue Elementary: \n2730 Ganahl St. Los Angeles, CA 90033-2019\n\nPuente Charter:\n501 South Boyle Ave. Los Angeles, CA 90033",
     "neighborhood": [
       "Central LA",
       "DTLA",
