@@ -41,31 +41,20 @@ const AboutUs = () => {
         </div>
         <div className={styles.modalBody}>
           <p>
-            This is a short About Us placeholder. Replace with your real project
-            description later. For now, here's some filler content to show how
-            the modal will look.
+            <b>LASRP (Los Angeles Social Resources for Patients)</b> is a{" "}
+            clinician-facing, searchable database of vetted local
+            resources across <b>Los Angeles County</b>. It helps providers quickly
+            find tailored community resources for patients with social needs.
           </p>
           <p>
-            Our mission is to make data accessible and easy to find. We
-            collaborate with partners, researchers, and volunteers to curate
-            high-quality resources and tools that support practitioners and
-            researchers.
+            Built by volunteers, LASRP centralizes resource info for <b>point-of-care</b> use.
+            The site offers filterable search, printouts, and daily updates from a central database.
           </p>
-          <p>Contributors (filler):</p>
-          <ul className={styles.list}>
-            <li>
-              <strong>Taylor Quinn</strong>
-              <span className={styles.note}> — Project lead</span>
-            </li>
-            <li>
-              <strong>Riley Chen</strong>
-              <span className={styles.note}> — Engineering</span>
-            </li>
-            <li>
-              <strong>Jordan Patel</strong>
-              <span className={styles.note}> — Research</span>
-            </li>
-          </ul>
+          <p>
+            Designed for providers (medical students, residents, physicians,
+            social workers, street medicine) and <b>publicly accessible</b> for
+            patients and families.
+          </p>
         </div>
         {/* no footer; close via header X */}
       </div>
