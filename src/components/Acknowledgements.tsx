@@ -5,11 +5,16 @@ import { FaHandsHelping } from "react-icons/fa";
 import styles from "../styles/Acknowledgements.module.css";
 
 const filler = [
-  { name: "Alex Rivera", note: "Data curation and cleaning" },
-  { name: "Casey Morgan", note: "UX feedback and testing" },
-  { name: "Jordan Lee", note: "Data ingestion scripts" },
-  { name: "Priya Patel", note: "Research and domain expertise" },
-  { name: "Sam Gomez", note: "Design review" },
+  { name: "Keck Human Rights Student Interest Group", note: "" },
+  { name: "Arthur Bookstein", note: "" },
+  { name: "Ashley Hernandez Gutierrez", note: "" },
+  { name: "Carson McNeill", note: "" },
+  { name: "Grace Kim", note: "" },
+  { name: "Justine Po", note: "" },
+  { name: "Manan Chopra", note: "" },
+  { name: "Michelle Dong", note: "" },
+  { name: "Michelle Koh", note: "" },
+  { name: "Zara Mubin", note: "" },
 ];
 
 const Acknowledgements = () => {
@@ -59,7 +64,7 @@ const Acknowledgements = () => {
             {filler.map((p) => (
               <li key={p.name}>
                 <strong>{p.name}</strong>
-                <span className={styles.note}> — {p.note}</span>
+                {/* <span className={styles.note}> — {p.note}</span> */}
               </li>
             ))}
           </ul>
