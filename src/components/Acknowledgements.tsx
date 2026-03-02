@@ -4,7 +4,7 @@ import { IoMdClose } from "react-icons/io";
 import { FaHandsHelping } from "react-icons/fa";
 import styles from "../styles/Acknowledgements.module.css";
 
-const filler = [
+const contributors = [
   { name: "Keck Human Rights Student Interest Group", note: "" },
   { name: "Arthur Bookstein", note: "" },
   { name: "Ashley Hernandez Gutierrez", note: "" },
@@ -58,10 +58,10 @@ const Acknowledgements = () => {
         <div className={styles.modalBody}>
           <p>
             We thank the following people and organizations for their
-            contributions to this project (filler names):
+            contributions to this project:
           </p>
           <ul className={styles.list}>
-            {filler.map((p) => (
+            {contributors.map((p) => (
               <li key={p.name}>
                 <strong>{p.name}</strong>
                 {/* <span className={styles.note}> — {p.note}</span> */}
