@@ -83,12 +83,12 @@ const Results: React.FC<ResultsProps> = ({ ids }) => {
             <span>No resources matching your filters were found.</span>
             <span>
               If you represent a resource or know of one that is missing in our
-              database, please reach out to
+              database, please reach out to{" "}
+              <a href="mailto:contact.lasrp@gmail.com" style={{ fontWeight: "bold" }}>
+                contact.lasrp@gmail.com
+              </a>{" "}
+              so that we can look into adding it.
             </span>
-            <span style={{ fontWeight: "bold" }}>
-              contact[dot]lasrp[at]gmail[dot]com
-            </span>
-            <span>so that we can look into adding it.</span>
           </div>
         )}
       </div>
