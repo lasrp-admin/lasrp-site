@@ -5,6 +5,7 @@ import { FaHandsHelping } from "react-icons/fa";
 import styles from "../styles/Acknowledgements.module.css";
 
 const contributors = [
+  { name: "ARCH Collaborative", note: "" },
   { name: "Keck Human Rights Student Interest Group", note: "" },
   { name: "Arthur Bookstein", note: "" },
   { name: "Ashley Hernandez Gutierrez", note: "" },
