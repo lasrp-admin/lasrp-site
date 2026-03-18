@@ -4,6 +4,7 @@ export type FilterSet = {
   resourceAudiences: Set<ResourceAudience>;
   resourceLanguages: Set<ResourceLanguage>;
   resourceNeighborhoods: Set<ResourceNeighborhood>;
+  resourceZipCode: Set<ResourceZipCode>;
   resourceOthers: Set<ResourceOther>;
 };
 
@@ -16,7 +17,7 @@ export type Resource = {
   name: string;
   id: number;
   description: string;
-  audience: Set<ResourceOther>;
+  audience: Set<ResourceAudience>;
   language: Set<ResourceLanguage>;
   other: Set<ResourceOther>;
   eligibility: string[];
@@ -29,6 +30,7 @@ export type Resource = {
   website: string;
   address: string;
   neighborhood: Set<ResourceNeighborhood>;
+  zipcode: Set<ResourceZipCode>;
   moreInfo: string;
   selected: boolean;
 };
@@ -243,3 +245,5 @@ export const ALL_NEIGHBORHOOD_TYPES: ResourceNeighborhood[] = [
   "Remote",
   "Other",
 ];
+
+export type ResourceZipCode = string;

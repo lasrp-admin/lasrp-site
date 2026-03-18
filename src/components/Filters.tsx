@@ -1,4 +1,4 @@
-import React, { useEffect, useState, type SetStateAction } from "react";
+import React, { useEffect, useMemo, useState, type SetStateAction } from "react";
 import Select, { type ActionMeta } from "react-select";
 
 import makeAnimated from "react-select/animated";
@@ -17,13 +17,17 @@ import type {
   ResourceAudience,
   ResourceLanguage,
   ResourceNeighborhood,
+  ResourceZipCode,
   ResourceOther,
 } from "../types/types";
 
 import styles from "../styles/Filters.module.css";
+import { getUniqueZipCodes } from "../utils/zipcode";
+
 import { AiOutlineQuestionCircle } from "react-icons/ai";
 import ReactDOM from "react-dom";
 import { IoMdClose } from "react-icons/io";
+import useDatabaseStore from "../contexts/DatabaseStore";
 
 type Option = {
   label: string;
@@ -32,6 +36,7 @@ type Option = {
     | ResourceAudience
     | ResourceLanguage
     | ResourceNeighborhood
+    | ResourceZipCode
     | ResourceOther;
 };
 
@@ -43,6 +48,7 @@ const Filters: React.FC<FiltersProps> = ({ setFilterSet }) => {
   /*----------------
   States & Constants
   ----------------*/
+  const database = useDatabaseStore((state) => state.database);
   const [showHelp, setShowHelp] = useState<boolean>(false);
   const [selectedTypes, setSelectedTypes] = useState<ResourceType[]>([]);
   const [selectedAudiences, setSelectedAudiences] = useState<
@@ -53,6 +59,9 @@ const Filters: React.FC<FiltersProps> = ({ setFilterSet }) => {
   >([]);
   const [selectedNeighborhoods, setSelectedNeighborhoods] = useState<
     ResourceNeighborhood[]
+  >([]);
+  const [selectedZipCodes, setSelectedZipCodes] = useState<
+    ResourceZipCode[]
   >([]);
   const [selectedOthers, setSelectedOthers] = useState<ResourceOther[]>([]);
 
@@ -78,6 +87,18 @@ const Filters: React.FC<FiltersProps> = ({ setFilterSet }) => {
       value: neighborhood,
       label: neighborhood,
     })
+  );
+  const uniqueZipCodes = useMemo(
+    () => getUniqueZipCodes(Object.values(database)),
+    [database]
+  );
+  const zipcodeOptions: Option[] = useMemo(
+    () =>
+      uniqueZipCodes.map((zipcode) => ({
+        value: zipcode,
+        label: zipcode,
+      })),
+    [uniqueZipCodes]
   );
   const otherOptions: Option[] = ALL_OTHER_TYPES.map((other) => ({
     value: other,
@@ -118,13 +139,20 @@ const Filters: React.FC<FiltersProps> = ({ setFilterSet }) => {
   useEffect(() => {
     setFilterSet((prev) => ({
       ...prev,
+      resourceZipCode: new Set(selectedZipCodes),
+    }));
+  }, [selectedZipCodes]);
+
+  useEffect(() => {
+    setFilterSet((prev) => ({
+      ...prev,
       resourceOthers: new Set(selectedOthers),
     }));
   }, [selectedOthers]);
 
   function handleChange(
     selected: readonly Option[],
-    filter: "type" | "audience" | "language" | "neighborhood" | "other"
+    filter: "type" | "audience" | "language" | "neighborhood" | "zipcode" | "other"
   ) {
     if (filter === "type") {
       setSelectedTypes(selected.map((option) => option.value as ResourceType));
@@ -142,8 +170,18 @@ const Filters: React.FC<FiltersProps> = ({ setFilterSet }) => {
           (neighborhood) => neighborhood.value as ResourceNeighborhood
         )
       );
+    } else if (filter === "zipcode") {
+      setSelectedZipCodes(
+        selected.map(
+          (zipcode) => zipcode.value as ResourceZipCode
+        )
+      )
     } else if (filter === "other") {
-      setSelectedOthers(selected.map((other) => other.value as ResourceOther));
+      setSelectedOthers(
+        selected.map(
+          (other) => other.value as ResourceOther
+        )
+      );
     }
   }
 
@@ -222,6 +260,17 @@ const Filters: React.FC<FiltersProps> = ({ setFilterSet }) => {
           className={styles.bar}
           onChange={(selected: readonly Option[], _: ActionMeta<Option>) =>
             handleChange(selected, "neighborhood")
+          }
+        />
+        <Select
+          placeholder="Zip Code"
+          options={zipcodeOptions}
+          isSearchable
+          isMulti
+          components={animated}
+          className={styles.bar}
+          onChange={(selected: readonly Option[], _: ActionMeta<Option>) =>
+            handleChange(selected, "zipcode")
           }
         />
         <Select
