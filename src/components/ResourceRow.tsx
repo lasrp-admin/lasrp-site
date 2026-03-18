@@ -23,6 +23,7 @@ interface ResourceRowProps {
   phone: string;
   email: string;
   address: string;
+  zipcode: Set<string>;
   expandInit: boolean;
   color: 0 | 1;
 }
@@ -39,6 +40,7 @@ const ResourceRow: React.FC<ResourceRowProps> = React.memo(
     phone,
     email,
     address,
+    zipcode,
     color,
     expandInit,
   }) => {
@@ -201,6 +203,15 @@ const ResourceRow: React.FC<ResourceRowProps> = React.memo(
                     <div className={styles.infoRow}>
                       <div className={styles.infoLabel}>Address</div>
                       <div className={styles.infoValue}>{address}</div>
+                    </div>
+                  )}
+
+                  {zipcode && zipcode.size > 0 && (
+                    <div className={styles.infoRow}>
+                      <div className={styles.infoLabel}>Zip Code</div>
+                      <div className={styles.infoValue}>
+                        {Array.from(zipcode).join(", ")}
+                      </div>
                     </div>
                   )}
                 </div>
