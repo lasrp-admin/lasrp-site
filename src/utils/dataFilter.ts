@@ -25,6 +25,7 @@ export function handleFilterUpdate(
         isSubsetOf(filterSet.resourceAudiences, resource.audience) &&
         isSubsetOf(filterSet.resourceLanguages, resource.language) &&
         isSubsetOf(filterSet.resourceNeighborhoods, resource.neighborhood) &&
+        hasIntersection(filterSet.resourceZipCode, resource.zipcode) && 
         isSubsetOf(filterSet.resourceOthers, resource.other)
     )
   );
@@ -48,4 +49,19 @@ export function isSubsetOf<T>(a: Set<T>, b: Set<T>): boolean {
     if (!b.has(item)) flag = false;
   }
   return flag;
+}
+
+/**
+ * Check if there is an intersection between two sets.
+ * If the filter set (a) is empty, return true (i.e. no filter applied).
+ * @param a Filter set
+ * @param b Resource's set
+ * @returns True if a is empty OR if a and b have common elements.
+ */
+export function hasIntersection<T>(a: Set<T>, b: Set<T>): boolean {
+  if (a.size === 0) return true;
+  for (const item of a) {
+    if (b.has(item)) return true;
+  }
+  return false;
 }

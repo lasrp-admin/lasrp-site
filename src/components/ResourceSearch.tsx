@@ -13,6 +13,7 @@ import type {
   ResourceLanguage,
   ResourceAudience,
   ResourceNeighborhood,
+  ResourceZipCode,
   ResourceOther,
 } from "../types/types";
 
@@ -30,6 +31,7 @@ const ResourceSearch = () => {
     resourceAudiences: new Set<ResourceAudience>(),
     resourceLanguages: new Set<ResourceLanguage>(),
     resourceNeighborhoods: new Set<ResourceNeighborhood>(),
+    resourceZipCode: new Set<ResourceZipCode>(),
     resourceOthers: new Set<ResourceOther>(),
   });
   const [isMobile, setIsMobile] = useState(false);

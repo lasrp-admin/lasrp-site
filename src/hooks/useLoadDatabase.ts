@@ -23,6 +23,7 @@ export default function useLoadDatabase() {
               language: new Set(resource.language),
               other: new Set(resource.other),
               neighborhood: new Set(resource.neighborhood),
+              zipcode: new Set(resource.zipcode),
               id: resource.id,
             },
           ])

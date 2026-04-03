@@ -20,8 +20,9 @@ CONTACT_PERSON_COL = 13
 CONTACT_LINK_COL = 14
 WEBSITE_COL = 15
 ADDRESS_COL = 16
-NEIGHBORHOOD_COL = 17
-MORE_INFO_COL = 18
+ZIPCODE_COL = 17
+NEIGHBORHOOD_COL = 18
+MORE_INFO_COL = 19
 
 STABLE_ENTRY = "COMPLETE & VERIFIED"
 
@@ -54,7 +55,7 @@ def smart_split(text):
 
 def main():
 	# Arg parsing
-	parser = argparse.ArgumentParser(description="CSV to JSON converter.")
+	parser = argparse.ArgumentParser(description="JSON to JSON converter.")
 	parser.add_argument("input_file", type=str, help="Name of input raw JSON file.")
 	parser.add_argument("output_file", type=str, help="Name of output formatted JSON file.")
 	args = parser.parse_args()
@@ -82,6 +83,7 @@ def main():
 					"contactLink": row[CONTACT_LINK_COL],
 					"website": row[WEBSITE_COL],
 					"address": row[ADDRESS_COL],
+					"zipcode": smart_split(row[ZIPCODE_COL]),
 					"neighborhood": smart_split(row[NEIGHBORHOOD_COL]),
 					"moreInfo": row[MORE_INFO_COL]					
 				}

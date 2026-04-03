@@ -110,6 +110,7 @@ const Results: React.FC<ResultsProps> = ({ ids }) => {
                   phone={entry.phone}
                   email={entry.email}
                   address={entry.address}
+                  zipcode={entry.zipcode}
                   color={(i % 2) as 0 | 1}
                   expandInit={false}
                 />
