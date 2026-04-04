@@ -2796,6 +2796,7 @@
     "website": "https://www.ypapride.org/",
     "address": "PO Box 3058 Camarillo, CA 93011-3058",
     "zipcode": [
+      "93011",
       "93011-3058"
     ],
     "neighborhood": [
@@ -3664,7 +3665,8 @@
     "website": "https://www.taptogo.net/Reduced_Fare#senior (seniors)\nhttps://www.taptogo.net/Reduced_Fare#disability (disabilities)\nhttps://www.taptogo.net/Reduced_Fare#college (college students)\nhttps://www.taptogo.net/Reduced_Fare#student (K12 students)",
     "address": "TAP Reduced Fare Office\nOne Gateway Plaza\nMail Stop 99-PL-4\nLos Angeles, CA 90012-2952 [mailing address, multiple physical addresses]",
     "zipcode": [
-      "90012-2952"
+      "90012-2952",
+      "90012"
     ],
     "neighborhood": [
       "Other"
@@ -3988,7 +3990,8 @@
     "website": "https://losangeleshouseofruth.com",
     "address": "Written communications only:\nLos Angeles House of Ruth\nPO Box 33288\nLos Angeles, CA 90033-1727\n\nLocations of houses confidential, but near Downtown LA",
     "zipcode": [
-      "90033-1727"
+      "90033-1727",
+      "90033"
     ],
     "neighborhood": [
       "DTLA"
@@ -4492,7 +4495,8 @@
     "website": "https://lalgbtcenter.org/",
     "address": "1625 N. Schrader Blvd, Los Angeles, CA 90028-6213 (McDonal/Wright Building - health and mental health services, and pharmacy)",
     "zipcode": [
-      "90028-6213"
+      "90028-6213",
+      "90028"
     ],
     "neighborhood": [
       "Central LA"
