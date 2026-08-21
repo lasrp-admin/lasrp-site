@@ -21,6 +21,10 @@ venv/
 .env
 .env.*
 !.env.example
+scripts/extract/refresh.jsonl
+scripts/extract/refresh_state.json
+scripts/extract/pending.json
+scripts/extract/pending.jsonl
 
 # Editor directories and files
 .vscode/*
