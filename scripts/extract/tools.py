@@ -1,10 +1,11 @@
 import json
-from pathlib import Path
 from pydantic import ValidationError
 from xai_sdk.chat import tool
+from zip_neighborhood import apply_neighborhoods, default_map
 from schema import ResourceDraft
+from settings import settings
 
-PENDING = Path(__file__).with_name("pending.jsonl")  # JSONL: one ResourceDraft per line
+PENDING = settings.pending
 _submit_succeeded = False
 
 
@@ -30,8 +31,11 @@ def submit_resource(payload: dict, *, persist: bool = True) -> dict:
         row = ResourceDraft.model_validate(payload)
     except ValidationError as exc:
         return _fail(exc.errors())
+    filled = apply_neighborhoods(row.model_dump(), default_map())
+    row = ResourceDraft.model_validate(filled)
     written_to = None
     if persist:
+        PENDING.parent.mkdir(parents=True, exist_ok=True)
         with PENDING.open("a", encoding="utf-8") as handle:
             handle.write(row.model_dump_json() + "\n")
         written_to = str(PENDING)

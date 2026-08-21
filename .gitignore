@@ -25,6 +25,8 @@ scripts/extract/refresh.jsonl
 scripts/extract/refresh_state.json
 scripts/extract/pending.json
 scripts/extract/pending.jsonl
+scripts/extract/queues/
+scripts/extract/eval/runs/
 
 # Editor directories and files
 .vscode/*

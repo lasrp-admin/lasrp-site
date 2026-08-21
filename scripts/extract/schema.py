@@ -1,14 +1,15 @@
 from typing import Literal
 from pydantic import BaseModel, Field, field_validator
+from settings import settings
 
-# Caps from public/data/data.json (150 resources).
-MAX_TYPE_TAGS = 11
-MAX_AUDIENCE_TAGS = 6
-MAX_LANGUAGE_TAGS = 12
-MAX_OTHER_TAGS = 3
-MAX_NEIGHBORHOOD_TAGS = 10
-MAX_ZIPCODES = 4
-MAX_ELIGIBILITY_TAGS = 2
+MAX_TYPE_TAGS = settings.tag_caps.type
+MAX_AUDIENCE_TAGS = settings.tag_caps.audience
+MAX_LANGUAGE_TAGS = settings.tag_caps.language
+MAX_OTHER_TAGS = settings.tag_caps.other
+MAX_NEIGHBORHOOD_TAGS = settings.tag_caps.neighborhood
+MAX_ZIPCODES = settings.tag_caps.zipcode
+MAX_ELIGIBILITY_TAGS = settings.tag_caps.eligibility
+
 ResourceType = Literal[
     "Addiction/Substance Use",
     "Animal & Pet Services",

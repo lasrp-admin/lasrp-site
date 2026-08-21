@@ -1,13 +1,10 @@
-import json
-import tempfile
 import unittest
 from datetime import datetime, timedelta, timezone
-from pathlib import Path
 from unittest import mock
 
 import _extract_path  # noqa: F401
 import run_refresh
-from run_refresh import is_fresh, load_jsonl, pick_resources
+from run_refresh import is_fresh, pick_resources
 
 
 class ImportIsolationTests(unittest.TestCase):
@@ -125,39 +122,6 @@ class PickResourcesTests(unittest.TestCase):
         state = {"0": {"checked_at": (self.now - timedelta(days=1)).isoformat()}}
         picked = self._pick(data, state, limit=1, force=True)
         self.assertEqual([rid for rid, _ in picked], ["1"])
-
-
-class LoadJsonlTests(unittest.TestCase):
-    def setUp(self) -> None:
-        self.tmp = tempfile.TemporaryDirectory()
-        self.path = Path(self.tmp.name) / "rows.jsonl"
-
-    def tearDown(self) -> None:
-        self.tmp.cleanup()
-
-    @mock.patch("run_refresh.info")
-    def test_skips_malformed_line_and_keeps_valid_rows(self, mock_info) -> None:
-        first = {"resource_id": "0", "name": "A"}
-        second = {"resource_id": "1", "name": "B"}
-        self.path.write_text(
-            json.dumps(first) + "\nnot-json\n" + json.dumps(second) + "\n",
-            encoding="utf-8",
-        )
-        self.assertEqual(load_jsonl(self.path), [first, second])
-        mock_info.assert_called()
-
-    def test_skips_empty_lines(self) -> None:
-        row = {"resource_id": "0"}
-        self.path.write_text("\n" + json.dumps(row) + "\n\n", encoding="utf-8")
-        self.assertEqual(load_jsonl(self.path), [row])
-
-    def test_valid_only_file_unchanged(self) -> None:
-        rows = [{"a": 1}, {"b": 2}]
-        self.path.write_text(
-            "\n".join(json.dumps(row) for row in rows) + "\n",
-            encoding="utf-8",
-        )
-        self.assertEqual(load_jsonl(self.path), rows)
 
 
 if __name__ == "__main__":

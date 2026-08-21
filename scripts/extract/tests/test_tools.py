@@ -59,6 +59,14 @@ class PersistTests(unittest.TestCase):
         self.assertIsNone(args)
         self.assertEqual(errors, ["tool arguments must be a JSON object"])
 
+    def test_submit_fills_neighborhood_from_hq_zip(self) -> None:
+        tools.reset_submit()
+        result = tools.submit_resource(
+            {**MIN_DRAFT, "zipcode": ["90032"]}, persist=False
+        )
+        self.assertTrue(result["ok"])
+        self.assertEqual(result["resource"]["neighborhood"], ["Eastside"])
+
 
 if __name__ == "__main__":
     unittest.main()

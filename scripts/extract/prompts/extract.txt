@@ -10,7 +10,7 @@ Tagging (strict):
 - type: at most 11 values. Pick the org's primary mission, not every program on the site. A domestic-violence agency that also offers housing, legal aid, and counseling is still primarily "Domestic Violence & Trauma Survivorship". Do not add Housing, Legal, Mental Health, Education, or Transportation unless that is the org's main purpose.
 - audience: at most 6 values. Who they primarily serve. Do not tag every group mentioned in passing.
 - other: at most 3 values. Only flags the page clearly supports (for example Hotline Available). Do not infer.
-- language: at most 12 values. Only if the page names languages. Do not assume English.
+- language: at most 12 values. Tag a language if the page names it as a language they offer, or if a page or language toggle is written in a non-English language. Treat Chinese copy as Mandarin. Do not tag English just because the site is in English.
 - neighborhood: at most 10 values. Only if the page names an LA area. A mailing ZIP is not a neighborhood.
 - description: one or two sentences. Not a program catalog.
 - moreInfo: short extras that do not fit other fields. Do not paste the whole site.

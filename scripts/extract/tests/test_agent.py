@@ -6,8 +6,15 @@ from types import SimpleNamespace
 from unittest import mock
 
 import _extract_path  # noqa: F401
-import agent
-from agent import SubmitResult, extract_url, main, run_tool_loop
+import loop
+from loop import SubmitResult, extract_url, run_tool_loop
+from run_extract import main
+
+
+class ImportIsolationTests(unittest.TestCase):
+    def test_loop_has_no_cli(self) -> None:
+        self.assertIsNone(getattr(loop, "parse_args", None))
+        self.assertIsNone(getattr(loop, "main", None))
 
 
 class ScriptedChat:
@@ -36,8 +43,8 @@ def _text_response(content: str):
 
 
 class ExtractUrlTests(unittest.TestCase):
-    @mock.patch("agent.make_chat")
-    @mock.patch("agent.run_tool_loop")
+    @mock.patch("loop.make_chat")
+    @mock.patch("loop.run_tool_loop")
     def test_unparseable_url_is_hostname(self, mock_loop, mock_chat) -> None:
         for url in ("not-a-url", ""):
             with self.subTest(url=url):
@@ -48,11 +55,11 @@ class ExtractUrlTests(unittest.TestCase):
         mock_chat.assert_not_called()
         mock_loop.assert_not_called()
 
-    @mock.patch("agent.reset_submit")
-    @mock.patch("agent.load_system_prompt", return_value="prompt")
-    @mock.patch("agent.web_search")
-    @mock.patch("agent.make_chat")
-    @mock.patch("agent.run_tool_loop")
+    @mock.patch("loop.reset_submit")
+    @mock.patch("loop.load_system_prompt", return_value="prompt")
+    @mock.patch("loop.web_search")
+    @mock.patch("loop.make_chat")
+    @mock.patch("loop.run_tool_loop")
     def test_success_returns_payload(
         self, mock_loop, mock_chat, _web, _prompt, mock_reset
     ) -> None:
@@ -64,11 +71,11 @@ class ExtractUrlTests(unittest.TestCase):
         self.assertIsNone(result.fail)
         mock_reset.assert_called_once()
 
-    @mock.patch("agent.reset_submit")
-    @mock.patch("agent.load_system_prompt", return_value="prompt")
-    @mock.patch("agent.web_search")
-    @mock.patch("agent.make_chat")
-    @mock.patch("agent.run_tool_loop")
+    @mock.patch("loop.reset_submit")
+    @mock.patch("loop.load_system_prompt", return_value="prompt")
+    @mock.patch("loop.web_search")
+    @mock.patch("loop.make_chat")
+    @mock.patch("loop.run_tool_loop")
     def test_no_submit_and_loop_cap_propagate(
         self, mock_loop, mock_chat, _web, _prompt, mock_reset
     ) -> None:
@@ -90,8 +97,8 @@ class ExtractUrlTests(unittest.TestCase):
 class MainTests(unittest.TestCase):
     def _run(self, result: SubmitResult) -> tuple[str | None, str, str]:
         with (
-            mock.patch("agent.parse_args") as mock_args,
-            mock.patch("agent.extract_url") as mock_extract,
+            mock.patch("run_extract.parse_args") as mock_args,
+            mock.patch("run_extract.extract_url") as mock_extract,
             mock.patch("sys.stdout", new=io.StringIO()) as stdout,
             mock.patch("sys.stderr", new=io.StringIO()) as stderr,
         ):
@@ -145,7 +152,7 @@ class MainTests(unittest.TestCase):
 
 
 class RunToolLoopTests(unittest.TestCase):
-    @mock.patch("agent.tool_result", side_effect=lambda output, tool_call_id: output)
+    @mock.patch("loop.tool_result", side_effect=lambda output, tool_call_id: output)
     def test_no_client_side_tools_is_no_submit(self, _tool_result) -> None:
         chat = ScriptedChat([_text_response("site has no name")])
         result = run_tool_loop(chat, False, lambda name, args: "{}")
@@ -153,18 +160,18 @@ class RunToolLoopTests(unittest.TestCase):
         self.assertEqual(result.detail, "site has no name")
         self.assertIsNone(result.payload)
 
-    @mock.patch("agent.get_tool_call_type", return_value="client_side_tool")
-    @mock.patch("agent.tool_result", side_effect=lambda output, tool_call_id: output)
+    @mock.patch("loop.get_tool_call_type", return_value="client_side_tool")
+    @mock.patch("loop.tool_result", side_effect=lambda output, tool_call_id: output)
     def test_loop_cap_after_failed_submits(self, _tool_result, _kind) -> None:
-        chat = ScriptedChat([_tool_response() for _ in range(agent.CLIENT_SIDE_LOOP_CAP)])
+        chat = ScriptedChat([_tool_response() for _ in range(loop.CLIENT_SIDE_LOOP_CAP)])
         result = run_tool_loop(
             chat, False, lambda name, args: json.dumps({"ok": False, "errors": ["no"]})
         )
         self.assertEqual(result.fail, "loop_cap")
         self.assertEqual(result.detail, "loop cap reached without a successful submit")
 
-    @mock.patch("agent.get_tool_call_type", return_value="client_side_tool")
-    @mock.patch("agent.tool_result", side_effect=lambda output, tool_call_id: output)
+    @mock.patch("loop.get_tool_call_type", return_value="client_side_tool")
+    @mock.patch("loop.tool_result", side_effect=lambda output, tool_call_id: output)
     def test_successful_submit_returns_payload(self, _tool_result, _kind) -> None:
         payload = {"ok": True, "resource": {"name": "Jenesse Center"}}
         chat = ScriptedChat([_tool_response()])
@@ -233,7 +240,7 @@ class RefreshExtractLoopTests(unittest.TestCase):
     @mock.patch("run_refresh.load_jsonl", return_value=[])
     @mock.patch("run_refresh.load_state", return_value={})
     @mock.patch("run_refresh.load_data_json")
-    @mock.patch("agent.extract_url")
+    @mock.patch("loop.extract_url")
     def test_logs_reason_and_skips_write(
         self, mock_extract, mock_data, _state, _pending, mock_save, mock_append
     ) -> None:

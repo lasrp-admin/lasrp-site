@@ -5,13 +5,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from diff import already_pending, proposed_diffs
-
-EXTRACT_DIR = Path(__file__).resolve().parent
-DATA_JSON = EXTRACT_DIR.parent.parent / "public" / "data" / "data.json"
-REFRESH = EXTRACT_DIR / "refresh.jsonl"
-STATE = EXTRACT_DIR / "refresh_state.json"
-DEFAULT_LIMIT = 3
-DEFAULT_MIN_AGE_DAYS = 7
+from settings import load_data_json, load_jsonl, settings, website_of
 
 
 def info(message: str) -> None:
@@ -42,38 +36,20 @@ def is_fresh(entry: dict | None, now: datetime, min_age_days: int) -> bool:
     return now - checked < timedelta(days=min_age_days)
 
 
-def load_data_json() -> dict:
-    if not DATA_JSON.is_file():
-        raise SystemExit("missing resource database: " + str(DATA_JSON))
-    return json.loads(DATA_JSON.read_text(encoding="utf-8"))
-
-
 def load_state() -> dict:
-    if not STATE.is_file():
+    path = settings.refresh_state
+    if not path.is_file():
         return {}
-    payload = json.loads(STATE.read_text(encoding="utf-8"))
+    payload = json.loads(path.read_text(encoding="utf-8"))
     if not isinstance(payload, dict):
         return {}
     return payload
 
 
 def save_state(state: dict) -> None:
-    STATE.write_text(json.dumps(state, indent=2) + "\n", encoding="utf-8")
-
-
-def load_jsonl(path: Path) -> list[dict]:
-    if not path.is_file():
-        return []
-    rows = []
-    for i, line in enumerate(path.read_text(encoding="utf-8").splitlines(), start=1):
-        line = line.strip()
-        if not line:
-            continue
-        try:
-            rows.append(json.loads(line))
-        except json.JSONDecodeError:
-            info(f"skip bad jsonl line {i}: {path}")
-    return rows
+    path = settings.refresh_state
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(state, indent=2) + "\n", encoding="utf-8")
 
 
 def resource_sort_key(resource_id: str) -> tuple:
@@ -89,10 +65,6 @@ def refresh_sort_key(resource_id: str, state: dict) -> tuple:
     if checked is None:
         return (0, resource_sort_key(resource_id))
     return (1, checked, resource_sort_key(resource_id))
-
-
-def website_of(row: dict) -> str:
-    return str(row.get("website") or "").strip()
 
 
 def pick_resources(
@@ -132,6 +104,7 @@ def pick_resources(
 
 
 def append_jsonl(path: Path, rows: list[dict]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("a", encoding="utf-8") as handle:
         for row in rows:
             handle.write(json.dumps(row) + "\n")
@@ -144,8 +117,8 @@ def main() -> None:
     parser.add_argument(
         "--limit",
         type=int,
-        default=DEFAULT_LIMIT,
-        help=f"Max resources to extract (default {DEFAULT_LIMIT})",
+        default=settings.refresh_default_limit,
+        help=f"Max resources to extract (default {settings.refresh_default_limit})",
     )
     parser.add_argument(
         "--id",
@@ -155,8 +128,8 @@ def main() -> None:
     parser.add_argument(
         "--min-age-days",
         type=int,
-        default=DEFAULT_MIN_AGE_DAYS,
-        help=f"Skip resources checked this recently (default {DEFAULT_MIN_AGE_DAYS})",
+        default=settings.refresh_min_age_days,
+        help=f"Skip resources checked this recently (default {settings.refresh_min_age_days})",
     )
     parser.add_argument(
         "--force",
@@ -180,7 +153,7 @@ def main() -> None:
 
     data = load_data_json()
     state = load_state()
-    pending_diffs = load_jsonl(REFRESH)
+    pending_diffs = load_jsonl(settings.refresh_jsonl)
     targets = pick_resources(
         data,
         state,
@@ -194,7 +167,7 @@ def main() -> None:
         info("nothing to refresh")
         return
 
-    from agent import extract_url
+    from loop import extract_url
 
     for rid, published in targets:
         site = website_of(published)
@@ -233,7 +206,7 @@ def main() -> None:
         if not new_rows:
             info(f"no change: {rid} {name}")
             continue
-        append_jsonl(REFRESH, new_rows)
+        append_jsonl(settings.refresh_jsonl, new_rows)
         for row in new_rows:
             print(json.dumps(row))
 

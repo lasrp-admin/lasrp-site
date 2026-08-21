@@ -1,4 +1,3 @@
-import argparse
 import json
 import os
 import sys
@@ -11,12 +10,12 @@ from dotenv import load_dotenv
 from xai_sdk import Client
 from xai_sdk.chat import system, user, tool_result
 from xai_sdk.tools import web_search, get_tool_call_type
+from settings import EXTRACT_DIR, settings
 from tools import SUBMIT_TOOL, dispatch, reset_submit
 
-EXTRACT_DIR = Path(__file__).resolve().parent
-PROMPT_PATH = EXTRACT_DIR / "prompt.txt"
-CLIENT_SIDE_LOOP_CAP = 4
-MODEL = "grok-4.6"
+CLIENT_SIDE_LOOP_CAP = settings.client_side_loop_cap
+MODEL = settings.model
+PROMPT_PATH = settings.extract_prompt
 
 FailKind = Literal["hostname", "no_submit", "loop_cap"]
 
@@ -49,20 +48,6 @@ def load_api_key() -> str:
 def hostname(url: str) -> str:
     host = (urlparse(str(url)).hostname or "").lower()
     return host.removeprefix("www.")
-
-
-def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(
-        description="Extract one LASRP resource from an organization URL."
-    )
-    parser.add_argument("url", help="Organization website, e.g. https://jenesse.org/")
-    parser.add_argument(
-        "-d",
-        "--debug",
-        action="store_true",
-        help="Print rounds, tool calls, stream text, and dispatch results.",
-    )
-    return parser.parse_args()
 
 
 def log(debug: bool, message: str) -> None:
@@ -174,22 +159,3 @@ def extract_url(url: str, debug: bool = False, persist: bool = True) -> SubmitRe
     chat.append(system(load_system_prompt()))
     chat.append(user("Extract a LASRP resource from this URL: " + str(url)))
     return run_tool_loop(chat, debug, lambda name, args: dispatch(name, args, persist=persist))
-
-
-def main() -> None:
-    args = parse_args()
-    result = extract_url(args.url, debug=args.debug)
-    if result.payload is not None:
-        print(json.dumps(result.payload))
-        return
-    if result.fail == "no_submit":
-        if result.detail:
-            print(result.detail, file=sys.stderr)
-        raise SystemExit("extraction finished without a successful submit")
-    if result.fail == "hostname":
-        raise SystemExit("could not parse hostname")
-    raise SystemExit("loop cap reached without a successful submit")
-
-
-if __name__ == "__main__":
-    main()

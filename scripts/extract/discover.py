@@ -5,19 +5,10 @@ from pydantic import ValidationError
 from xai_sdk.chat import system, tool, user
 from xai_sdk.tools import web_search
 
-from agent import EXTRACT_DIR, load_prompt_text, log, make_chat, run_tool_loop
+from loop import load_prompt_text, log, make_chat, run_tool_loop
 from candidates import CandidateList
+from settings import settings
 from tools import parse_tool_args
-
-SEARCH_PROMPT_PATH = EXTRACT_DIR / "search_prompt.txt"
-
-EXCLUDED = [
-    "yelp.com",
-    "wikipedia.org",
-    "facebook.com",
-    "instagram.com",
-    "reddit.com",
-]
 
 CANDIDATE_TOOL = tool(
     name="submit_candidates",
@@ -25,7 +16,7 @@ CANDIDATE_TOOL = tool(
     parameters=CandidateList.model_json_schema(),
 )
 DISCOVER_TOOLS = [
-    web_search(excluded_domains=EXCLUDED),
+    web_search(excluded_domains=list(settings.excluded_domains)),
     CANDIDATE_TOOL,
 ]
 
@@ -55,7 +46,7 @@ def dispatch_candidates(name: str, arguments_json: str) -> str:
 
 
 def load_search_prompt() -> str:
-    return load_prompt_text(SEARCH_PROMPT_PATH, "search prompt")
+    return load_prompt_text(settings.search_prompt, "search prompt")
 
 
 def discover(query: str, debug: bool = False) -> CandidateList:

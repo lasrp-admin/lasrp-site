@@ -2,31 +2,15 @@ import argparse
 import json
 import sys
 
-from agent import extract_url, hostname, log
+from loop import extract_url, hostname, log
 from candidates import Candidate
 from discover import discover
-from run_refresh import load_data_json, load_jsonl, website_of
+from settings import load_data_json, load_jsonl, settings, website_of
 from tools import PENDING
-
-MAX_EXTRACTS = 3
-AGGREGATORS = {
-    "211la.org",
-    "211.org",
-    "findhelp.org",
-    "auntbertha.com",
-    "yellowpages.com",
-    "google.com",
-    "maps.google.com",
-    "wikipedia.org",
-    "yelp.com",
-    "facebook.com",
-    "instagram.com",
-    "reddit.com",
-}
 
 
 def is_aggregator(host: str) -> bool:
-    return any(host == item or host.endswith("." + item) for item in AGGREGATORS)
+    return any(host == item or host.endswith("." + item) for item in settings.aggregators)
 
 
 def existing_hosts(data_json: dict, pending_rows: list[dict]) -> set[str]:
@@ -56,7 +40,7 @@ def classify_candidates(
         if host in seen:
             skips.append((item, "duplicate"))
             continue
-        if len(keep) >= MAX_EXTRACTS:
+        if len(keep) >= settings.max_extracts:
             skips.append((item, "cap"))
             continue
         seen.add(host)

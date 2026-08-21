@@ -1,0 +1,48 @@
+model = "grok-4.6"
+client_side_loop_cap = 4
+
+[paths]
+data_json = "../../public/data/data.json"
+pending = "queues/pending.jsonl"
+refresh_jsonl = "queues/refresh.jsonl"
+refresh_state = "queues/refresh_state.json"
+extract_prompt = "prompts/extract.txt"
+search_prompt = "prompts/search.txt"
+
+[search]
+max_candidates = 5
+max_extracts = 3
+aggregators = [
+  "211la.org",
+  "211.org",
+  "findhelp.org",
+  "auntbertha.com",
+  "yellowpages.com",
+  "google.com",
+  "maps.google.com",
+  "wikipedia.org",
+  "yelp.com",
+  "facebook.com",
+  "instagram.com",
+  "reddit.com",
+]
+excluded_domains = [
+  "yelp.com",
+  "wikipedia.org",
+  "facebook.com",
+  "instagram.com",
+  "reddit.com",
+]
+
+[refresh]
+default_limit = 3
+min_age_days = 7
+
+[tag_caps]
+type = 11
+audience = 6
+language = 12
+other = 3
+neighborhood = 10
+zipcode = 4
+eligibility = 2
