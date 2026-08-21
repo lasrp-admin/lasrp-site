@@ -12,6 +12,16 @@ dist
 dist-ssr
 *.local
 
+# Python extract agent
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
