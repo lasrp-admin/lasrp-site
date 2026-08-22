@@ -8,7 +8,7 @@ python run_search.py "food pantry Koreatown Los Angeles"
 python run_refresh.py
 ```
 
-`run_*.py` are the only programs you run. `loop.py` is the shared Grok tool loop.
+`run_*.py` write queues. `eval/run_eval.py` scores extract without writing. `loop.py` is the shared Grok tool loop.
 
 ## Queues (gitignored)
 
@@ -22,6 +22,15 @@ python run_refresh.py
 
 - `prompts/extract.txt` — one URL → `submit_resource`
 - `prompts/search.txt` — query → `submit_candidates`
+
+## Eval
+
+Page-grounded gold is `eval/cases.json`. Track 1 is contact facts (hard pass/fail). Track 2 is tag F1. Runs do not write queues. JSON reports go to `eval/runs/` (gitignored).
+
+```bash
+python eval/run_eval.py
+python eval/run_eval.py --id 0
+```
 
 ## Config
 

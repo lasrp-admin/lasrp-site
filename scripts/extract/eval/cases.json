@@ -1,0 +1,89 @@
+{
+  "notes": "Page-grounded labels for the 21 Aug 2026 five-org set. Not a dump of data.json. Neighborhood is HQ/site, not service area. Language empty means the site does not name languages (do not assume English).",
+  "cases": [
+    {
+      "id": "0",
+      "short": "Jenesse",
+      "url": "https://jenesse.org/",
+      "name": "Jenesse Center",
+      "website": "https://jenesse.org/",
+      "phone": "(800) 479-7328",
+      "hours": "24/7 Hotline",
+      "email": "info@jenesse.org",
+      "address": "P.O. Box 8476, Los Angeles, CA 90008",
+      "type": ["Domestic Violence & Trauma Survivorship"],
+      "audience": ["Women", "Families & Parents"],
+      "language": [],
+      "zipcode": ["90008"],
+      "neighborhood": []
+    },
+    {
+      "id": "23",
+      "short": "Harbor CHC",
+      "url": "https://www.harborchc.org/",
+      "name": "Harbor Community Health Centers",
+      "website": "https://www.harborchc.org/",
+      "phone": "(310) 547-0202",
+      "hours": "Mon-Thurs 8am-5pm, Fri 8:30am-5pm",
+      "email": "",
+      "address": "San Pedro, CA 90731",
+      "type": ["Community Health Center"],
+      "audience": [],
+      "language": ["English", "Spanish"],
+      "zipcode": ["90731"],
+      "neighborhood": ["Harbor"]
+    },
+    {
+      "id": "106",
+      "short": "NLSLA",
+      "url": "https://nlsla.org",
+      "name": "Neighborhood Legal Services",
+      "website": "https://nlsla.org",
+      "phone": "800-433-6251",
+      "hours": "",
+      "email": "",
+      "address": "1226 N State St",
+      "type": ["Legal Services"],
+      "audience": ["Low Income"],
+      "language": ["Spanish", "Mandarin", "Armenian"],
+      "zipcode": ["91205", "91331", "91731", "90033"],
+      "neighborhood": ["San Fernando Valley", "Other"]
+    },
+    {
+      "id": "108",
+      "short": "Angel Food",
+      "url": "https://www.angelfood.org",
+      "name": "Project Angel Food",
+      "website": "https://www.angelfood.org",
+      "phone": "(323) 845-1800",
+      "hours": "",
+      "email": "",
+      "address": "922 Vine Street, Los Angeles, CA 90038",
+      "type": ["Food & Nutrition Assistance"],
+      "audience": ["People with Medical Conditions"],
+      "language": ["English", "Spanish"],
+      "zipcode": ["90038"],
+      "neighborhood": []
+    },
+    {
+      "id": "163",
+      "short": "Barrio Action",
+      "url": "https://barrioaction.org/",
+      "name": "Barrio Action",
+      "website": "https://barrioaction.org/",
+      "phone": "(323) 221-0779",
+      "hours": "",
+      "email": "info@barrioaction.org",
+      "address": "4927 Huntington Dr. N, Los Angeles, CA 90032",
+      "type": ["Child Support & Youth Services"],
+      "audience": [
+        "Adolescents & Young Adults (AYA)",
+        "Families & Parents",
+        "Students & Youth"
+      ],
+      "language": [],
+      "zipcode": ["90032"],
+      "neighborhood": ["Eastside"]
+    }
+  ]
+}
