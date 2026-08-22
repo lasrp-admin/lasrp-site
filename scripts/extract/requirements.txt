@@ -1,0 +1,3 @@
+xai-sdk
+pydantic
+python-dotenv
