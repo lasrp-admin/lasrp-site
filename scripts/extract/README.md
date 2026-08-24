@@ -35,3 +35,7 @@ python eval/run_eval.py --id 0
 ## Config
 
 Tunables live in `config.toml` and are loaded by `settings.py` (missing keys fail at startup). Put `XAI_API_KEY` in `.env` only.
+
+## Next
+
+This folder is a local tool. The product path (sheet Pending tab, review states, Action trigger) is in the repo root `TODO.md` under **Extract: CLI to feature**.
